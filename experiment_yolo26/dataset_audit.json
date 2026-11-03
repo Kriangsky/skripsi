@@ -1,0 +1,53 @@
+{
+  "python": "C:\\Program Files\\Python311\\python.exe",
+  "total_videos": 2803,
+  "counts": {
+    "test/apa_kabar": 50,
+    "test/bingung": 50,
+    "test/halo": 50,
+    "test/kamu": 50,
+    "test/marah": 50,
+    "test/saya": 50,
+    "test/senang": 50,
+    "test/tidur": 50,
+    "train/apa_kabar": 300,
+    "train/bingung": 300,
+    "train/halo": 300,
+    "train/kamu": 300,
+    "train/marah": 303,
+    "train/saya": 300,
+    "train/senang": 300,
+    "train/tidur": 300
+  },
+  "test_csv_rows": 400,
+  "duplicate_csv_names": [],
+  "test_missing_labels": [],
+  "csv_without_video": [],
+  "decode_errors": [],
+  "duplicate_video_groups": [],
+  "duplicate_midpoint_groups": [],
+  "dependencies": {
+    "ultralytics": false,
+    "torch": true,
+    "mediapipe": true,
+    "pandas": true,
+    "cv2": true,
+    "yaml": true,
+    "nbformat": true
+  },
+  "checkpoint_files": [],
+  "manifest": {
+    "rows": 2803,
+    "included": 2803,
+    "reviewed": 0,
+    "boxes_numeric": 0,
+    "frames_chosen": 2803,
+    "splits": "{('apa_kabar', 'test'): 50, ('apa_kabar', 'train'): 240, ('apa_kabar', 'val'): 60, ('bingung', 'test'): 50, ('bingung', 'train'): 240, ('bingung', 'val'): 60, ('halo', 'test'): 50, ('halo', 'train'): 240, ('halo', 'val'): 60, ('kamu', 'test'): 50, ('kamu', 'train'): 240, ('kamu', 'val'): 60, ('marah', 'test'): 50, ('marah', 'train'): 242, ('marah', 'val'): 61, ('saya', 'test'): 50, ('saya', 'train'): 240, ('saya', 'val'): 60, ('senang', 'test'): 50, ('senang', 'train'): 240, ('senang', 'val'): 60, ('tidur', 'test'): 50, ('tidur', 'train'): 240, ('tidur', 'val'): 60}",
+    "existing_frame_images": 2803
+  },
+  "torch": {
+    "version": "2.14.0+cu126",
+    "cuda": true,
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU"
+  }
+}

@@ -1,0 +1,1073 @@
+{
+  "schema": 1,
+  "study_id": "d3a5ab42d9e3dd223be4b27b58a75549d20dea527386289efb5a771bef1d819e",
+  "reviewer_id": "reviewer_2",
+  "responses": [
+    {
+      "sample_id": "b66a6ec08c12fadef4c7a20f94b8b241",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T10:19:51.361Z"
+    },
+    {
+      "sample_id": "3bfa81241e4b1f2a21cd71c64fe7e048",
+      "decision": "ambiguous",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:19:21.686Z"
+    },
+    {
+      "sample_id": "89e1711b7aff3a5a0959ca89ba716685",
+      "decision": "ambiguous",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:19:26.160Z"
+    },
+    {
+      "sample_id": "7973fbbfd1db2061f11b2dcbd6e1c1e3",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:19:29.127Z"
+    },
+    {
+      "sample_id": "6bce2c91c5b2daf4c672f9ed2ad0e8a9",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:19:32.648Z"
+    },
+    {
+      "sample_id": "a213e47e06ba765b39f1469198676fa4",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:19:46.187Z"
+    },
+    {
+      "sample_id": "bbfb8c6c6cb7293ce3e8d9ed2a245d2c",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:19:48.925Z"
+    },
+    {
+      "sample_id": "95de0b68c99fe775ef6bf2137f03f98a",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:19:51.977Z"
+    },
+    {
+      "sample_id": "dd0d8bc1585ff480dd497ee5208b62f3",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:19:56.024Z"
+    },
+    {
+      "sample_id": "11b7f8e0b9d0618f0465198fb9bfe77a",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:00.419Z"
+    },
+    {
+      "sample_id": "967f342dd78c1b64b7556dde91d613c5",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:04.240Z"
+    },
+    {
+      "sample_id": "aaa24287ac6b0fe5935fea9831dc5acd",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:07.545Z"
+    },
+    {
+      "sample_id": "65629b91a12ce598703dafa26e12e587",
+      "decision": "invalid",
+      "reasons": [
+        "preparation",
+        "transition",
+        "blur"
+      ],
+      "timestamp": "2026-11-01T11:20:14.755Z"
+    },
+    {
+      "sample_id": "5ef716f7e46b05838285dc95a9c6b689",
+      "decision": "saya",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:20:19.117Z"
+    },
+    {
+      "sample_id": "2211cb0d0f552b1824bb78e50f89e141",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:22.293Z"
+    },
+    {
+      "sample_id": "c4a4398a5b48df225fd010a8b6df3ea6",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:25.428Z"
+    },
+    {
+      "sample_id": "229cc7a457ff05ced6116c11e1b77509",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:28.351Z"
+    },
+    {
+      "sample_id": "540798a15c9d26842e4987bb6eef5da6",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:31.858Z"
+    },
+    {
+      "sample_id": "358371c0914d3d576c64c4141a72d274",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:34.506Z"
+    },
+    {
+      "sample_id": "0c7480f9a92e2834b28656ea91469063",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:20:39.455Z"
+    },
+    {
+      "sample_id": "0fe4ae6673cf7f15f1533d35d8786567",
+      "decision": "apa_kabar",
+      "reasons": [
+        "temporal_insufficient"
+      ],
+      "timestamp": "2026-11-01T11:20:44.386Z"
+    },
+    {
+      "sample_id": "aab4f33a2350f45fc28ae65d92ef1423",
+      "decision": "invalid",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:20:53.448Z"
+    },
+    {
+      "sample_id": "6e9f55e269411d5fda12851d65cfd536",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:21:37.391Z"
+    },
+    {
+      "sample_id": "3a0946c8bc80eaff830332aa9973f610",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:21:40.931Z"
+    },
+    {
+      "sample_id": "ae6f17747630aae9ccd46316beefde9b",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:21:45.864Z"
+    },
+    {
+      "sample_id": "24d4ff025ed54087d2abf0d6c5ddb526",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:21:49.529Z"
+    },
+    {
+      "sample_id": "56f5ba49433967f30508c2e7cd1c5415",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:21:52.492Z"
+    },
+    {
+      "sample_id": "dd05c8f38d8e7701ad55dae10f5f9fe9",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:21:54.927Z"
+    },
+    {
+      "sample_id": "17bb32685702920d99f234c986d95df6",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:21:57.743Z"
+    },
+    {
+      "sample_id": "9c8e410f4ae2b7c4e334952848ca1cf7",
+      "decision": "ambiguous",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:22:01.186Z"
+    },
+    {
+      "sample_id": "ee566bd9514ae76c64b91d188fdf5c7e",
+      "decision": "ambiguous",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:22:04.632Z"
+    },
+    {
+      "sample_id": "b6edaeb5284ab650993b2d4467120385",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:22:07.261Z"
+    },
+    {
+      "sample_id": "219f3fc2765b33ca0ee5d812f153c2b4",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:22:10.067Z"
+    },
+    {
+      "sample_id": "332496b10f1f7f65d8829ad1afb87438",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:22:12.738Z"
+    },
+    {
+      "sample_id": "83b516cfbd23d848bc8f17a938d89794",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:22:15.071Z"
+    },
+    {
+      "sample_id": "bfc95a220f2b4fc7f1c4bd55535d84c4",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:22:17.582Z"
+    },
+    {
+      "sample_id": "faf80670e0d6100492b95ef79ed86034",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:22:21.593Z"
+    },
+    {
+      "sample_id": "64f26454571fcf3adaafe5122599d0b1",
+      "decision": "ambiguous",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:29:15.401Z"
+    },
+    {
+      "sample_id": "03e56bbe4d3f87b3d64419144f6d4708",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:19.522Z"
+    },
+    {
+      "sample_id": "c326900b858008dbdb9a4ec71e25a1cd",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:23.277Z"
+    },
+    {
+      "sample_id": "d84b4cae9a85edaced19993711f6f847",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:25.771Z"
+    },
+    {
+      "sample_id": "ba7d7545b27a562fc74cc4ee6c11ce84",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:29.120Z"
+    },
+    {
+      "sample_id": "f46b101e1b66d491ba76aacb9ce42083",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:33.433Z"
+    },
+    {
+      "sample_id": "680f0d41985790b8c2f0f6b393c6e629",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:36.876Z"
+    },
+    {
+      "sample_id": "cc58f0c5ff7bc4212848f922f8051925",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:39.182Z"
+    },
+    {
+      "sample_id": "5911ee530eb7d9d5558e697ae675f81b",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:45.036Z"
+    },
+    {
+      "sample_id": "500026b653d4781dd731fb3504794c0c",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:47.082Z"
+    },
+    {
+      "sample_id": "d642199f3fb46bcca77a2582110fc95d",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:50.144Z"
+    },
+    {
+      "sample_id": "b08f5951f1b6712ac0a1238512971769",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:29:52.810Z"
+    },
+    {
+      "sample_id": "b4fa9a3bf6ae2a470e470a5484b1521f",
+      "decision": "ambiguous",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:32:09.125Z"
+    },
+    {
+      "sample_id": "fca89f26444885418c1634b79b5b7a2c",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:32:13.222Z"
+    },
+    {
+      "sample_id": "5c57348542cb679f673c20c1112fcebd",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:32:15.818Z"
+    },
+    {
+      "sample_id": "b153331c03213d02a9639776012f8f1e",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:32:17.971Z"
+    },
+    {
+      "sample_id": "003708eb25256d9552464ad07f97ae6a",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:32:21.146Z"
+    },
+    {
+      "sample_id": "57bd2fd6e2d59ff0a73cd86f80207a94",
+      "decision": "ambiguous",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:32:27.592Z"
+    },
+    {
+      "sample_id": "a7cafa25a65ca8baf66b952e748a0d14",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:32:30.189Z"
+    },
+    {
+      "sample_id": "44ccb833545748cbbadf46708cfe8b4b",
+      "decision": "ambiguous",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:32:38.298Z"
+    },
+    {
+      "sample_id": "11688ebb697317390c44a4b50da2b3af",
+      "decision": "tidur",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:33:00.569Z"
+    },
+    {
+      "sample_id": "0e8c7361bb221d97b39620641b433133",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:07.306Z"
+    },
+    {
+      "sample_id": "6ab42aa92008a10518a9e6f17ccb8eec",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:11.335Z"
+    },
+    {
+      "sample_id": "2baaeb2acde5d374a4eab32ddea1e34f",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:13.852Z"
+    },
+    {
+      "sample_id": "3d3d0320bd01b0f63bfcb95bea51d9b8",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:15.980Z"
+    },
+    {
+      "sample_id": "7003e53fea41425d8b22e77dba370f3d",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:19.008Z"
+    },
+    {
+      "sample_id": "b598e720e8c843c52c0bb87d09044b35",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:21.292Z"
+    },
+    {
+      "sample_id": "b2e925168a0a1f1fb36e5b8492bca369",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:24.155Z"
+    },
+    {
+      "sample_id": "f5d42e71c14244bc1d976b7a759c4d46",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:27.061Z"
+    },
+    {
+      "sample_id": "8f677f184f35c9835f3ea6a977c9579a",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:30.561Z"
+    },
+    {
+      "sample_id": "73d75d419f685d645d8486d4bcc15908",
+      "decision": "marah",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:33:34.119Z"
+    },
+    {
+      "sample_id": "48099dc4f8779eb977878240545c1aeb",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:37.413Z"
+    },
+    {
+      "sample_id": "4bfc1fe8e2d67482c7839a8ec04ef2e9",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:40.077Z"
+    },
+    {
+      "sample_id": "136e3d68a07b012a40f6c1b5cad3a5fb",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:43.591Z"
+    },
+    {
+      "sample_id": "5540f84f55c729ad3d7b08903602b68f",
+      "decision": "ambiguous",
+      "reasons": [
+        "preparation",
+        "transition",
+        "hand_clipped"
+      ],
+      "timestamp": "2026-11-01T11:33:48.678Z"
+    },
+    {
+      "sample_id": "ebea69926f5a56d9f28cc101352a8407",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:52.657Z"
+    },
+    {
+      "sample_id": "d879e8394307dbf00bde02b3e3968d74",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:33:58.452Z"
+    },
+    {
+      "sample_id": "fbf6e4e3f86126af2cf6cf46a219f6ff",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:01.150Z"
+    },
+    {
+      "sample_id": "389ec09636acbe593aff5e2f29f1b6bd",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:05.167Z"
+    },
+    {
+      "sample_id": "a334353a8a73b701bb59cba1a1079ad9",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:09.327Z"
+    },
+    {
+      "sample_id": "75786da22bc649a341c5a379ee9e3bb2",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:12.489Z"
+    },
+    {
+      "sample_id": "e06bdf11551ec05af016cf59ae16417b",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:14.989Z"
+    },
+    {
+      "sample_id": "cbed2d77fe0b77387301f0cccf05dea5",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:17.985Z"
+    },
+    {
+      "sample_id": "91afff5eb0ef1653ca27c9e280ee88fd",
+      "decision": "ambiguous",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:34:21.537Z"
+    },
+    {
+      "sample_id": "d781a1882576f784e5170ca65c875c6d",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:23.918Z"
+    },
+    {
+      "sample_id": "027f7cc9f21cec57d2f69d7cebc47056",
+      "decision": "apa_kabar",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:34:28.687Z"
+    },
+    {
+      "sample_id": "20c1e9b8caa1702b820025aaad6b8c39",
+      "decision": "marah",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:34:32.069Z"
+    },
+    {
+      "sample_id": "369a89d4aa643183e0f5706b1a57651f",
+      "decision": "ambiguous",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:34:36.378Z"
+    },
+    {
+      "sample_id": "b579ebcee7e4aa13a2b20b04c3a6bbf6",
+      "decision": "apa_kabar",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:34:39.126Z"
+    },
+    {
+      "sample_id": "879da782e6fb6ba3fbbaf94640a97fab",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:41.179Z"
+    },
+    {
+      "sample_id": "c90a309a32989b702e5b379515d4ff88",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:43.654Z"
+    },
+    {
+      "sample_id": "b45dcb24e6179d7ae9ed22e73d61d48b",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:46.619Z"
+    },
+    {
+      "sample_id": "b80141dfc20a6100fbb6ffbadbdd22e7",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:49.054Z"
+    },
+    {
+      "sample_id": "c2a05064c164e6f583cf86bc1b65de41",
+      "decision": "apa_kabar",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:34:54.839Z"
+    },
+    {
+      "sample_id": "f380df322ffece8d07edb9baf2c08814",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:34:57.369Z"
+    },
+    {
+      "sample_id": "205df9254417b2d8dfd967fce0f67b49",
+      "decision": "halo",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:35:00.475Z"
+    },
+    {
+      "sample_id": "fd6625e2b8ec3db20d700574d15cee8b",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:02.703Z"
+    },
+    {
+      "sample_id": "81d8a383b93c5befe57551f5007d2612",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:05.215Z"
+    },
+    {
+      "sample_id": "5dfd1a1b897178b71ba981a52bbf973e",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:09.604Z"
+    },
+    {
+      "sample_id": "ce17ca27cca671ada36655d1a20a7dc9",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:13.734Z"
+    },
+    {
+      "sample_id": "c01b8d66e4ebb07b32e1a6df82dee822",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:17.830Z"
+    },
+    {
+      "sample_id": "4d6fa43d9f41eda5bdec28bd9e893436",
+      "decision": "bingung",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:35:21.416Z"
+    },
+    {
+      "sample_id": "467a24afe82adcb0e3b5bc4e9494aa83",
+      "decision": "bingung",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:35:23.954Z"
+    },
+    {
+      "sample_id": "dc07477b0cb76a6048e568d65ca968f9",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:26.002Z"
+    },
+    {
+      "sample_id": "b492f50a004441b8247b5a5e80310737",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:28.827Z"
+    },
+    {
+      "sample_id": "9c0bbb529545ddf3f2a6ef538a97a10c",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:32.054Z"
+    },
+    {
+      "sample_id": "db3dd93e18257a8b2c64a01600d0691b",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:33.909Z"
+    },
+    {
+      "sample_id": "a474e8482bc7e3f109a1c3880db6738e",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:36.322Z"
+    },
+    {
+      "sample_id": "c9329f749e74f5f8bdb8e8d736798880",
+      "decision": "saya",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:35:39.428Z"
+    },
+    {
+      "sample_id": "9de195300efec3d063c5286be2d679ee",
+      "decision": "invalid",
+      "reasons": [
+        "preparation",
+        "transition",
+        "hand_clipped"
+      ],
+      "timestamp": "2026-11-01T11:35:44.099Z"
+    },
+    {
+      "sample_id": "5bb69cd7866f1a99e1fbecd901de3141",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:35:47.047Z"
+    },
+    {
+      "sample_id": "9afbecac0ee478f612b2df71cabf3847",
+      "decision": "apa_kabar",
+      "reasons": [
+        "temporal_insufficient"
+      ],
+      "timestamp": "2026-11-01T11:35:52.173Z"
+    },
+    {
+      "sample_id": "ffc4496cd07ae4c58c411d5687fa5b27",
+      "decision": "ambiguous",
+      "reasons": [
+        "preparation",
+        "transition",
+        "temporal_insufficient"
+      ],
+      "timestamp": "2026-11-01T11:35:59.655Z"
+    },
+    {
+      "sample_id": "d8fe228d61efae5cdea0299a01f48696",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:01.933Z"
+    },
+    {
+      "sample_id": "070456514dcf29f976f2c7ebae7ece78",
+      "decision": "saya",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:36:06.246Z"
+    },
+    {
+      "sample_id": "0a423050388e09ac4ab8c1738193f608",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:11.177Z"
+    },
+    {
+      "sample_id": "a7f7603a47cb59b1e2c07b67f306a635",
+      "decision": "halo",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:36:15.260Z"
+    },
+    {
+      "sample_id": "2eba4d599d3578d5eaadd4cbd59b02cc",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:16.743Z"
+    },
+    {
+      "sample_id": "a5df0a88334281baea3e891a1661b49e",
+      "decision": "saya",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:36:19.422Z"
+    },
+    {
+      "sample_id": "338771959fdd4a9936b16cb4d1c33dc9",
+      "decision": "saya",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:36:22.513Z"
+    },
+    {
+      "sample_id": "1abacd65fadfde87f95f706303ca0562",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:24.278Z"
+    },
+    {
+      "sample_id": "bd97a5425d9bb770f54e83ee59b3909b",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:26.262Z"
+    },
+    {
+      "sample_id": "e71eb85d7a564e7a6dcb0d1a98139aa6",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:28.968Z"
+    },
+    {
+      "sample_id": "bb5ce3c3465a2a3045fa9d3c1509ba9d",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:31.871Z"
+    },
+    {
+      "sample_id": "5f841acf159b99d67ea1a033756c83e0",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:41.486Z"
+    },
+    {
+      "sample_id": "5fe52f0020f1c9abfbceb650c0d36203",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:44.878Z"
+    },
+    {
+      "sample_id": "1197de551343f89ade62522d6102c4b3",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:46.961Z"
+    },
+    {
+      "sample_id": "517dae78cb01247a1187fca0fd31a804",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:49.731Z"
+    },
+    {
+      "sample_id": "4a50b70791f40516f17464cc442d530a",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:36:51.646Z"
+    },
+    {
+      "sample_id": "0415e8cffd794414d9660f752da94fb1",
+      "decision": "kamu",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:36:58.440Z"
+    },
+    {
+      "sample_id": "f946cac03d40bdd67a22889250a109c6",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:00.707Z"
+    },
+    {
+      "sample_id": "24f438fde8a7715d2e8257ac39c7ac93",
+      "decision": "kamu",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:37:05.361Z"
+    },
+    {
+      "sample_id": "8becc91ea4f610b9953b796fe7bbcf80",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:07.784Z"
+    },
+    {
+      "sample_id": "726b50fc420573360a6ff55a36941187",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:10.151Z"
+    },
+    {
+      "sample_id": "22c49d804ec4ea7dd89ee75a1c465190",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:12.618Z"
+    },
+    {
+      "sample_id": "1f8475893605a8a7117be255aab8dd68",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:15.005Z"
+    },
+    {
+      "sample_id": "ce85601df14901519175bf78292625cd",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:17.771Z"
+    },
+    {
+      "sample_id": "2607117d07549ff9be37de1b40d5813a",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:19.877Z"
+    },
+    {
+      "sample_id": "f2233b596a522da93d27f6c8f7e34c95",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:22.306Z"
+    },
+    {
+      "sample_id": "78e8ba4877f7c88841398271789f2308",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:24.334Z"
+    },
+    {
+      "sample_id": "98f311756eed6c8c77965a2d8ab07172",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:26.734Z"
+    },
+    {
+      "sample_id": "1fa6a57bb24dee81a0ad1f57428d2c77",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:29.105Z"
+    },
+    {
+      "sample_id": "a003bcb989dddc0c03d76e50f9bf6339",
+      "decision": "marah",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:37:36.193Z"
+    },
+    {
+      "sample_id": "91e828b13279775b37490a885840a542",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:41.396Z"
+    },
+    {
+      "sample_id": "af006b27c71a7a0e9c615f98afdbc491",
+      "decision": "kamu",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:37:45.373Z"
+    },
+    {
+      "sample_id": "a7755f8c46015a40fcbb2adfa9f4d1a7",
+      "decision": "marah",
+      "reasons": [
+        "preparation"
+      ],
+      "timestamp": "2026-11-01T11:37:48.821Z"
+    },
+    {
+      "sample_id": "8450bc0d67e4dec5b511c286024be8dd",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:51.102Z"
+    },
+    {
+      "sample_id": "cf4fb6a8447dddea5deb55f3033373ab",
+      "decision": "saya",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:37:54.252Z"
+    },
+    {
+      "sample_id": "44ac586da6faa60bbe20a4a266a9c86d",
+      "decision": "senang",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:57.045Z"
+    },
+    {
+      "sample_id": "22e90fe1b0a4b2a123fbf5a7fd5f77cd",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:37:59.067Z"
+    },
+    {
+      "sample_id": "02a3f1c6aca23f26c2c79dd4181d88ca",
+      "decision": "bingung",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:38:03.751Z"
+    },
+    {
+      "sample_id": "ea3b29ced301c0743f08f23de1a36269",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:09.575Z"
+    },
+    {
+      "sample_id": "fc86c1f116185a16f08fb9d1bb5df62b",
+      "decision": "kamu",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:12.249Z"
+    },
+    {
+      "sample_id": "fa4989489e2fe5c581af581d0eb6ffc6",
+      "decision": "saya",
+      "reasons": [
+        "preparation",
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:38:15.670Z"
+    },
+    {
+      "sample_id": "0a9bffee79ce42d427fe83bc29ce0a4b",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:18.080Z"
+    },
+    {
+      "sample_id": "7ad5aa1315f68152cd7397a4093fe056",
+      "decision": "marah",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:20.852Z"
+    },
+    {
+      "sample_id": "5d66ca89cfc86e8cc89119d8dff4f913",
+      "decision": "saya",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:22.523Z"
+    },
+    {
+      "sample_id": "a7b7ee07d5d3526aa15028259aae9181",
+      "decision": "tidur",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:25.742Z"
+    },
+    {
+      "sample_id": "4a704919f800be87b31229f5109b2a47",
+      "decision": "halo",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:29.233Z"
+    },
+    {
+      "sample_id": "27be9226ed09abaff39a4f3841e90450",
+      "decision": "apa_kabar",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:31.186Z"
+    },
+    {
+      "sample_id": "d9a20f392f4f5c905adc3fe30ee7eb1e",
+      "decision": "bingung",
+      "reasons": [],
+      "timestamp": "2026-11-01T11:38:34.073Z"
+    },
+    {
+      "sample_id": "d6c25f3f18c971cceb1fd7c20a922fb8",
+      "decision": "invalid",
+      "reasons": [
+        "preparation",
+        "transition",
+        "temporal_insufficient"
+      ],
+      "timestamp": "2026-11-01T11:38:40.657Z"
+    },
+    {
+      "sample_id": "afa76a7260f91841c152547f61729e26",
+      "decision": "marah",
+      "reasons": [
+        "transition"
+      ],
+      "timestamp": "2026-11-01T11:38:43.544Z"
+    }
+  ]
+}

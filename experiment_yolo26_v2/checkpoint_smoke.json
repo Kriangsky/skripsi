@@ -1,0 +1,11 @@
+{
+  "training_executed": false,
+  "task": "detect",
+  "names": 80,
+  "image": "experiment_yolo26_v2\\frames\\001a5bf36886e16826ca.jpg",
+  "speed": {
+    "preprocess": 30.9229000013147,
+    "inference": 7.891799999924842,
+    "postprocess": 8.067000000664848
+  }
+}

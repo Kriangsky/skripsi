@@ -1,0 +1,5 @@
+Samples=160; seed=42; per_class=20
+selection_status
+flagged     117
+eligible     43
+Known signer samples=0

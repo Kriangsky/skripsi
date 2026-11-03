@@ -1,0 +1,28 @@
+{
+  "tests_passed": 46,
+  "tests_failed": 0,
+  "actual_training_runs": 2,
+  "epochs_per_model": 30,
+  "optimizer_steps": {
+    "A": 690,
+    "B": 900
+  },
+  "identical_initial_checkpoint_sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+  "source_split_and_mapping": "PASS",
+  "duplicate_content_and_image_integrity": "PASS",
+  "shared_six_validation_ids_and_image_bytes": "PASS",
+  "independent_accuracy_f1_confusion_audit": "PASS",
+  "probability_argmax_and_full_output_mapping": "PASS",
+  "controlled_actual_hyperparameters": "PASS; Ultralytics normalizes device 0 to string 0",
+  "old_detection_source_snapshots": "UNCHANGED",
+  "human_pilot_frozen_artifacts": "VALID",
+  "old_detection_training_runs": 0,
+  "kaggle_train_val_images": 0,
+  "human_development_validation_overlap": 0,
+  "audit_javascript_syntax": "PASS",
+  "technical_visual_audit_images": 160,
+  "semantic_expert_verified_images": 0,
+  "signer_independence": "UNVERIFIED",
+  "fully_verified_dataset": false,
+  "hyperparameter_or_frame_reselection_after_results": false
+}

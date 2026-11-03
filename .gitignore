@@ -1,0 +1,51 @@
+# Local environment and credentials
+.venv*/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Participant data, generated frames, caches and dataset copies stay local
+/train/
+/test/
+**/datasets/
+**/assets/
+**/candidate_records/
+**/candidate_frames/
+**/candidate_labels/
+**/frames/
+**/selected_frames/
+**/overlays/
+**/contact_sheets/
+**/error_examples/
+**/ultralytics_config/
+**/hf_cache/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+*.png
+!**/confusion*.png
+!**/results.png
+
+# Downloadable models and generated binary caches
+*.pt
+*.onnx
+*.task
+*.cache
+*.npy
+*.npz
+
+# Generated review pages may embed participant images; retain source templates
+**/*.html
+!/annotation_review_template.html
+!/frame_review_template.html

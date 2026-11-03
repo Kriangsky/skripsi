@@ -1,0 +1,47 @@
+{
+  "ready": true,
+  "blockers": [],
+  "checkpoint": {
+    "repo_id": "Ultralytics/YOLO26",
+    "filename": "yolo26n-cls.pt",
+    "revision": "9da872c500a0a6fc9526cf09108ee249489a3895",
+    "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+    "sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+    "upstream_lfs_sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81"
+  },
+  "task": "classify",
+  "dry_forward": [
+    1,
+    1000
+  ],
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "optimizer": "SGD",
+  "optimizer_groups": [
+    {
+      "lr": 0.01,
+      "momentum": 0.937,
+      "nesterov": true,
+      "weight_decay": 0.0005
+    },
+    {
+      "lr": 0.01,
+      "momentum": 0.937,
+      "nesterov": true,
+      "weight_decay": 0.0
+    },
+    {
+      "lr": 0.01,
+      "momentum": 0.937,
+      "nesterov": true,
+      "weight_decay": 0
+    }
+  ],
+  "packages": {
+    "ultralytics": "8.4.197",
+    "torch": "2.14.0+cu126",
+    "torchvision": "0.29.0+cu126",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3"
+  }
+}

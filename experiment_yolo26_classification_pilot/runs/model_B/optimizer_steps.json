@@ -1,0 +1,14 @@
+{
+  "model": "B",
+  "epoch": 30,
+  "actual_optimizer_steps": 900,
+  "batches_per_epoch": 30,
+  "batch": 16,
+  "learning_rates": [
+    0.00043,
+    0.00043,
+    0.00043
+  ],
+  "framework_callback_epoch": 31,
+  "epoch_count_basis": "30 rows, epochs 1..30, in results.csv; final-validation callback counter is not an extra training epoch"
+}

@@ -1,0 +1,17 @@
+class_name,split,inventory_n,target,available_positive,selected_n,reviewed_n,reviewed_rejected_n,rejection_rate,unreviewed_n,videos_with_technical_candidate
+saya,train,240,60,0,0,0,0,,240,107.0
+saya,val,60,20,0,0,0,0,,60,31.0
+kamu,train,240,60,0,0,0,0,,240,47.0
+kamu,val,60,20,0,0,0,0,,60,7.0
+senang,train,240,60,0,0,0,0,,240,47.0
+senang,val,60,20,0,0,0,0,,60,10.0
+bingung,train,240,60,0,0,0,0,,240,19.0
+bingung,val,60,20,0,0,0,0,,60,2.0
+marah,train,240,60,0,0,0,0,,240,19.0
+marah,val,60,20,0,0,0,0,,60,7.0
+apa_kabar,train,240,60,0,0,0,0,,240,43.0
+apa_kabar,val,60,20,0,0,0,0,,60,13.0
+halo,train,240,60,0,0,0,0,,240,75.0
+halo,val,60,20,0,0,0,0,,60,23.0
+tidur,train,240,60,0,0,0,0,,240,72.0
+tidur,val,60,20,0,0,0,0,,60,23.0

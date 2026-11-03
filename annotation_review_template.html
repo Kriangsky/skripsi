@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BISINDO — quick review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:15px system-ui;background:#eef1f5;color:#18212d}header{position:sticky;top:0;z-index:3;background:#fff;padding:14px 22px;border-bottom:1px solid #ccd3dd}h1{font-size:20px;margin:0 0 8px}.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}input,select,button{font:inherit;padding:8px;border:1px solid #a7b2c2;border-radius:5px}button{cursor:pointer;background:white}button.primary{background:#164d88;color:white}input[type=search]{min-width:260px}#message{color:#8b260d}main{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;padding:18px}article{background:white;border:2px solid transparent;border-radius:7px;overflow:hidden}article.bad{border-color:#d85a28}article.changed{border-color:#1769b0}.picture{position:relative;cursor:pointer}.picture img{display:block;width:100%;height:auto}.box{position:absolute;border:3px solid #29e152;pointer-events:none}.caption{padding:10px;overflow-wrap:anywhere}.caption small{display:block;color:#536172}dialog{width:min(1100px,96vw);max-height:96vh;border:0;border-radius:8px;padding:16px}dialog::backdrop{background:#000b}#editor{display:block;max-width:100%;max-height:68vh;object-fit:contain;touch-action:none;cursor:crosshair;margin:auto}#coords{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}#coords label{display:flex;align-items:center;gap:4px}#coords input{width:90px}#note{width:100%}.hint{font-size:13px;color:#526072}summary{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #edac23}
+</style></head><body>
+<header><h1>BISINDO — quick scan & koreksi</h1>
+<div class="bar"><input id="search" type="search" aria-label="Cari sampel" placeholder="Cari kelas, sample ID, nama video…"><select id="classFilter" aria-label="Filter kelas"><option value="">Semua kelas</option></select><select id="sourceFilter" aria-label="Filter sumber"><option value="">Semua sumber</option><option value="train">Internal</option><option value="test">External test</option></select><select id="statusFilter" aria-label="Filter status"><option value="">Semua status</option><option value="missing">Tanpa kotak — perlu koreksi</option><option value="changed">Sudah dikoreksi</option><option value="unchanged">Kotak awal</option></select><label>Ukuran <input id="size" type="range" min="200" max="650" step="50" value="300"></label></div>
+<p id="counts" aria-live="polite"></p>
+<details><summary>Selesai scan? Approve All & ekspor</summary><p>Koreksi gambar yang salah. Approve All berlaku untuk <strong>seluruh dataset, termasuk gambar yang sedang tersembunyi oleh filter</strong>. Kotak kosong/invalid tetap menghalangi ekspor approval.</p><div class="bar"><input id="reviewer" aria-label="Nama reviewer" placeholder="Nama reviewer"><label><input id="scanned" type="checkbox"> Saya sudah memeriksa seluruh gambar dan kotaknya</label><button id="approve" class="primary">Approve All & unduh review JSON</button><button id="draft">Unduh draft koreksi</button><label>Impor draft <input id="draftFile" type="file" accept="application/json,.json"></label></div><p class="hint">Koreksi tersimpan di browser bila local storage tersedia. Unduh draft untuk cadangan/pindah browser. JSON approval harus diimpor ke notebook; HTML tidak langsung mengubah CSV.</p></details>
+<p id="message" role="status"></p></header>
+<main id="grid"></main>
+<dialog id="modal"><h2 id="sampleTitle"></h2><p>Drag pada gambar untuk menggambar ulang satu kotak gabungan seluruh tangan relevan. Atau edit koordinat 0–1.</p><canvas id="editor" aria-label="Editor bounding box"></canvas><div id="coords"></div><input id="note" placeholder="Catatan koreksi (opsional)" aria-label="Catatan"><p id="editorMessage" role="status"></p><div class="bar"><button id="save" class="primary">Simpan koreksi</button><button id="reset">Kembalikan kotak awal</button><button id="cancel">Tutup</button></div></dialog>
+<script id="dataset" type="application/json">__DATASET_JSON__</script>
+<script>
+'use strict';
+const dataset=JSON.parse(document.getElementById('dataset').textContent);
+const records=dataset.records, byId=new Map(records.map(r=>[r.sample_id,r]));
+const $=id=>document.getElementById(id), storeKey='bisindo_review_'+dataset.annotations_sha256;
+let edits={}, current=null, currentImage=null, currentBox=null, drag=null;
+function valid(b){return Array.isArray(b)&&b.length===4&&b.every(Number.isFinite)&&b[0]>=0&&b[1]>=0&&b[2]<=1&&b[3]<=1&&b[2]>b[0]&&b[3]>b[1]}
+function effective(r){return edits[r.sample_id]?.box??r.box}
+function changed(r){return Boolean(edits[r.sample_id])}
+function notify(text){$('message').textContent=text}
+function persist(){try{localStorage.setItem(storeKey,JSON.stringify(edits))}catch(e){notify('Browser tidak dapat menyimpan koreksi otomatis. Unduh draft sebelum menutup halaman.')}}
+try{const saved=JSON.parse(localStorage.getItem(storeKey)||'{}');for(const [id,e] of Object.entries(saved)){if(byId.has(id)&&valid(e.box))edits[id]=e}}catch(e){notify('Local storage tidak tersedia. Unduh draft untuk menyimpan progres.')}
+for(const cls of [...new Set(records.map(r=>r.class_name))]){const o=document.createElement('option');o.value=o.textContent=cls;$('classFilter').append(o)}
+function drawBox(div,box){div.hidden=!valid(box);if(valid(box)){div.style.left=box[0]*100+'%';div.style.top=box[1]*100+'%';div.style.width=(box[2]-box[0])*100+'%';div.style.height=(box[3]-box[1])*100+'%'}}
+const cards=new Map();
+for(const r of records){
+ const card=document.createElement('article'), picture=document.createElement('div'), image=document.createElement('img'), box=document.createElement('div'), caption=document.createElement('div'), button=document.createElement('button'), info=document.createElement('small');
+ picture.className='picture';image.loading='lazy';image.src='frames/'+r.sample_id+'.jpg';image.alt=r.video;box.className='box';picture.append(image,box);caption.className='caption';button.textContent=r.class_name+' · '+r.sample_id;button.onclick=()=>openEditor(r);picture.onclick=()=>openEditor(r);info.textContent=r.video+' | '+r.source+' / '+r.split+' | hands='+r.num_hands+' | '+r.auto_status;caption.append(button,info);card.append(picture,caption);$('grid').append(card);cards.set(r.sample_id,{card,box});
+}
+function refresh(){
+ const query=$('search').value.toLowerCase().trim(),cls=$('classFilter').value,source=$('sourceFilter').value,status=$('statusFilter').value;
+ let shown=0,missing=0,modified=0;
+ for(const r of records){const b=effective(r),bad=!valid(b),edit=changed(r);if(bad)missing++;if(edit)modified++;const show=(!query||[r.video,r.sample_id,r.class_name].join(' ').toLowerCase().includes(query))&&(!cls||r.class_name===cls)&&(!source||r.source===source)&&(!status||(status==='missing'&&bad)||(status==='changed'&&edit)||(status==='unchanged'&&!edit));const c=cards.get(r.sample_id);c.card.hidden=!show;c.card.classList.toggle('bad',bad);c.card.classList.toggle('changed',edit);drawBox(c.box,b);if(show)shown++}
+ $('counts').textContent=`Tampil ${shown}/${records.length} · Koreksi ${modified} · Kotak kosong/invalid ${missing} · Approval belum diterapkan ke notebook`;
+}
+for(const id of ['search','classFilter','sourceFilter','statusFilter'])$(id).addEventListener('input',refresh);
+$('size').oninput=()=>{$('grid').style.gridTemplateColumns=`repeat(auto-fill,minmax(${Number($('size').value)}px,1fr))`};
+function fields(){return [...$('coords').querySelectorAll('input')].map(i=>Number(i.value))}
+function setFields(box){[...$('coords').querySelectorAll('input')].forEach((input,i)=>input.value=box?box[i]:'')}
+function paint(){if(!currentImage)return;const canvas=$('editor'),ctx=canvas.getContext('2d');ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(currentImage,0,0);if(currentBox){ctx.strokeStyle=valid(currentBox)?'#20ef50':'#ff6500';ctx.lineWidth=Math.max(3,canvas.width/350);ctx.strokeRect(currentBox[0]*canvas.width,currentBox[1]*canvas.height,(currentBox[2]-currentBox[0])*canvas.width,(currentBox[3]-currentBox[1])*canvas.height)}}
+for(const name of ['x1','y1','x2','y2']){const label=document.createElement('label'),input=document.createElement('input');input.type='number';input.min='0';input.max='1';input.step='.001';input.setAttribute('aria-label',name);label.append(name,input);$('coords').append(label);input.oninput=()=>{currentBox=fields();paint()}}
+function openEditor(r){current=r;currentImage=null;currentBox=effective(r)?.slice()||null;drag=null;setFields(currentBox);$('sampleTitle').textContent=r.class_name+' · '+r.video;$('note').value=edits[r.sample_id]?.note||'';$('editorMessage').textContent='';const image=new Image();image.onload=()=>{if(current!==r)return;currentImage=image;$('editor').width=image.naturalWidth;$('editor').height=image.naturalHeight;paint()};image.onerror=()=>{$('editorMessage').textContent='Gambar gagal dibuka. Buka HTML dari folder output asli beserta folder frames/.'};image.src='frames/'+r.sample_id+'.jpg';$('modal').showModal()}
+function point(event){const rect=$('editor').getBoundingClientRect();return [Math.max(0,Math.min(1,(event.clientX-rect.left)/rect.width)),Math.max(0,Math.min(1,(event.clientY-rect.top)/rect.height))]}
+$('editor').onpointerdown=event=>{if(!currentImage)return;drag=point(event);$('editor').setPointerCapture(event.pointerId)};
+$('editor').onpointermove=event=>{if(!drag)return;const p=point(event);currentBox=[Math.min(drag[0],p[0]),Math.min(drag[1],p[1]),Math.max(drag[0],p[0]),Math.max(drag[1],p[1])];setFields(currentBox);paint()};
+function endDrag(event){if(!drag)return;const p=point(event);currentBox=[Math.min(drag[0],p[0]),Math.min(drag[1],p[1]),Math.max(drag[0],p[0]),Math.max(drag[1],p[1])];drag=null;setFields(currentBox);paint()}
+$('editor').onpointerup=endDrag;$('editor').onpointercancel=()=>{drag=null};
+$('save').onclick=()=>{if(!valid(currentBox)){ $('editorMessage').textContent='Kotak harus memiliki lebar/tinggi positif dan berada di dalam gambar.';return}edits[current.sample_id]={box:currentBox.slice(),note:$('note').value};persist();refresh();$('modal').close()};
+$('reset').onclick=()=>{currentBox=current.box?.slice()||null;setFields(currentBox);paint();delete edits[current.sample_id];persist();refresh()};
+$('cancel').onclick=()=>$('modal').close();
+function download(data,filename){const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+$('draft').onclick=()=>download({schema:1,kind:'draft',annotations_sha256:dataset.annotations_sha256,edits},'bisindo_review_draft.json');
+$('draftFile').onchange=async event=>{try{const payload=JSON.parse(await event.target.files[0].text());if(payload.kind!=='draft'||payload.annotations_sha256!==dataset.annotations_sha256)throw Error('Draft berasal dari snapshot dataset berbeda.');for(const [id,e]of Object.entries(payload.edits)){if(!byId.has(id)||!valid(e.box))throw Error('Isi draft tidak valid.')}edits={...edits,...payload.edits};persist();refresh();notify('Draft koreksi dimuat.')}catch(e){notify(e.message)}};
+$('approve').onclick=()=>{
+ if(!$('reviewer').value.trim()||!$('scanned').checked){notify('Isi nama reviewer dan centang konfirmasi setelah selesai memeriksa seluruh gambar.');return}
+ const invalid=records.filter(r=>!valid(effective(r)));if(invalid.length){$('statusFilter').value='missing';$('classFilter').value='';$('sourceFilter').value='';$('search').value='';refresh();notify(`${invalid.length} gambar belum memiliki kotak valid. Koreksi dahulu; tidak ada sampel yang dibuang otomatis.`);return}
+ if(!confirm(`Setujui seluruh ${records.length} anotasi, termasuk gambar di luar filter saat ini?`))return;
+ const rows=records.map(r=>({sample_id:r.sample_id,class_id:r.class_id,frame_sha256:r.frame_sha256,box:effective(r),note:edits[r.sample_id]?.note||''}));
+ download({schema:1,kind:'approval',annotations_sha256:dataset.annotations_sha256,reviewer:$('reviewer').value.trim(),all_images_reviewed:true,records:rows},'bisindo_review_approved.json');notify('Review diekspor. Impor bisindo_review_approved.json di notebook, lalu jalankan validation gates. CSV belum berubah.');
+};
+refresh();
+</script></body></html>

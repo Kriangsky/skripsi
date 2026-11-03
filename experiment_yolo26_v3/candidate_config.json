@@ -1,0 +1,29 @@
+{
+  "protocol": "human_selected_positive_v1",
+  "primary_fractions": [
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "fallback_fractions": [
+    0.05,
+    0.1,
+    0.15,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "quality_heuristics": {
+    "border_margin": 0.01,
+    "min_hand_side_px": 16,
+    "min_hand_area_px": 256,
+    "min_focus": 60.0
+  },
+  "annotation_recipe_sha256": "fd5eaec095608c591afd96835059bbbb88c944c7df7a96dcd65c251eb996f151",
+  "split_lock_sha256": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+  "note": "Technical visibility/blur checks are heuristics; only human class-aware review establishes a gesture positive."
+}

@@ -1,0 +1,13 @@
+{
+  "model": "B",
+  "epoch": 30,
+  "framework_callback_epoch": 31,
+  "actual_optimizer_steps": 900,
+  "batches_per_epoch": 30,
+  "batch": 16,
+  "learning_rates": [
+    0.00043,
+    0.00043,
+    0.00043
+  ]
+}

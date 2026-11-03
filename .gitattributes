@@ -1,0 +1,3 @@
+# Preserve exact bytes: experiment provenance records content SHA256.
+* -text
+*.png binary

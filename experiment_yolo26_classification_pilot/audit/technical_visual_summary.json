@@ -1,0 +1,11 @@
+{
+  "viewed_n": 160,
+  "random_stratified_n": 120,
+  "additional_flagged_n": 40,
+  "suspected_nonrepresentative_n": 3,
+  "suspected_cross_class_pose_overlap_n": 2,
+  "semantic_expert_verified_n": 0,
+  "known_semantic_ambiguous_n": 0,
+  "semantic_unassessed_n": 640,
+  "observations": "Room/background/clothing cues recur across image groups; appearance cues may confound recognition. No signer identities inferred. No frame/label changed."
+}
