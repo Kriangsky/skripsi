@@ -1,0 +1,10 @@
+[
+  {
+    "status_label": "exploratory/development",
+    "event": "hard_stop",
+    "seed": 42,
+    "kind": "linear_probe",
+    "model": "A",
+    "error": "RuntimeError: Ultralytics already imported with different settings directory; run pilot CLI in a fresh process"
+  }
+]

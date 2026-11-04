@@ -1,0 +1,24 @@
+{
+  "moved_files": 58,
+  "dataset_files_same_inode": 2800,
+  "frozen_hashes_unchanged": 182,
+  "stage1b_last_checkpoints_verified": 10,
+  "index_links_valid": 163,
+  "no_training": true,
+  "root_only_readme_and_git_configuration": true,
+  "directory_metadata_ids_changed": [
+    "train"
+  ],
+  "raw_file_ids_and_sizes_all_unchanged": true,
+  "focused_tests": {
+    "passed": 29,
+    "seconds": 18.12
+  },
+  "runtime_link_guard_verified": true,
+  "atomic_replace_guard_verified": true,
+  "tracking_file": "07_dokumen/TRACKING_BISINDO.md",
+  "tracking_links_valid": true,
+  "classification_cli_help_passed": true,
+  "jupyterlab_module_version": "4.2.6",
+  "jupyterlab_notebook_dir_flag_supported": true
+}

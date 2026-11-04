@@ -1,0 +1,23 @@
+{
+  "models": [
+    {
+      "model": "A",
+      "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs\\model_A\\weights\\last.pt",
+      "sha256": "20533ef76136e29f105f96bcd9aeda09d530a2bcc65198beaf94bf9df4ebe5e7",
+      "epoch": 30,
+      "seed": 43,
+      "initial_checkpoint_sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+      "actual_optimizer_steps": 690
+    },
+    {
+      "model": "B",
+      "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs\\model_B\\weights\\last.pt",
+      "sha256": "ddcd40f906c52f6228689eaed78235ece77b7372ad5de819c47976d5b229dd79",
+      "epoch": 30,
+      "seed": 43,
+      "initial_checkpoint_sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+      "actual_optimizer_steps": 900
+    }
+  ],
+  "release_fingerprint": "2ef8fb4f8824bbb3a59fd4cadb803cc54bd6f5e5300b368b6c922f2bfaaacdea"
+}

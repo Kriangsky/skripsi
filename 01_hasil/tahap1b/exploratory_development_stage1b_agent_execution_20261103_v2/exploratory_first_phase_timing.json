@@ -1,0 +1,9 @@
+{
+  "prior_prepare_seconds": 71.91250240000045,
+  "prior_pair_train_evaluation_seconds": 139.92973619999975,
+  "prior_active_phase_including_failure_seconds": 215.36696099999972,
+  "A_recorded_training_seconds": 53.1245,
+  "B_recorded_training_seconds": 67.186,
+  "probe_A_fresh_process_seconds": 14.137825099999645,
+  "probe_B_fresh_process_seconds": 14.666812699999355
+}

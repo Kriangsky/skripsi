@@ -1,0 +1,9 @@
+,saya,kamu,senang,bingung,marah,apa_kabar,halo,tidur,ambiguous,invalid
+saya,16,0,0,0,0,0,0,0,4,0
+kamu,0,17,0,0,0,0,0,0,3,0
+senang,0,0,17,0,0,0,0,0,3,0
+bingung,0,0,0,18,0,0,0,0,2,0
+marah,0,0,0,0,17,0,0,0,3,0
+apa_kabar,0,0,1,0,0,9,0,0,10,0
+halo,0,0,0,0,0,3,16,0,1,0
+tidur,0,0,0,0,0,0,0,19,1,0

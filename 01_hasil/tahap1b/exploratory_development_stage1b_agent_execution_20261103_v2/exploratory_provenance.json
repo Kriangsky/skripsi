@@ -1,0 +1,22 @@
+{
+  "status": "exploratory/development",
+  "source_sha256": {
+    "classification_research.py": "5b75e780bdc1b23747606dec52f671ad107e3cd0cfc6244161e972c0c7e68ae9",
+    "classification_diagnostics.py": "a2db59d81385eee60432c4fe8a6be140dd82838949d8ac03ef7b596bcc02d122",
+    "classification_workflow.py": "6a3a01b14c17d53f117b89d768e06f27f2951e402c12bb0cbea67ae8479dd27d",
+    "classification_pilot.py": "8e8a5be2f8057214772151e56db1d39479a55fd2f3c470a58c0a008a082f6e65",
+    "training_pilot.py": "fa44757bd3a5813f29fea92352c146d94b7ac6ce61c9a286c370d2b31ab60446",
+    "pilot_study.py": "030cb1bc7283608be9f6ab50a99010c2fd75e9901e5795384830a0c4f2ee5668",
+    "frame_candidates.py": "0e4a9a636775caed2b837f37eb5781072bb108bc5b5c4beeda78417cdcdb07a7",
+    "bisindo_pipeline.py": "0f8aa793bb2e91eb88b29359de81b2cbec26a682952567cd7da980997eb7c8f1",
+    "analysis_paired.py": "c0c9433f12852a7f342c52a36a151fd4f419e01f5980e2ada0674ddecea0be24"
+  },
+  "runner_sha256": "c81c4f8c8dde329d4a6938ada995f9c038d960eca5344c2a199c57024bcf73a4",
+  "candidate_sha256": "24e21743168f3457933f0f17db76e52d420b5f005da774a7f9230c71f1ac7a70",
+  "total_completed_full_fits": 10,
+  "agent_new_full_fits": 8,
+  "completed_head_fits": 10,
+  "external_scores": 0,
+  "execution_authorization": "Researcher 2026-11-03: kamu yang run aja; complete approved Stage1b, no Stage2.",
+  "stop_before_stage2": true
+}

@@ -1,0 +1,63 @@
+{
+  "status": "exploratory/development",
+  "date": "2026-11-03",
+  "timezone": "Asia/Bangkok",
+  "model_fits": 0,
+  "optimizer_steps": 0,
+  "external_images_read": 0,
+  "baseline_tests": {
+    "count": 81,
+    "seconds": 100.083,
+    "passed": true
+  },
+  "final_tests": {
+    "count": 92,
+    "seconds": 93.294,
+    "passed": true
+  },
+  "statistics_rng": 20261103,
+  "bootstrap_repetitions": 10000,
+  "simulation_repetitions_per_scenario": 10000,
+  "source_sha256": {
+    "classification_research.py": "5b75e780bdc1b23747606dec52f671ad107e3cd0cfc6244161e972c0c7e68ae9",
+    "power_precision.py": "38cc7c1d1ab41e3e7190d414378e7afecb47d150517252a7f7384f3f5f2c1003",
+    "classification_diagnostics.py": "a2db59d81385eee60432c4fe8a6be140dd82838949d8ac03ef7b596bcc02d122",
+    "classification_workflow.py": "6a3a01b14c17d53f117b89d768e06f27f2951e402c12bb0cbea67ae8479dd27d",
+    "BISINDO_Classification_Vocabulary_Expansion.ipynb": "d24557762bf3c6c9768cbfe88e958fe8c8369299d06697e08689e66eb38019e2",
+    "test_exploratory_development.py": "c9cd613a79413511f831cb42bbc1fc66b522fc078b113c9ab525b57f8dadf58e",
+    "exploratory_development_plan.md": "c24350254b72f39dcfe0dad4b8f6abe2b78bf837b55f363fc95ac76a3c630cab",
+    "analysis_paired.py": "c0c9433f12852a7f342c52a36a151fd4f419e01f5980e2ada0674ddecea0be24"
+  },
+  "protected_hashes_at_completion": {
+    "PREREGISTRATION.md": "24e21743168f3457933f0f17db76e52d420b5f005da774a7f9230c71f1ac7a70",
+    "PREREGISTRATION.sha256": "27e709e73a5d104634f7e0b424b92b4bd77dd2b13b2a96f17360364108e75691",
+    "PREREGISTRATION_ADDENDUM_01.md": "1242f435e86aaa1c4e62f55c8ed3a30e66f6dcb65e00b8d7570606bac09b2ba6",
+    "PREREGISTRATION_ADDENDUM_01.sha256": "33b36c8c0383e70dd2b8c9637b0dfcd88f1b787e5c08f1407cb5dc71f9e453eb",
+    "DEVIATION_LOG.md": "651bd3435ba85a17d3c59ac39903f9a06c0e8b57633b3e903c7b31f698ed45d8",
+    "classification_pilot.py": "8e8a5be2f8057214772151e56db1d39479a55fd2f3c470a58c0a008a082f6e65",
+    "test_classification_pilot.py": "613f85ad3cc6221e43a47c4b7d34a610f647b0cc520d7b7aa0e86b723f17f367",
+    "experiment_yolo26_v3/split_lock.csv": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+    "BISINDO_YOLO26_Training_Set_Expansion.ipynb": "370ed65b1eb9232ba63ea76466fc702bebd7f5ee00d374aa971bd905b0c0a94c",
+    "BISINDO_YOLO26_Vocabulary_Expansion_Research.ipynb": "d479ab9ed5b392c063e6de9055ed7dc708de2a920eca8c387994160cf7922622",
+    "Effect of Vocabulary Expansion on YOLO26 Classification for BISINDO Phrase Recognition.md": "2d82ba6241a844541b4c763557333715c08af4679bfa605d53a0779da377f6fa",
+    "Effect of Training Set Expansion on YOLOv26 Performance for Real-Time BISINDO Phrase Recognition.md": "5a0b8e7efc22ad66219cf9be7ad71e5dd08ebd6c67b227f1b629357bbab562f9"
+  },
+  "candidate_hash_matches_sidecar": true,
+  "packages": {
+    "torch": "2.14.0+cu126",
+    "torchvision": "0.29.0+cu126",
+    "ultralytics": "8.4.197",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.17.1",
+    "Pillow": "11.0.0"
+  },
+  "notebook": {
+    "schema_valid": true,
+    "python_cells_compile": true,
+    "executed_end_to_end": false,
+    "training_default": false
+  },
+  "authorization": "Only implementation/analysis. Researcher explicitly approved Stage1b code gate change; Stage1b fits still await explicit approval. Addendum mandatory before Stage2/3.",
+  "smoke_limit": "Inference-only resident batch forward. No measured backward/SGD/head-fit duration."
+}

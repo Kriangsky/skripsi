@@ -1,0 +1,64 @@
+{"label": "exploratory/development", "action": "existing_seed42_full_runs_verified_and_reused", "new_full_fits": 0}
+{"label": "exploratory/development", "action": "probe_started", "seed": 42, "model": "A"}
+{"label": "exploratory/development", "action": "probe", "seed": 42, "model": "A", "seconds": 14.137825099999645, "returncode": 0, "log": "exploratory_probe_seed42_A.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 42, "model": "A"}
+{"label": "exploratory/development", "action": "probe_started", "seed": 42, "model": "B"}
+{"label": "exploratory/development", "action": "probe", "seed": 42, "model": "B", "seconds": 14.666812699999355, "returncode": 0, "log": "exploratory_probe_seed42_B.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 42, "model": "B"}
+{"label": "exploratory/development", "action": "prepare", "seed": 43, "model": "A", "seconds": 71.3357447999997, "returncode": 0, "log": "exploratory_prepare_seed43_A.log"}
+{"label": "exploratory/development", "action": "pair_started", "seed": 43}
+{"label": "exploratory/development", "action": "train", "seed": 43, "model": "A", "seconds": 182.21807099999933, "returncode": 0, "log": "exploratory_train_seed43_A.log"}
+{"label": "exploratory/development", "action": "pair_completed", "seed": 43}
+{"label": "exploratory/development", "action": "probe_started", "seed": 43, "model": "A"}
+{"label": "exploratory/development", "action": "probe", "seed": 43, "model": "A", "seconds": 13.941131999999925, "returncode": 0, "log": "exploratory_probe_seed43_A.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 43, "model": "A"}
+{"label": "exploratory/development", "action": "probe_started", "seed": 43, "model": "B"}
+{"label": "exploratory/development", "action": "probe", "seed": 43, "model": "B", "seconds": 14.965242899999794, "returncode": 0, "log": "exploratory_probe_seed43_B.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 43, "model": "B"}
+{"label": "exploratory/development", "action": "prepare", "seed": 44, "model": "A", "seconds": 73.87044590000005, "returncode": 0, "log": "exploratory_prepare_seed44_A.log"}
+{"label": "exploratory/development", "action": "pair_started", "seed": 44}
+{"label": "exploratory/development", "action": "train", "seed": 44, "model": "A", "seconds": 207.94860889999927, "returncode": 0, "log": "exploratory_train_seed44_A.log"}
+{"label": "exploratory/development", "action": "pair_completed", "seed": 44}
+{"label": "exploratory/development", "action": "probe_started", "seed": 44, "model": "A"}
+{"label": "exploratory/development", "action": "probe", "seed": 44, "model": "A", "seconds": 14.158367399999406, "returncode": 0, "log": "exploratory_probe_seed44_A.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 44, "model": "A"}
+{"label": "exploratory/development", "action": "probe_started", "seed": 44, "model": "B"}
+{"label": "exploratory/development", "action": "probe", "seed": 44, "model": "B", "seconds": 13.227277500000127, "returncode": 0, "log": "exploratory_probe_seed44_B.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 44, "model": "B"}
+{"label": "exploratory/development", "action": "prepare", "seed": 45, "model": "A", "seconds": 70.71863920000033, "returncode": 0, "log": "exploratory_prepare_seed45_A.log"}
+{"label": "exploratory/development", "action": "pair_started", "seed": 45}
+{"label": "exploratory/development", "action": "train", "seed": 45, "model": "A", "seconds": 149.3586132999999, "returncode": 0, "log": "exploratory_train_seed45_A.log"}
+{"label": "exploratory/development", "action": "pair_completed", "seed": 45}
+{"label": "exploratory/development", "action": "probe_started", "seed": 45, "model": "A"}
+{"label": "exploratory/development", "action": "probe", "seed": 45, "model": "A", "seconds": 13.3003075000006, "returncode": 0, "log": "exploratory_probe_seed45_A.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 45, "model": "A"}
+{"label": "exploratory/development", "action": "probe_started", "seed": 45, "model": "B"}
+{"label": "exploratory/development", "action": "probe", "seed": 45, "model": "B", "seconds": 13.304021400000238, "returncode": 0, "log": "exploratory_probe_seed45_B.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 45, "model": "B"}
+{"label": "exploratory/development", "action": "prepare", "seed": 46, "model": "A", "seconds": 71.41155810000055, "returncode": 0, "log": "exploratory_prepare_seed46_A.log"}
+{"label": "exploratory/development", "action": "pair_started", "seed": 46}
+{"label": "exploratory/development", "action": "train", "seed": 46, "model": "A", "seconds": 149.60494930000004, "returncode": 0, "log": "exploratory_train_seed46_A.log"}
+{"label": "exploratory/development", "action": "pair_completed", "seed": 46}
+{"label": "exploratory/development", "action": "probe_started", "seed": 46, "model": "A"}
+{"label": "exploratory/development", "action": "probe", "seed": 46, "model": "A", "seconds": 13.353178899999875, "returncode": 0, "log": "exploratory_probe_seed46_A.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 46, "model": "A"}
+{"label": "exploratory/development", "action": "probe_started", "seed": 46, "model": "B"}
+{"label": "exploratory/development", "action": "probe", "seed": 46, "model": "B", "seconds": 13.28686099999959, "returncode": 0, "log": "exploratory_probe_seed46_B.log"}
+{"label": "exploratory/development", "action": "probe_completed", "seed": 46, "model": "B"}
+{"label": "exploratory/development", "action": "masks", "seed": 42, "model": "A", "seconds": 24.58869759999925, "returncode": 0, "log": "exploratory_masks_seed42_A.log"}
+{"label": "exploratory/development", "action": "masked", "seed": 42, "model": "A", "seconds": 12.948333000000275, "returncode": 0, "log": "exploratory_masked_seed42_A.log"}
+{"label": "exploratory/development", "action": "paired", "seed": 42, "model": "A", "seconds": 2.3885832000005394, "returncode": 0, "log": "exploratory_paired_seed42_A.log"}
+{"label": "exploratory/development", "action": "curves", "seed": 42, "model": "A", "seconds": 2.789242699999704, "returncode": 0, "log": "exploratory_curves_seed42_A.log"}
+{"label": "exploratory/development", "action": "masked", "seed": 43, "model": "A", "seconds": 12.978778499999862, "returncode": 0, "log": "exploratory_masked_seed43_A.log"}
+{"label": "exploratory/development", "action": "paired", "seed": 43, "model": "A", "seconds": 2.3555665999992925, "returncode": 0, "log": "exploratory_paired_seed43_A.log"}
+{"label": "exploratory/development", "action": "curves", "seed": 43, "model": "A", "seconds": 2.7332553000005646, "returncode": 0, "log": "exploratory_curves_seed43_A.log"}
+{"label": "exploratory/development", "action": "masked", "seed": 44, "model": "A", "seconds": 12.899313500000062, "returncode": 0, "log": "exploratory_masked_seed44_A.log"}
+{"label": "exploratory/development", "action": "paired", "seed": 44, "model": "A", "seconds": 2.2956162999998924, "returncode": 0, "log": "exploratory_paired_seed44_A.log"}
+{"label": "exploratory/development", "action": "curves", "seed": 44, "model": "A", "seconds": 2.6253930000002583, "returncode": 0, "log": "exploratory_curves_seed44_A.log"}
+{"label": "exploratory/development", "action": "masked", "seed": 45, "model": "A", "seconds": 12.762123299999985, "returncode": 0, "log": "exploratory_masked_seed45_A.log"}
+{"label": "exploratory/development", "action": "paired", "seed": 45, "model": "A", "seconds": 2.297129600000517, "returncode": 0, "log": "exploratory_paired_seed45_A.log"}
+{"label": "exploratory/development", "action": "curves", "seed": 45, "model": "A", "seconds": 2.6574264000000767, "returncode": 0, "log": "exploratory_curves_seed45_A.log"}
+{"label": "exploratory/development", "action": "masked", "seed": 46, "model": "A", "seconds": 12.602011799999673, "returncode": 0, "log": "exploratory_masked_seed46_A.log"}
+{"label": "exploratory/development", "action": "paired", "seed": 46, "model": "A", "seconds": 2.3055057000001398, "returncode": 0, "log": "exploratory_paired_seed46_A.log"}
+{"label": "exploratory/development", "action": "curves", "seed": 46, "model": "A", "seconds": 2.6808378000005177, "returncode": 0, "log": "exploratory_curves_seed46_A.log"}
+{"label": "exploratory/development", "action": "summary", "seed": 42, "model": "A", "seconds": 3.0767336999997497, "returncode": 0, "log": "exploratory_summary_seed42_A.log"}

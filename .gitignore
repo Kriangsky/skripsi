@@ -49,3 +49,20 @@ __pycache__/
 **/*.html
 !/annotation_review_template.html
 !/frame_review_template.html
+
+# Organized workspace: compatibility mirrors and source datasets remain local
+/.compat_runtime/
+/04_dataset/
+/09_environment/
+/experiment_yolo26*/
+/exploratory_development_*/
+
+# Derived landmark caches remain local with the source dataset
+/02_exp/arsip_pipeline/*/candidates.csv
+/02_exp/arsip_pipeline/*/flagged_candidates.csv
+
+# Section navigation and source review templates
+!/04_dataset/README.md
+!/09_environment/README.md
+!/08_review/templates/annotation_review_template.html
+!/08_review/templates/frame_review_template.html

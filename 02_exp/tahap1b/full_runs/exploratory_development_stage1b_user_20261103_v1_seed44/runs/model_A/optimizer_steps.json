@@ -1,0 +1,12 @@
+{
+  "model": "A",
+  "seed": 44,
+  "epoch": 30,
+  "actual_optimizer_steps": 690,
+  "batches_per_epoch": 23,
+  "learning_rates": [
+    0.00043,
+    0.00043,
+    0.00043
+  ]
+}

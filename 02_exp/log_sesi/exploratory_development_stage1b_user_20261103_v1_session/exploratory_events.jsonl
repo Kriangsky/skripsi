@@ -1,0 +1,6 @@
+{"status_label": "exploratory/development", "event": "session_initialized", "training_authorized": true, "seed42_is_replication": true}
+{"status_label": "exploratory/development", "event": "pair_started", "seed": 42}
+{"status_label": "exploratory/development", "event": "pair_completed", "seed": 42, "timing": {"seed": 42, "replication": true, "status": "running", "prepare_seconds": 71.91250240000045, "pair_train_and_evaluation_seconds": 139.92973619999975}}
+{"status_label": "exploratory/development", "event": "probe_started", "seed": 42, "model": "A"}
+{"status_label": "exploratory/development", "event": "hard_stop", "seed": 42, "kind": "linear_probe", "model": "A", "error": "RuntimeError: Ultralytics already imported with different settings directory; run pilot CLI in a fresh process"}
+{"status_label": "exploratory/development", "event": "phase_timing", "seed": 42, "replication": true, "status": "failed", "prepare_seconds": 71.91250240000045, "pair_train_and_evaluation_seconds": 139.92973619999975, "error": "RuntimeError: Ultralytics already imported with different settings directory; run pilot CLI in a fresh process", "total_wall_seconds": 215.36696099999972}

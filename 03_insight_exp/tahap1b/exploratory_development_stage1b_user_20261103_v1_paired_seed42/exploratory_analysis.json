@@ -1,0 +1,47 @@
+{
+  "kind": "FACT: post-hoc exploratory analysis of existing internal pilot",
+  "n": 120,
+  "counts": {
+    "both_correct": 111,
+    "a_only": 1,
+    "b_only": 0,
+    "both_wrong": 8
+  },
+  "mcnemar_exact_two_sided": 1.0,
+  "correctness_discordance": 0.008333333333333333,
+  "label_disagreement": 0.05,
+  "seed": 20261103,
+  "repetitions": 10000,
+  "training_seeds_observed": [
+    42
+  ],
+  "seed_variance": null,
+  "source_sha256": {
+    "manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "runs/trained_models.json": "82569ad6798fcbb3b52617584416351531591a8c9fc3f6661e2d1791ed9d2438",
+    "evaluation/predictions.csv": "5a813c007f426bfda01768b44f65548b0334075c235b0dc2cc257c761d2e70cf"
+  },
+  "analysis_source_sha256": "c0c9433f12852a7f342c52a36a151fd4f419e01f5980e2ada0674ddecea0be24",
+  "statistics": [
+    {
+      "metric": "macro_f1",
+      "A": 0.9317756044925641,
+      "B": 0.9300418783462919,
+      "delta_B_minus_A": -0.0017337261462722076,
+      "ci95_low": -0.025679347857453294,
+      "ci95_high": 0.01566455224991803,
+      "lower_one_sided95": -0.020841948126293985,
+      "bootstrap_sd": 0.010670351600781183
+    },
+    {
+      "metric": "accuracy",
+      "A": 0.9333333333333333,
+      "B": 0.925,
+      "delta_B_minus_A": -0.008333333333333304,
+      "ci95_low": -0.025,
+      "ci95_high": 0.0,
+      "lower_one_sided95": -0.025,
+      "bootstrap_sd": 0.008088024881005169
+    }
+  ]
+}

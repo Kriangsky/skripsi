@@ -1,0 +1,22 @@
+{
+  "source_snapshot_unchanged": true,
+  "human_pilot_frozen_files_valid": true,
+  "review_queue_n": 640,
+  "queue_class_split_hash_audit": "PASS",
+  "human_development_validation_overlap": 0,
+  "actual_training_api_calls": 0,
+  "actual_training_runs": 0,
+  "live_training_gate": "BLOCKED",
+  "verified_positive_n": 0,
+  "metadata_missing_n": 640,
+  "environment_api_probe": "PASS",
+  "javascript_syntax": "PASS",
+  "real_browser_interaction": "NOT_VERIFIED",
+  "actual_training_and_model_evaluation": "NOT_RUN",
+  "tests_passed": 38,
+  "tests_failed": 0,
+  "focused_checks_after_changes": "PASS: label precision, matching, training gate, import/review snapshot integration, real optimizer groups/API and JS syntax",
+  "latest_readiness": "BLOCKED",
+  "local_only": true,
+  "paid_api": false
+}

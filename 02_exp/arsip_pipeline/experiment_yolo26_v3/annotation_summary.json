@@ -1,0 +1,10 @@
+{
+  "videos": 2800,
+  "candidate_frames": 33250,
+  "technically_eligible_candidates": 1120,
+  "flagged_candidates": 32130,
+  "selected_positives": 0,
+  "needs_review": 2800,
+  "training_allowed": false,
+  "note": "Eligible means technical checks passed, NOT that the gesture matches the class. No positives without human selection."
+}

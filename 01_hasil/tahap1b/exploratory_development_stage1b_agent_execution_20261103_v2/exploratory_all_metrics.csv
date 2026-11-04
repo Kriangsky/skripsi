@@ -1,0 +1,16 @@
+model,scope,n,correct_n,accuracy,macro_f1,macro_f1_definition,extra_class_predictions_n,seed
+A,common6,120,112,0.9333333333333332,0.931775604492564,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,42
+B,common6,120,111,0.925,0.930041878346292,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,2,42
+B,full8,160,150,0.9375,0.9354640789917368,Mean F1 over fixed ground-truth classes 0..7; extra predicted classes remain errors/FN.,0,42
+A,common6,120,112,0.9333333333333332,0.9326249749869776,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,43
+B,common6,120,111,0.925,0.9308942013767204,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,2,43
+B,full8,160,149,0.93125,0.9298634501033882,Mean F1 over fixed ground-truth classes 0..7; extra predicted classes remain errors/FN.,0,43
+A,common6,120,114,0.95,0.9475002122060946,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,44
+B,common6,120,112,0.9333333333333332,0.9319470937339606,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,44
+B,full8,160,151,0.94375,0.9428515916307662,Mean F1 over fixed ground-truth classes 0..7; extra predicted classes remain errors/FN.,0,44
+A,common6,120,115,0.9583333333333334,0.956626061277224,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,45
+B,common6,120,111,0.925,0.9238073337649324,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,45
+B,full8,160,149,0.93125,0.9305668272045128,Mean F1 over fixed ground-truth classes 0..7; extra predicted classes remain errors/FN.,0,45
+A,common6,120,112,0.9333333333333332,0.9309718426908904,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,46
+B,common6,120,113,0.9416666666666668,0.9391616672821838,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,46
+B,full8,160,151,0.94375,0.9422182700801592,Mean F1 over fixed ground-truth classes 0..7; extra predicted classes remain errors/FN.,0,46

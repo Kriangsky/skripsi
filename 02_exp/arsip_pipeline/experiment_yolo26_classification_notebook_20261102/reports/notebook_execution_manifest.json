@@ -1,0 +1,93 @@
+{
+  "notebook": "BISINDO_YOLO26_Classification_End_to_End.ipynb",
+  "work_directory": "experiment_yolo26_classification_notebook_20261102",
+  "mode": "new experiment executed in notebook",
+  "recorded_utc": "2026-11-02T07:05:46.568994+00:00",
+  "python_version": "3.11.5",
+  "source_sha256": {
+    "classification_pilot.py": "8e8a5be2f8057214772151e56db1d39479a55fd2f3c470a58c0a008a082f6e65",
+    "training_pilot.py": "fa44757bd3a5813f29fea92352c146d94b7ac6ce61c9a286c370d2b31ab60446",
+    "pilot_study.py": "030cb1bc7283608be9f6ab50a99010c2fd75e9901e5795384830a0c4f2ee5668",
+    "frame_candidates.py": "0e4a9a636775caed2b837f37eb5781072bb108bc5b5c4beeda78417cdcdb07a7",
+    "bisindo_pipeline.py": "0f8aa793bb2e91eb88b29359de81b2cbec26a682952567cd7da980997eb7c8f1"
+  },
+  "release_fingerprint": "2f87b3eddd101269d3bf81d07b4f35df16e3ed2ff587818ea43e193685340967",
+  "artifact_sha256": {
+    "manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "release.json": "84a54bc1fefaa77a08a6b17d8966b58e4b3dc3d7edc68de81bef67d8d4c560f0",
+    "checkpoint.json": "14072f3d7d79dbeec7877f377e36ea881b044049882c5fae5e3010a7f68b2cb7",
+    "reports/environment.json": "056e717ce462c02858e581d22d1eca22ad9f583a2b222ea2487c062815ec8de0",
+    "reports/experiment_config.json": "c00050e262c3948148101f3b7f804aff347a4520291241253c6ed683ef831bcb",
+    "reports/training.log": "bde59ec994456d989daafb3a23f61607fd689ecc94a50e961d7836fc4a5c33eb",
+    "runs/trained_models.json": "baff379ad11e060d744b077219dc85efd44248c2c29daec1d787d897b09260b7",
+    "runs/model_A/results.csv": "ac4a83cf701451626fa81f00abbf9d033df125352e9296308c02b314280c7a87",
+    "runs/model_B/results.csv": "4c326c78adfda23ecce214d03ee0a8eb8a6cd0bbff04b28abe1d3d1a4d458fe2",
+    "evaluation/predictions.csv": "5a813c007f426bfda01768b44f65548b0334075c235b0dc2cc257c761d2e70cf",
+    "evaluation/comparison_metrics.csv": "ae6c9e55572f0e3ab1dd56996067319e3c32289cd88e78613ca47a28ecf08b5d",
+    "reports/notebook_prepare.log": "9ff7335bd854fe21b289606df367bf3d39d1d57e09973782a1b2a06b4bce2bab",
+    "reports/notebook_probe.log": "1431da874013783d9d224de50f6adbc1e03fdd3503a9cc8f4b92767d0055cb86",
+    "reports/notebook_train.log": "fd3364b1bdce49c794afbd6806a290f2b988f8cc6be47286abc1b4ade5f5000e"
+  },
+  "cli_history": [
+    {
+      "command": "prepare",
+      "started_utc": "2026-11-02T07:02:31.062636+00:00",
+      "argv": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\classification_pilot.py",
+        "prepare",
+        "--root",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa",
+        "--source",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_v3",
+        "--work",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_notebook_20261102"
+      ],
+      "log_file": "reports/notebook_prepare.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-02T07:03:48.202717+00:00"
+    },
+    {
+      "command": "probe",
+      "started_utc": "2026-11-02T07:03:51.433216+00:00",
+      "argv": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\classification_pilot.py",
+        "probe",
+        "--root",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa",
+        "--source",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_v3",
+        "--work",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_notebook_20261102"
+      ],
+      "log_file": "reports/notebook_probe.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-02T07:04:10.808527+00:00"
+    },
+    {
+      "command": "train",
+      "started_utc": "2026-11-02T07:04:10.823550+00:00",
+      "argv": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\classification_pilot.py",
+        "train",
+        "--root",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa",
+        "--source",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_v3",
+        "--work",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_notebook_20261102"
+      ],
+      "log_file": "reports/notebook_train.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-02T07:05:43.046466+00:00"
+    }
+  ],
+  "training_seed": 42,
+  "fully_verified_dataset": false,
+  "signer_independence": "UNVERIFIED"
+}

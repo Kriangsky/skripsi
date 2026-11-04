@@ -1,0 +1,12 @@
+{
+  "total": 2800,
+  "detection_status": {
+    "detected": 2720,
+    "no_hands": 80
+  },
+  "review_status": {
+    "pending": 2800
+  },
+  "training_allowed": false,
+  "note": "Training requires validate_dataset() with reviewed, hash-bound boxes; automatic detections are candidates."
+}

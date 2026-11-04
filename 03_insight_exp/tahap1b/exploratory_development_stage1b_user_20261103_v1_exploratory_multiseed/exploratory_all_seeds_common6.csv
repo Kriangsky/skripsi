@@ -1,0 +1,11 @@
+seed,replication,model,scope,n,correct_n,accuracy,macro_f1,macro_f1_definition,extra_class_predictions_n,paired_delta_B_minus_A
+42,True,A,common6,120,112,0.9333333333333333,0.9317756044925641,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,
+42,True,B,common6,120,111,0.925,0.9300418783462919,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,2,-0.0017337261462722076
+43,False,A,common6,120,112,0.9333333333333333,0.9326249749869775,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,
+43,False,B,common6,120,111,0.925,0.9308942013767204,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,2,-0.0017307736102570859
+44,False,A,common6,120,114,0.95,0.9475002122060946,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,
+44,False,B,common6,120,112,0.9333333333333333,0.9319470937339606,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,-0.015553118472134031
+45,False,A,common6,120,115,0.9583333333333334,0.956626061277224,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,
+45,False,B,common6,120,111,0.925,0.9238073337649323,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,-0.03281872751229176
+46,False,A,common6,120,112,0.9333333333333333,0.9309718426908904,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,
+46,False,B,common6,120,113,0.9416666666666667,0.9391616672821838,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0,0.00818982459129336

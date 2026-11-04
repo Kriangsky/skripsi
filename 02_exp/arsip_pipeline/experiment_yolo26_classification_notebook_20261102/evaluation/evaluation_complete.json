@@ -1,0 +1,22 @@
+{
+  "models": {
+    "A": {
+      "model": "A",
+      "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_notebook_20261102\\runs\\model_A\\weights\\last.pt",
+      "sha256": "560e5aeda9e822fbcdf7415c50026d82216f2500988f59b34e714bd67948109a",
+      "epoch": 30,
+      "initial_checkpoint_sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+      "actual_optimizer_steps": 690
+    },
+    "B": {
+      "model": "B",
+      "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_notebook_20261102\\runs\\model_B\\weights\\last.pt",
+      "sha256": "2c399d2060356581c199dfc705800941a6af9d5d7362b8a466f8adeffe9a0315",
+      "epoch": 30,
+      "initial_checkpoint_sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+      "actual_optimizer_steps": 900
+    }
+  },
+  "release_fingerprint": "2f87b3eddd101269d3bf81d07b4f35df16e3ed2ff587818ea43e193685340967",
+  "timestamp": "2026-11-02T07:05:42.327824+00:00"
+}

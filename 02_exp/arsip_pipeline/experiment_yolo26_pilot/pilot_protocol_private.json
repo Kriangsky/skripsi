@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "study_id": "d3a5ab42d9e3dd223be4b27b58a75549d20dea527386289efb5a771bef1d819e",
+  "seed": 42,
+  "per_class": 20,
+  "rule": "v1: readable; eligible first; fewer technical flags; focus descending; frame index ascending",
+  "classes": [
+    "saya",
+    "kamu",
+    "senang",
+    "bingung",
+    "marah",
+    "apa_kabar",
+    "halo",
+    "tidur"
+  ],
+  "categories": [
+    "saya",
+    "kamu",
+    "senang",
+    "bingung",
+    "marah",
+    "apa_kabar",
+    "halo",
+    "tidur",
+    "ambiguous",
+    "invalid"
+  ],
+  "reasons": [
+    "preparation",
+    "transition",
+    "hand_clipped",
+    "blur",
+    "temporal_insufficient",
+    "other"
+  ],
+  "reviewers": [
+    "reviewer_1",
+    "reviewer_2"
+  ],
+  "split_lock_sha256": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+  "candidates_sha256": "2061a83fa605b0194324499ba7f9b9f69ddfd21ca86a907db01786fdcb3afb12",
+  "candidate_config_sha256": "eb986c300d2d618372f955e87565f7f32c8abbfd3d7b3a34f2e229361f0eb618",
+  "signer_metadata_sha256": null,
+  "manifest_sha256": "6d033a09eb54c5f0af011f3b7fecf7fe5a9b2e5532610c9d8468961ae43128fd",
+  "selection_sha256": "f4e6a1a03bdfdab9c5dbff235279e7856d6af91c1c42a1218bf7453332dddc5c",
+  "limitations": [
+    "Technical heuristics are not calibrated semantic validity checks.",
+    "Signer-independent inference unavailable when signer metadata is missing; video != signer.",
+    "Exploratory training-pool pilot; not an external-test benchmark.",
+    "Reviewer independence requires separate people/devices and no answer sharing.",
+    "Image appearance may itself reveal source cues; opaque files cannot eliminate visual confounding."
+  ],
+  "known_signer_samples": 0,
+  "review_html_sha256": {
+    "reviewer_1": "9244268efb4a2c7bb7ed584d3444e154ca5c3765e2dbd5e789ef5c05d30e2e79",
+    "reviewer_2": "d2b68cc5bf7d4c5d3cab1f8ae744636ddbb68370209addfc8ad12773adc55ec5"
+  }
+}

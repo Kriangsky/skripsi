@@ -1,0 +1,20 @@
+{
+  "historical": [
+    {
+      "model": "A",
+      "epochs": 30,
+      "recorded_training_seconds": 37.4169,
+      "source_sha256": "856e707fc26e800018c478f31c3e9a5b6f6c902ce2b4281c0fe24ddb004f6f19"
+    },
+    {
+      "model": "B",
+      "epochs": 30,
+      "recorded_training_seconds": 47.5833,
+      "source_sha256": "06617d35a30899b7e206b22b61659676a410dce0ef6e7990f0b564a2fa6f4ea1"
+    }
+  ],
+  "five_pairs_historical_training_seconds": 425.00100000000003,
+  "head_fit_seconds": null,
+  "new_instrumented_training_seconds": null,
+  "explanation": "No training smoke permitted. Inference smoke cannot estimate backward/SGD or head-fitting duration. A measured Stage1b total must wait for explicitly approved training smoke; historical training is only a baseline."
+}

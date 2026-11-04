@@ -1,0 +1,24 @@
+{
+  "status": "exploratory/development",
+  "model": "A",
+  "seed": 43,
+  "epoch": 30,
+  "backbone_eval": true,
+  "backbone_sha256": "20533ef76136e29f105f96bcd9aeda09d530a2bcc65198beaf94bf9df4ebe5e7",
+  "optimizer": {
+    "name": "SGD",
+    "lr": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "batch": 16
+  },
+  "train_n": 360,
+  "validation_used_for_selection": false,
+  "seconds": 4.461104999999407,
+  "n": 120,
+  "correct_n": 113,
+  "accuracy": 0.9416666666666667,
+  "macro_f1": 0.9420560804707147,
+  "macro_f1_definition": "Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.",
+  "extra_class_predictions_n": 0
+}

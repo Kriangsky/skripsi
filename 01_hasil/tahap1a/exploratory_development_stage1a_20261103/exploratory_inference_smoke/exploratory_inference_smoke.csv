@@ -1,0 +1,3 @@
+model,batch,repeats,seconds,seconds_per_batch,weights_sha256,model_fits,optimizer_steps,status,scope
+A,16,10,0.04498469999998633,0.004498469999998633,a8e5438c5aa1da868524871f7d41bbb21409b64b239d2432b24a350d3d20b434,0,0,exploratory/development,"resident FP32 GPU batch forward only; excludes decode, IO, backward, optimizer, head fitting"
+B,16,10,0.05379670000002079,0.0053796700000020795,e136abaa47ba2b5584b2664188853566ccf5bc50b80e08a1f9b8476b026385fc,0,0,exploratory/development,"resident FP32 GPU batch forward only; excludes decode, IO, backward, optimizer, head fitting"

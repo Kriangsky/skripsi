@@ -1,0 +1,20 @@
+{
+  "kind": "bisindo_training_approval",
+  "scope": "stage1b",
+  "approved_by": "researcher: explicit approval in chat 2026-11-03",
+  "work_names": [
+    "exploratory_development_stage1b_user_20261103_v1_seed45"
+  ],
+  "training": {
+    "seed": 45,
+    "epochs": 30,
+    "imgsz": 224
+  },
+  "protocol_sha256": {
+    "PREREGISTRATION.md": "24e21743168f3457933f0f17db76e52d420b5f005da774a7f9230c71f1ac7a70"
+  },
+  "linear_probes": true,
+  "status": "exploratory/development",
+  "approval_date": "2026-11-03",
+  "approval_source": "explicit researcher chat; researcher executes this notebook"
+}

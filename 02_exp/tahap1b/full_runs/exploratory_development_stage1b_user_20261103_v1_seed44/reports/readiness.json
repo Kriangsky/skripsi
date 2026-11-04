@@ -1,0 +1,19 @@
+{
+  "ready": true,
+  "blockers": [],
+  "warnings": [
+    "Exploratory pilot, not final thesis performance; one seed and 30 epochs.",
+    "Labels come from frozen video metadata, not verified per-frame semantics; dataset is NOT fully verified.",
+    "Technical flags are retained; MediaPipe hand detection is not gesture classification.",
+    "Signer/session independence is unverified where metadata is absent; no signer-independent claim.",
+    "Static-frame/label errors, background and signer cues may explain performance; no causal temporal claim.",
+    "Classification and detection were not compared on a matched trained benchmark; architecture is not automatically replaced."
+  ],
+  "samples": 640,
+  "technical_flagged_n": 497,
+  "selection_failed_n": 0,
+  "known_signer_samples": 0,
+  "semantic_assessed_n": 0,
+  "known_ambiguous_n": 0,
+  "semantic_unknown_n": 640
+}

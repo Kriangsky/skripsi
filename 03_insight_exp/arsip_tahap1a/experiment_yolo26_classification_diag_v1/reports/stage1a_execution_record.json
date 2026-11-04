@@ -1,0 +1,83 @@
+{
+  "scope": "Stage1a A-D only; no model training",
+  "recorded_utc": "2026-11-03T05:54:13.006531+00:00",
+  "model_training_fits": 0,
+  "external_images_read": 0,
+  "external_scores_computed": 0,
+  "statistics_rng": 20261103,
+  "bootstrap_repetitions": 10000,
+  "power_repetitions_per_scenario": 10000,
+  "commands_executed": [
+    "analysis_paired.py --work experiment_yolo26_classification_pilot --out experiment_yolo26_classification_diag_v1/reports/paired --repetitions 10000",
+    "power_precision.py --work experiment_yolo26_classification_pilot --out experiment_yolo26_classification_diag_v1/reports/power --repetitions 10000"
+  ],
+  "tests_before": {
+    "passed": 58,
+    "source": "actual unittest discover process output before changes"
+  },
+  "tests_after": {
+    "passed": 81,
+    "log": "reports/tests_after.log"
+  },
+  "installed_cfg_api_checked": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "imgsz": [
+      224,
+      320,
+      448
+    ],
+    "epochs": 15
+  },
+  "python": "3.11.5",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.17.1",
+    "ultralytics": "8.4.197",
+    "torch": "2.14.0+cu126",
+    "torchvision": "0.29.0+cu126"
+  },
+  "source_sha256": {
+    "analysis_paired.py": "c0c9433f12852a7f342c52a36a151fd4f419e01f5980e2ada0674ddecea0be24",
+    "power_precision.py": "624cd27cc15e75a85b11a6e3cbe4f2ad29bcb0cd064eafd1f8890f24bdc62260",
+    "classification_research.py": "b4eac9318477f24d641f959aaf39a61ff2172a789fabba9c679e276a685c907e",
+    "test_analysis_paired.py": "e134f9915447c09b342a6d7a8866c4ebe92de5aee71b4c72e14de7e152bf5a60",
+    "test_power_precision.py": "c795287af09a01abb9412cb5c124a3817fce3fdf1cee83f15f33de80f1d4cd07",
+    "test_classification_research.py": "f5d60a1c40a7fb3215f3e71ac5fd09c6ea03b2e2e88284254181a81e3daed365",
+    "test_protocol_addendum.py": "7f0d5293e5b5d6e5f2e2e3a2059417b8dc7e98509c510af9d42936688af8001b",
+    "PREREGISTRATION.md": "24e21743168f3457933f0f17db76e52d420b5f005da774a7f9230c71f1ac7a70",
+    "PREREGISTRATION_ADDENDUM_01.md": "1242f435e86aaa1c4e62f55c8ed3a30e66f6dcb65e00b8d7570606bac09b2ba6",
+    "DEVIATION_LOG.md": "651bd3435ba85a17d3c59ac39903f9a06c0e8b57633b3e903c7b31f698ed45d8",
+    "STAGE1A_README.md": "6bfe081cffab626e5ab2963de1652f0603af1c12ea7a7101461a6eed0ff93b7b",
+    "Effect of Vocabulary Expansion on YOLO26 Classification for BISINDO Phrase Recognition.md": "2d82ba6241a844541b4c763557333715c08af4679bfa605d53a0779da377f6fa"
+  },
+  "output_sha256": {
+    "reports\\tests_after.log": "3d66ddf6737f9f026a00e827a910c3787cb932580f6ca67ca0904a7e688558e7",
+    "reports\\paired\\accuracy_wilson.csv": "0a19e2bab375218c1ba4544af78d43231a262c66e02eff206f88b0feda34cfc6",
+    "reports\\paired\\analysis.json": "8875ed4753871fdcb12d0011f6df1edbe526474aa9f149d16f351265d6524bc0",
+    "reports\\paired\\paired_analysis.md": "5b4a96c9c93c2b93be74f619f295446e535580bbee006fadd465b8bf82995ed3",
+    "reports\\paired\\paired_ci.csv": "aa41b7ab76c9081c6527ac71edba522099d3d735f46d1e91d08b7f9399faa035",
+    "reports\\paired\\paired_errors.csv": "966a99af06bea8c3f2545a1d54144d700f8d9e17b8e4596dc0a41efe2206e3e3",
+    "reports\\paired\\per_class_metrics.csv": "071e2859c7d9596f0c4bcfd2d29ce977e041e080d6a48e4b190a87e7626d1bde",
+    "reports\\power\\h1_effect_sensitivity.md": "f7b42dff14794f1d42e6c2e8dd0aa997f4f60b747fe11fb70a8995f592a2914d",
+    "reports\\power\\h1_power_scenarios.csv": "cd4dcb3dffd48432dc36e456601fb9a8d117be3f9d94594dec9c305a5459f86a",
+    "reports\\power\\h2_power_scenarios.csv": "2e997c7f58e10e94d7085ed9483e4109a1fd96ba5b72b703fe087b3796bb9df5",
+    "reports\\power\\power_precision_report.md": "44b3943a039923f8e74cbf22596589a9b2f5b8bb326187a0a20aa17194b1a813",
+    "reports\\power\\simulation_provenance.json": "45939964bb82ef3d9c2cf90bbc7a6b641ab355a3631c27fd6610438bc2d4867c"
+  },
+  "legacy_protected_files_unchanged": 182,
+  "new_training_live_gpu_test": false,
+  "hypotheses_changed": false,
+  "pending_decisions": [
+    "delta",
+    "H2 threshold",
+    "H1 evidence domain; Addendum02 before prospective training"
+  ]
+}

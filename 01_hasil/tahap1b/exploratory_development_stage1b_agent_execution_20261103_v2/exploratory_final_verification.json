@@ -1,0 +1,35 @@
+{
+  "status": "exploratory/development",
+  "verified_full_last_checkpoints": {
+    "42_A": "03727737a647405bdc6154c925c4575f2b77bf45f48a2ef21a92d02d044f54b7",
+    "42_B": "e544a04b4798f1d76a2096c844fd768bd53e50aa2fa4e1c17a419eef3fbc67bd",
+    "43_A": "20533ef76136e29f105f96bcd9aeda09d530a2bcc65198beaf94bf9df4ebe5e7",
+    "43_B": "ddcd40f906c52f6228689eaed78235ece77b7372ad5de819c47976d5b229dd79",
+    "44_A": "8b5af75865038f6c14a1dcd22cb9331495f0120ae92ff1b45ae6fe0d83f18db6",
+    "44_B": "79fa00f026422a7d41dd51cf6e49f251a96418be55bea873076a0e00d71a8e80",
+    "45_A": "e03c41f67d1f64c84eaaedba9ddd51c1cd0c0384fb412a44b81d957b025c53ba",
+    "45_B": "bbe8dac6bad0e452ef18543b795ae816008bf1673bbe99bf9e13aa6acba7bc76",
+    "46_A": "af538ffb291a31666a4861ce309714784eb1ed795d6896540bc828af86342242",
+    "46_B": "f5bb4d80995be7e668f4153bada040beca84467d968dce04e3e866e0cdb90fdb"
+  },
+  "verified_last_heads": {
+    "42_A": "4a802a12ccb3ff8321457734589f0ed16acabdc435d38ad2bc83e10e9709cbb7",
+    "42_B": "0526f88d56696f175ddff4ebfa642e4ecf74e8df943fc644d7d078dc7575e120",
+    "43_A": "ff5b727ed2a0922d91832d807b2e76a056caee76daf57c376640b5e2b706de96",
+    "43_B": "a08acd26f2a8811b1488c1943b87191fa4814a191f898098d89de4a7507014ed",
+    "44_A": "d3b8df0eca7515876c1e9f579ef30a826ca118deb4ee965f16857c1f66e37e78",
+    "44_B": "11a7283b9f18f2fc2b5fe04214f0eb597c63ee3141d80761b93808d470cbf7ff",
+    "45_A": "f652f623f27ac18f7a5faf0eeb4a011aadb1e379b0a70ec0012bcab2da9892bf",
+    "45_B": "5829961016d4f84babf75a001424a9022089ab418e96417c399652d7b050a03b",
+    "46_A": "862d22f7fb015eeb450632ef49411e4c501243e0106263b0bbb7db57f1de5602",
+    "46_B": "587d7f93f1a0128144b875f6662a171e5877d8772ebb543e47985bb503f4f84f"
+  },
+  "completed_full_fits": 10,
+  "completed_head_fits": 10,
+  "expected_steps_each_A": 690,
+  "expected_steps_each_B": 900,
+  "expected_steps_each_head": 690,
+  "all_epochs_1_to_30": true,
+  "candidate_hash_valid": true,
+  "training_started_by_this_verification": false
+}
