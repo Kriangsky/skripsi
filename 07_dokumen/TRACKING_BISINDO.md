@@ -208,3 +208,114 @@ Tambahkan setiap pekerjaan/percobaan baru dengan status,scope/seed/config,hasil 
 | Tanggal | Aktivitas | Status | Hasil/error | Bukti | Tindak lanjut |
 |---|---|---|---|---|
 |2026-11-04–05| Segmentasi penuh +tracking | SELESAI | Tidak ada training baru; file/data/hash dipertahankan | Manifest dan verification pada organisasi lengkap | Menunggu keputusan riset berikutnya; tetap berhenti sebelumTahap2 |
+
+
+## 11. Final experiment controller — TASK 0, 2026-11-05 Asia/Bangkok
+
+Scope disetujui: TASK 0 saja, sesuai master goal attachment. TASK 1–8 menunggu `LANJUT TASK N`.
+Tidak ada training, inferensi, freeze, perubahan split, commit, push, penghapusan, atau pemindahan.
+Perubahan awal Git: modul confirmatory/interference, tests dan dokumen addendum sudah untracked sebelum TASK 0;
+TASK 0 tidak mengklaim membuatnya. Baseline byte: `01_hasil/addendum/final_control_task0/baseline.json`.
+
+Desain: satu notebook primer, inspeksi read-only; reuse modul existing. Menyalin pipeline dan membuat scoring baru ditolak.
+Scaffold sengaja menolak opt-in berbahaya; controller final runnable belum dibuat sampai fase terkait disetujui.
+Scope perubahan: notebook baru, test kontrak notebook, bukti validasi baru, tambahan tracker dan indeks notebook.
+Callers/config/exports/fixtures existing tidak perlu diubah. Historis outputs/checkpoints/protocols dipertahankan.
+
+### TASK 0 — audit dan scaffold
+
+- Dependency: master goal dibaca; scope TASK 0 diotorisasi.
+- Objective: notebook primer dengan 12 bagian, safe Run All, peta reuse dan konflik.
+- Reuse: `05_kode/src/classification_research.py`, `classification_pilot.py`, `confirmatory_evaluation.py`,
+  `confirmatory_statistics.py`, `interference_metrics.py`; tracker/protocol/run records existing.
+- Inspect: seluruh preregistration/addenda/analysis_plan/readiness/reproducibility manifest di `07_dokumen/protokol/`;
+  `02_exp/arsip_pipeline/experiment_yolo26_v3/split_lock.csv` (keberadaan/hash saja);
+  `02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed{42..46}/` configs,
+  execution records/results/checkpoints; approvals/failures/tracker dan notebook Classification lama.
+- Modify/create: `06_notebook/eksperimen/BISINDO_FINAL_EXPERIMENT_CONTROL.ipynb`,
+  `05_kode/tests/test_final_control_notebook.py`, tracker ini, `06_notebook/README.md`,
+  `01_hasil/addendum/final_control_task0/`.
+- Inputs: artefak development/protokol aktual; tidak membaca external model predictions.
+- Outputs: notebook beroutput nyata, validation log/record, hash preservation report, peta TASK 0–8.
+- Acceptance: JSON valid; imports dan seluruh safe cells berjalan di kernel project; flags False dan opt-in ditolak;
+  sepuluh checkpoint byte cocok; tidak menduplikasi algoritme; test terkait lulus; failure existing dilaporkan;
+  semua baseline source/notebook/protocol byte tetap.
+- Validation command: `& .venv-bisindo/Scripts/python.exe 01_hasil/addendum/final_control_task0/validate_task0.py`.
+- Status: COMPLETED / PASS TASK 0; completion.json adalah hasil verifikasi terakhir; validation.json mempertahankan attempt awal.
+- Blocker: tidak ada untuk scaffold; historical notebook-output expectation memblokir klaim full regression green.
+- Approval: TASK 0 sudah diberikan; STOP setelah report. TASK 1 perlu `LANJUT TASK 1`.
+
+### Ordered task map (PLANNED; commands below are acceptance checks, not authorization)
+
+Semua task mempertahankan mapping/seed, common6 pairing, H2 verbatim dan full8 argmax B.
+`P` = `07_dokumen/protokol/analysis_plan.json`; `N` = notebook primer di atas;
+`E` = `05_kode/src/confirmatory_evaluation.py`. Paths ini juga berlaku untuk setiap baris berikut.
+Validasi ilmiah manual/evidence review melengkapi tes, tidak digantikan tes sintetik.
+
+| ID / dependency | Objective; reuse | Exact inspect/modify files | Inputs → expected outputs | Acceptance; validation command | Status / blocker / required approval |
+|---|---|---|---|---|---|
+| TASK 1 / TASK 0 | Inventory/provenance; reuse frame_candidates, audit_dataset, E | P, N, `02_exp/arsip_pipeline/experiment_yolo26_v3/split_lock.csv`, `07_dokumen/protokol/external_scoring_readiness.md`, `05_kode/src/audit_dataset.py` | locked split + metadata/history → count/schema/leakage/exposure report, missing final manifest list | Identical common6 splits; counts/missingness sourced; no Kaggle inference. Check `& .venv-bisindo/Scripts/python.exe -m unittest discover -s 05_kode/tests -p test_frame_candidates.py -v` plus report review | PLANNED; final manifests/provenance missing; `LANJUT TASK 1`; STOP |
+| TASK 2 / TASK 1 | Freeze scientific decisions; reuse Settings/training records | N, P, `07_dokumen/protokol/HYPOTHESES_ENDPOINTS_ADDENDUM.md`, `05_kode/src/classification_research.py`, per-seed `runs/model_A_execution.json`, `runs/model_B_execution.json`, `reports/experiment_config.json` | effective transforms/seed history → approved recipe/decision or explicit unresolved list | H2 exact; justified NI or approved estimation-only; academic approval confirmed. Check `& .venv-bisindo/Scripts/python.exe -m unittest discover -s 05_kode/tests -p test_confirmatory_statistics.py -v` plus decision hash review | PLANNED/BLOCKED decisions; researcher/supervisor approval + `LANJUT TASK 2`; STOP |
+| TASK 3 / TASK 2 | Final training readiness; reuse research.prepare/train, authorize_training | N, P, `05_kode/src/classification_research.py`, final config/manifests paths to be approved in P | approved recipe/releases → readiness report and scoped final authorization design | Independent pinned A/B init, same common6, no overwrite, actual transforms/steps; safe dry-run only where supported. Check `& .venv-bisindo/Scripts/python.exe -m unittest discover -s 05_kode/tests -p test_final_control_notebook.py -v` plus release review | PLANNED/BLOCKED: existing auth is stage1b-only, final interface requires scoped work; `LANJUT TASK 3`; no GPU fit; STOP |
+| TASK 4 / TASK 3 | Ten final runs; reuse approved existing training implementation in fresh subprocesses | N, P, final per-seed run directories approved in TASK 3 (not yet assigned) | approved recipe/10 scoped runs → checkpoints, logs, hashes, args, times, steps, failures | All 42–46 A/B accounted; no automatic restart; check notebook contract via same TASK 3 command, then actual run records against frozen config | PLANNED/BLOCKED training approval; `LANJUT TASK 4` plus explicit GPU/config/run approval; STOP after failures/successes |
+| TASK 5 / TASK 4 | Internal validation; reuse E/interference/statistics | N, P, E, `05_kode/src/interference_metrics.py`, `05_kode/src/confirmatory_statistics.py`, approved new result paths | paired internal predictions → per-seed F1/I1/I2/I3/full8/confusions | Same IDs/pixels/GT, no external tuning. Check `& .venv-bisindo/Scripts/python.exe -m unittest discover -s 05_kode/tests -p test_interference_metrics.py -v` plus paired evidence review | PLANNED; final runs absent; `LANJUT TASK 5`; STOP |
+| TASK 6 / TASK 5 | External readiness/freeze; reuse E.freeze/validate_plan | N, P, E, required artifacts paths in P, `07_dokumen/protokol/reproducibility_manifest.json` | manifests/reviews/checkpoints/environment/validation → immutable freeze + exact SHA | All E gates pass; exposure history truthful; hash reviewer approval. Check `& .venv-bisindo/Scripts/python.exe 05_kode/src/confirmatory_evaluation.py validate --out NEW_VALIDATION_PATH.json` then approved freeze interface | PLANNED/BLOCKED final artifacts/attestations; `LANJUT TASK 6`; STOP for approval exact freeze hash |
+| TASK 7 / TASK 6 | External evaluation once; reuse E.score/verify_freeze only | N, E, approved freeze/approval/results paths (set TASK 6) | frozen batch + hash-bound approval → all-seed raw predictions/results/receipt | No bypass/retry/protocol change; actual receipt/provenance. Check existing `score --freeze ... --approval ... --out ...` command only with exact approved paths; exit code + output review | PLANNED/BLOCKED exact freeze approval; `LANJUT TASK 7` and separate hash-bound scoring approval; STOP |
+| TASK 8 / TASK 7 | Final stats/manuscript; reuse E.export_reports/statistics/interference | N, P, approved TASK 7 results, `07_dokumen/draft_paper/Effect of Vocabulary Expansion on YOLO26 Classification for BISINDO Phrase Recognition.md` | verified predictions → paired intervals, per-class/I1/I2/I3/full8/CM/seed variability, internal-external tables/plots/limits | All seeds/failures, no invented significance/generalization. Check `& .venv-bisindo/Scripts/python.exe -m unittest discover -s 05_kode/tests -p test_confirmatory_statistics.py -v` plus all manuscript numbers traceable to artifacts | PLANNED/BLOCKED external results absent; `LANJUT TASK 8`; STOP |
+
+Seed provenance preliminary: 42 first-choice rationale not found; 42–46 already in 2026-11-03 candidate;
+Addendum01 says pilot42 already observed. Exact timestamp adding43–46 unknown. Five seeds practical variability,
+not special numerical values or exhaustive stochasticity. All registered seeds retained; failed preflight/probe attempts disclosed.
+No claim of complete omitted-run audit. Full provenance investigation belongs to TASK 2.
+
+Scientific conflicts: unresolved NI margin; historical .02 vs active null; title/academic approval; stage1b-only
+training authorization; final manifests/config/checkpoints absent; signer/exposure review incomplete;
+epoch-matched A690/B900 steps confound class count with data/optimization budget. No final conclusions.
+
+
+### TASK 0 — hasil aktual / COMPLETED (2026-11-05)
+
+- Notebook JSON valid; kernel `thesis_cuthbert` menjalankan 12/12 sel kode, execution_count1..12 nyata,
+  seluruh outputs tersimpan. SHA256 notebook `23bc38e6a1c3caf7cc004e9ab520c082b53de826e666205451aea34907a9d2dc`.
+- Pemeriksaan notebook: 3/3 lulus; interference synthetic:4/4; statistics synthetic:10/10. Total baru17/17.
+- Regresi existing pertama:92 tests,87 lulus,4 failures,1 error. Empat masalah tambahan berasal dari
+  TEMP Windows short-path `RICARD~1` dibandingkan resolve long-path. Tidak mengubah source/test historis.
+- Setelah TEMP/TMP canonical:92 tests dalam80.122s,91 lulus,1 failure historis
+  `DevelopmentTests.test_notebook_has_module_calls_and_training_false` (execution_count1 dianggap harus None).
+  Full regression tetap tidak green; keluaran notebook lama tidak dihapus.
+- Kernel sandbox attempt awal macet sebelum outputs tersimpan; process milik validator dihentikan;
+  retry dengan local kernel access berhasil. Penyebab tepat stall tidak dipastikan.
+  Warning aktual: zmq memakai selector thread karena Windows Proactor event loop tidak menyediakan add_reader.
+- Checker awal salah mengecualikan README karena separator Windows; validation.json merekam false negative itu.
+  `completion_checks.py` menormalisasi separator dan menunjukkan49 file baseline terlindungi identik.
+  README/tracker mempertahankan byte HEAD sebagai prefix (append-only evidence tersimpan).
+- Sepuluh checkpoint development benar-benar dihash, cocok trained_models records. A690/B900 steps;
+  seed42–46,224px,30epoch,batch16,SGD,last.pt tercatat. Initial checkpoint sama tercatat di kedua arm;
+  source membuat model fresh per arm; tidak ada replay training untuk klaim tersebut.
+- Laporan existing common6N120/full8N160 dan mean delta-0.008729304229932344 dibaca, tidak dihitung ulang.
+  Tidak diperlakukan sebagai hasil external. Hardware training historis tercatat RTX4070LaptopGPU/CUDA12.6
+  pada reports/environment.json; tidak mengklaim benchmark hardware baru.
+- `05_kode/check_runtime.py` dan `git diff --check` exit0. Tidak ada commit/push/training/freeze/inferensi.
+
+Commands aktual (project root kecuali cwd dicatat; seluruh argumen test/cwd/env ada pada records):
+
+```powershell
+& .venv-bisindo/Scripts/python.exe 01_hasil/addendum/final_control_task0/validate_task0.py
+& .venv-bisindo/Scripts/python.exe 01_hasil/addendum/final_control_task0/completion_checks.py
+& .venv-bisindo/Scripts/python.exe 05_kode/check_runtime.py .
+git diff --check
+```
+
+Command validator pertama exit1 (false-positive baseline README + regression failures) dipertahankan.
+Command follow-up exit0: notebook/tes baru/preservation memenuhi TASK 0; regression tetap exit1 di subprocess
+karena satu stale expectation. Bukan klaim seluruh suite hijau. Tidak overwrite log gagal.
+Follow-up menjalankan `python -m unittest discover -v` di `.compat_runtime` dengan TEMP/TMP long-path,
+PYTHONPATH `05_kode/src`; original validation merekam command discover test baru masing-masing secara eksplisit.
+
+Bukti: `01_hasil/addendum/final_control_task0/completion.json`, `validation.json`,
+`existing_regression_canonical_temp.log`, `notebook_execution.log`, `notebook_inventory.json`,
+`append_only_check.json`, baseline, script dan log test. completion.json adalah verifikasi akhir TASK 0.
+Snapshot executed-notebook terpisah tidak dibuat; primary notebook beroutput dan underlying log sudah disimpan.
+
+Next TASK 1: count/schema/split inventory, common6 pairing, frame-manifest requirements, duplicate/leakage evidence,
+external exposure history dan missing provenance. Tidak inferensi Kaggle. Tunggu `LANJUT TASK 1`.

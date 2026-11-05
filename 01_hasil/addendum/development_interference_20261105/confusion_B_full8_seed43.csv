@@ -1,0 +1,9 @@
+,saya,kamu,senang,bingung,marah,apa_kabar,halo,tidur
+saya,18,0,0,1,0,0,0,1
+kamu,0,20,0,0,0,0,0,0
+senang,0,0,19,0,0,1,0,0
+bingung,0,0,0,20,0,0,0,0
+marah,0,1,0,4,14,0,1,0
+apa_kabar,0,0,0,0,0,20,0,0
+halo,0,0,0,0,0,1,19,0
+tidur,0,1,0,0,0,0,0,19

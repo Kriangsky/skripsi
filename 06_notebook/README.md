@@ -10,3 +10,8 @@ dari cwd folder ini; asumsi cwd-nya belum diubah demi menjaga hash/output lama.
 Notebook hasil dengan output dapat dibaca langsung. Training memerlukan persetujuan fase/flag yang berlaku;
 notebook Tahap1b asli menyimpan error historis, sementara eksekusi sukses memakai runner proses terpisah.
 [Hasil terbaru](../01_hasil/README.md).
+
+
+Notebook primer final: [BISINDO_FINAL_EXPERIMENT_CONTROL.ipynb](eksperimen/BISINDO_FINAL_EXPERIMENT_CONTROL.ipynb).
+TASK 0 read-only; Run All tidak training/freeze/scoring. Kernel `thesis_cuthbert`; root ditemukan otomatis dari lokasi notebook.
+Notebook lama tetap bukti historis. Task lanjutan memerlukan `LANJUT TASK N`.

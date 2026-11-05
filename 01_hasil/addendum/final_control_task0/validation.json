@@ -1,0 +1,110 @@
+{
+  "started_utc": "2026-11-05T06:13:13.078435+00:00",
+  "command": [
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\01_hasil\\addendum\\final_control_task0\\validate_task0.py"
+  ],
+  "cwd": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa",
+  "model_fits": 0,
+  "external_scoring": false,
+  "freeze": false,
+  "notebook_before_sha256": "0435313edba870dcc8ff484efd58acdcbedc08b06ce9cfa07e1e3836585d8be5",
+  "tests": [
+    {
+      "name": "notebook_contract",
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "05_kode/tests",
+        "-p",
+        "test_final_control_notebook.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa",
+      "started_utc": "2026-11-05T06:13:31.842646+00:00",
+      "completed_utc": "2026-11-05T06:13:32.218315+00:00",
+      "exit_code": 0,
+      "log": "notebook_contract.log"
+    },
+    {
+      "name": "interference_synthetic",
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "05_kode/tests",
+        "-p",
+        "test_interference_metrics.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa",
+      "started_utc": "2026-11-05T06:13:32.218315+00:00",
+      "completed_utc": "2026-11-05T06:13:33.000045+00:00",
+      "exit_code": 0,
+      "log": "interference_synthetic.log"
+    },
+    {
+      "name": "statistics_synthetic",
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "05_kode/tests",
+        "-p",
+        "test_confirmatory_statistics.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa",
+      "started_utc": "2026-11-05T06:13:33.000045+00:00",
+      "completed_utc": "2026-11-05T06:13:41.820551+00:00",
+      "exit_code": 0,
+      "log": "statistics_synthetic.log"
+    },
+    {
+      "name": "existing_regression",
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.compat_runtime",
+      "started_utc": "2026-11-05T06:13:41.820551+00:00",
+      "completed_utc": "2026-11-05T06:15:32.344378+00:00",
+      "exit_code": 1,
+      "log": "existing_regression.log"
+    }
+  ],
+  "notebook_execution": "passed",
+  "notebook_completed_utc": "2026-11-05T06:13:31.835164+00:00",
+  "notebook_after_sha256": "23bc38e6a1c3caf7cc004e9ab520c082b53de826e666205451aea34907a9d2dc",
+  "baseline_drift": [
+    "06_notebook\\README.md"
+  ],
+  "intentional_baseline_edits": [
+    "06_notebook/README.md"
+  ],
+  "git": " M 06_notebook/README.md\n M 07_dokumen/TRACKING_BISINDO.md\n?? 01_hasil/addendum/\n?? 05_kode/src/confirmatory_evaluation.py\n?? 05_kode/src/confirmatory_statistics.py\n?? 05_kode/src/interference_metrics.py\n?? 05_kode/tests/test_confirmatory_statistics.py\n?? 05_kode/tests/test_final_control_notebook.py\n?? 05_kode/tests/test_interference_metrics.py\n?? 06_notebook/eksperimen/BISINDO_FINAL_EXPERIMENT_CONTROL.ipynb\n?? 07_dokumen/protokol/HYPOTHESES_ENDPOINTS_ADDENDUM.md\n?? 07_dokumen/protokol/analysis_plan.json\n?? 07_dokumen/protokol/external_scoring_readiness.md\n?? 07_dokumen/protokol/reproducibility_manifest.json\n?? 07_dokumen/rencana/confirmatory_addendum_implementation.md\n",
+  "completed_utc": "2026-11-05T06:15:32.486176+00:00",
+  "artifacts_sha256": {
+    "01_hasil\\addendum\\final_control_task0\\baseline.json": "81a423faa6ee3b10b9b2ec5f3d6e43f03c7ecaa0e82aef157bcb041d0c18a686",
+    "01_hasil\\addendum\\final_control_task0\\existing_regression.log": "ab96e9973684fcfb641e61cb2d5ad87be316b2e69e25fd5d4020fff7e5c3014d",
+    "01_hasil\\addendum\\final_control_task0\\interference_synthetic.log": "da9fc1e631b68d2b641fee5137028cd0514a1481bbe1e6fd6d7f9300702e02bb",
+    "01_hasil\\addendum\\final_control_task0\\notebook_contract.log": "bc043613480e6d1084b4ce2a41471446308a958cc331aa28b8489e5b34e53adf",
+    "01_hasil\\addendum\\final_control_task0\\notebook_execution.log": "32ef4b340b9646b69df67eda6366e9eb1906be92f026cda1ad98f0d6f9409194",
+    "01_hasil\\addendum\\final_control_task0\\notebook_inventory.json": "0b8825c774cf4ccf2fbc56d16b80337abc70da286b745c8239af874eef8968c2",
+    "01_hasil\\addendum\\final_control_task0\\sandbox_attempt.json": "a73b6227cc39469e86e173530f464235f3cf3b6040910569ed2b64968b73244c",
+    "01_hasil\\addendum\\final_control_task0\\statistics_synthetic.log": "c91ce0c8a0d46afcfe7972963d27393d2561dbcbf55b2ac217ecc563e795ec2e",
+    "01_hasil\\addendum\\final_control_task0\\validate_task0.py": "a867a2cb73472295b7ddaffbac8284bdf6a6deedf0541d7f496cff30fb6d8246"
+  },
+  "new_notebook_test_sha256": "585a7986e629e17e3934b8789a91493bd63368a509dc211a62cd5fe2ec1b018b",
+  "task0_acceptance": false
+}

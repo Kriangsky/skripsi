@@ -1,0 +1,51 @@
+{
+  "evidence_tier": "development",
+  "training_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "n_videos": 120,
+  "n_full8_videos": 160,
+  "bootstrap_seed": 20261103,
+  "repetitions": 10000,
+  "seed_delta_sd": 0.01589842145086347,
+  "ni_status": "NI_MARGIN_UNRESOLVED",
+  "ni_decision": "not tested: development evidence",
+  "h2": "not tested: development evidence",
+  "h2_one_sided_lower95": {
+    "halo": 0.8300000000000001,
+    "tidur": 0.96
+  },
+  "design_effect_sensitivity": [
+    {
+      "design_effect": 1,
+      "effective_n_multiplier": 1.0,
+      "adjusted_se": 0.009390094823896081,
+      "ci95_low": -0.027133551896184646,
+      "ci95_high": 0.009674943436319958,
+      "lower_one_sided95": -0.024174635758436057,
+      "assumed_effective_video_n": 120.0
+    },
+    {
+      "design_effect": 1.5,
+      "effective_n_multiplier": 0.6666666666666666,
+      "adjusted_se": 0.011500470477447431,
+      "ci95_low": -0.031269812170995476,
+      "ci95_high": 0.013811203711130784,
+      "lower_one_sided95": -0.02764589480641008,
+      "assumed_effective_video_n": 80.0
+    },
+    {
+      "design_effect": 2,
+      "effective_n_multiplier": 0.5,
+      "adjusted_se": 0.013279599451923238,
+      "ci95_low": -0.034756840884819735,
+      "ci95_high": 0.017298232424955047,
+      "lower_one_sided95": -0.030572301552891066,
+      "assumed_effective_video_n": 60.0
+    }
+  ]
+}

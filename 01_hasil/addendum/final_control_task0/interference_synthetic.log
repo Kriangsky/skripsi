@@ -1,0 +1,9 @@
+test_full8_precision_f1_confusion_counts (test_interference_metrics.InterferenceTests.test_full8_precision_f1_confusion_counts) ... ok
+test_full_argmax_intrusion_recall_and_identity (test_interference_metrics.InterferenceTests.test_full_argmax_intrusion_recall_and_identity) ... ok
+test_mapping_alignment_and_missing_predictions (test_interference_metrics.InterferenceTests.test_mapping_alignment_and_missing_predictions) ... ok
+test_missing_class_and_invalid_scores_rejected (test_interference_metrics.InterferenceTests.test_missing_class_and_invalid_scores_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.043s
+
+OK

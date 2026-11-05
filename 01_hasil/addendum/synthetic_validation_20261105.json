@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "external_scoring_performed": false,
+  "source_sha256": {
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\analysis_paired.py": "c0c9433f12852a7f342c52a36a151fd4f419e01f5980e2ada0674ddecea0be24",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\audit_dataset.py": "9a04c56430872230f9a7d12a4e68a0811650e392f05278cb10b17a295e2b5073",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\bisindo_pipeline.py": "0f8aa793bb2e91eb88b29359de81b2cbec26a682952567cd7da980997eb7c8f1",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\classification_diagnostics.py": "a2db59d81385eee60432c4fe8a6be140dd82838949d8ac03ef7b596bcc02d122",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\classification_pilot.py": "8e8a5be2f8057214772151e56db1d39479a55fd2f3c470a58c0a008a082f6e65",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\classification_research.py": "5b75e780bdc1b23747606dec52f671ad107e3cd0cfc6244161e972c0c7e68ae9",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\classification_workflow.py": "6a3a01b14c17d53f117b89d768e06f27f2951e402c12bb0cbea67ae8479dd27d",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\confirmatory_evaluation.py": "4973eb1b6755cfb57027348a3c5492c559638d15b7a6ed70624fffee4103b6dc",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\confirmatory_statistics.py": "033be07134e3f9750e245f0a11cdfe72250adab3464c937854e51ea9cfb6a7c0",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\exploratory_stage1b_runner.py": "c81c4f8c8dde329d4a6938ada995f9c038d960eca5344c2a199c57024bcf73a4",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\frame_candidates.py": "0e4a9a636775caed2b837f37eb5781072bb108bc5b5c4beeda78417cdcdb07a7",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\interference_metrics.py": "a86c14e397e8c69a7b71cd3ad3ae7961f823b013658a76ca66f31b638ceced3e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\pilot_study.py": "030cb1bc7283608be9f6ab50a99010c2fd75e9901e5795384830a0c4f2ee5668",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\power_precision.py": "38cc7c1d1ab41e3e7190d414378e7afecb47d150517252a7f7384f3f5f2c1003",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\training_pilot.py": "fa44757bd3a5813f29fea92352c146d94b7ac6ce61c9a286c370d2b31ab60446",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\training_pilot_eval.py": "21b89b9a78ba421d1c32b4d0a09b05a23138ce69b4e5d403348f1e8a77ef21d5",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\verify_notebook.py": "d3472b046608dad44cecb746c6df5d0be1dbe216b77c593c436aac822196c65b",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_analysis_paired.py": "e134f9915447c09b342a6d7a8866c4ebe92de5aee71b4c72e14de7e152bf5a60",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_bisindo_pipeline.py": "173ff509782d593f32ec565b585a826095b7fbfb99942706fe893cb335e72690",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_classification_notebook.py": "ef033f025956e90be41faf3e1f54e8e9510283703402ec2c69c89004c5e4ad22",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_classification_pilot.py": "613f85ad3cc6221e43a47c4b7d34a610f647b0cc520d7b7aa0e86b723f17f367",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_classification_research.py": "f5d60a1c40a7fb3215f3e71ac5fd09c6ea03b2e2e88284254181a81e3daed365",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_confirmatory_statistics.py": "c0b90d331ae6533fc1c8a41f75221a6ef77c0342da91a8efe660e3670b506f7d",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_exploratory_development.py": "c9cd613a79413511f831cb42bbc1fc66b522fc078b113c9ab525b57f8dadf58e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_frame_candidates.py": "3c4fea727422ec21a4ff9286dba3dca6814b61c09e36bd127828d8761b5e2bf4",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_interference_metrics.py": "aff3e7fb05e7f72e00d706821ea756bb4f1ece5e67b1fb980d3f5e72b23ddfdd",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_pilot_study.py": "83c0ccaf0916d2a5f88a6f14c082921411583111311a472d65e1ec92a7e332dc",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_power_precision.py": "c795287af09a01abb9412cb5c124a3817fce3fdf1cee83f15f33de80f1d4cd07",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_protocol_addendum.py": "7f0d5293e5b5d6e5f2e2e3a2059417b8dc7e98509c510af9d42936688af8001b",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_stage0_research_plan.py": "695bd2434eba555181b8e73b9e49fdae9008b413bd75b45217630728369b021a",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests\\test_training_pilot.py": "74988fa3edf6b19e6ab704f475148a2453a9ee9c36e7b54069409cb06595bf62"
+  },
+  "timestamp_utc": "2026-11-05T05:30:56.138007+00:00",
+  "tests": [
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests",
+        "-p",
+        "test_interference_metrics.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_full8_precision_f1_confusion_counts (test_interference_metrics.InterferenceTests.test_full8_precision_f1_confusion_counts) ... ok\ntest_full_argmax_intrusion_recall_and_identity (test_interference_metrics.InterferenceTests.test_full_argmax_intrusion_recall_and_identity) ... ok\ntest_mapping_alignment_and_missing_predictions (test_interference_metrics.InterferenceTests.test_mapping_alignment_and_missing_predictions) ... ok\ntest_missing_class_and_invalid_scores_rejected (test_interference_metrics.InterferenceTests.test_missing_class_and_invalid_scores_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.051s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests",
+        "-p",
+        "test_confirmatory_statistics.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_actual_file_duplicate_and_split_checks_on_synthetic_manifests (test_confirmatory_statistics.StatisticsTests.test_actual_file_duplicate_and_split_checks_on_synthetic_manifests) ... ok\ntest_bootstrap_reproducibility_and_f1_recomputed (test_confirmatory_statistics.StatisticsTests.test_bootstrap_reproducibility_and_f1_recomputed) ... ok\ntest_design_effect_and_simultaneous_intervals (test_confirmatory_statistics.StatisticsTests.test_design_effect_and_simultaneous_intervals) ... ok\ntest_development_exports_and_all_seeds_enforced (test_confirmatory_statistics.StatisticsTests.test_development_exports_and_all_seeds_enforced) ... ok\ntest_draft_actual_plan_cannot_freeze (test_confirmatory_statistics.StatisticsTests.test_draft_actual_plan_cannot_freeze) ... ok\ntest_final_gate_checks_provenance_exposure_validation_and_seed_coverage (test_confirmatory_statistics.StatisticsTests.test_final_gate_checks_provenance_exposure_validation_and_seed_coverage) ... ok\ntest_freeze_approval_binding_drift_and_no_overwrite (test_confirmatory_statistics.StatisticsTests.test_freeze_approval_binding_drift_and_no_overwrite) ... ok\ntest_multiple_seed_mean_not_pooled_trials (test_confirmatory_statistics.StatisticsTests.test_multiple_seed_mean_not_pooled_trials) ... ok\ntest_ni_boundary_and_unresolved_margin (test_confirmatory_statistics.StatisticsTests.test_ni_boundary_and_unresolved_margin) ... ok\ntest_premature_external_scoring_rejected_before_inference (test_confirmatory_statistics.StatisticsTests.test_premature_external_scoring_rejected_before_inference) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 5.542s\n\nOK\n"
+    }
+  ]
+}

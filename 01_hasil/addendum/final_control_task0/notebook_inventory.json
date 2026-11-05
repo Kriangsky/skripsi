@@ -1,0 +1,183 @@
+[
+  {
+    "path": "06_notebook\\eksperimen\\BISINDO_Classification_Stage1b_Exploratory.ipynb",
+    "sha256": "5a15bd0c7cc59d73348c7b698bcd8104ef02480d8897ee5ba4b0598619a5d72b",
+    "code_cells": 6,
+    "cells_with_outputs": 2,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      null,
+      null,
+      null
+    ],
+    "module_references": [
+      "classification_research",
+      "classification_workflow"
+    ],
+    "classification": "HISTORICAL EVIDENCE"
+  },
+  {
+    "path": "06_notebook\\eksperimen\\BISINDO_Classification_Vocabulary_Expansion.ipynb",
+    "sha256": "9af0a09dc89ee4202860ec155f29411eb30ae15be40dfcae10cf304b85d5ba56",
+    "code_cells": 5,
+    "cells_with_outputs": 1,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "module_references": [
+      "classification_pilot",
+      "classification_workflow"
+    ],
+    "classification": "HISTORICAL EVIDENCE"
+  },
+  {
+    "path": "06_notebook\\eksperimen\\BISINDO_FINAL_EXPERIMENT_CONTROL.ipynb",
+    "sha256": "23bc38e6a1c3caf7cc004e9ab520c082b53de826e666205451aea34907a9d2dc",
+    "code_cells": 12,
+    "cells_with_outputs": 12,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "module_references": [
+      "classification_pilot",
+      "classification_research",
+      "confirmatory_evaluation"
+    ],
+    "classification": "ACTIVE primary"
+  },
+  {
+    "path": "06_notebook\\eksperimen\\BISINDO_YOLO26_Classification_End_to_End.ipynb",
+    "sha256": "bbc3edd62f95aaa0ba1880009b42f3e2238eb1c94b87ac9302a94a12798fbd2d",
+    "code_cells": 15,
+    "cells_with_outputs": 14,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "module_references": [
+      "bisindo_pipeline",
+      "classification_pilot",
+      "training_pilot"
+    ],
+    "classification": "HISTORICAL EVIDENCE"
+  },
+  {
+    "path": "06_notebook\\eksperimen\\BISINDO_YOLO26_Training_Set_Expansion.ipynb",
+    "sha256": "370ed65b1eb9232ba63ea76466fc702bebd7f5ee00d374aa971bd905b0c0a94c",
+    "code_cells": 13,
+    "cells_with_outputs": 10,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "module_references": [
+      "bisindo_pipeline"
+    ],
+    "classification": "HISTORICAL EVIDENCE"
+  },
+  {
+    "path": "06_notebook\\eksperimen\\BISINDO_YOLO26_Vocabulary_Expansion_Research.ipynb",
+    "sha256": "d479ab9ed5b392c063e6de9055ed7dc708de2a920eca8c387994160cf7922622",
+    "code_cells": 5,
+    "cells_with_outputs": 5,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "module_references": [
+      "classification_pilot"
+    ],
+    "classification": "HISTORICAL EVIDENCE"
+  },
+  {
+    "path": "06_notebook\\hasil\\BISINDO_Classification_Stage1b_Results_Exploratory.ipynb",
+    "sha256": "24b8bf37aa28988582e2a6dcd7e5128c6ea5bd3d44737a6b539ed9611a3702c5",
+    "code_cells": 1,
+    "cells_with_outputs": 0,
+    "execution_counts": [
+      null
+    ],
+    "module_references": [],
+    "classification": "HISTORICAL EVIDENCE"
+  },
+  {
+    "path": "06_notebook\\hasil\\BISINDO_Classification_Stage1b_Results_Exploratory_Executed.ipynb",
+    "sha256": "f3abec48bc2b3e8f85cb361317361ddd50df3ff2dc27946ad31b8710985ee511",
+    "code_cells": 2,
+    "cells_with_outputs": 2,
+    "execution_counts": [
+      1,
+      2
+    ],
+    "module_references": [],
+    "classification": "HISTORICAL EVIDENCE"
+  },
+  {
+    "path": "06_notebook\\persiapan\\rename_test.ipynb",
+    "sha256": "6b1d65230c61981632541c3f4522b3712dba557a4b8ecbc8584bbff31d60956a",
+    "code_cells": 2,
+    "cells_with_outputs": 1,
+    "execution_counts": [
+      1,
+      2
+    ],
+    "module_references": [],
+    "classification": "HISTORICAL EVIDENCE"
+  },
+  {
+    "path": "06_notebook\\persiapan\\rename_train.ipynb",
+    "sha256": "e4bb8c1e92a9c2d40280abacff74ea16cdaab9a850940646a65f4ac4917fe4d5",
+    "code_cells": 2,
+    "cells_with_outputs": 1,
+    "execution_counts": [
+      1,
+      2
+    ],
+    "module_references": [],
+    "classification": "HISTORICAL EVIDENCE"
+  }
+]
