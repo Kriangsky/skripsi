@@ -1,0 +1,14 @@
+[
+  {
+    "status_label": "exploratory/development",
+    "event": "hard_stop",
+    "seed": 42,
+    "kind": "linear_probe",
+    "model": "A",
+    "error": "RuntimeError: Ultralytics already imported with different settings directory; run pilot CLI in a fresh process"
+  },
+  {
+    "event": "runner_preflight_failed_before_any_fit",
+    "error": "Empty-directory assertion counted an empty settings subdirectory as a file; corrected check in v2; v1 session preserved."
+  }
+]

@@ -1,0 +1,4 @@
+model,scope,n,correct_n,accuracy,macro_f1,macro_f1_definition,extra_class_predictions_n
+A,common6,120,112,0.9333333333333333,0.9309718426908904,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0
+B,common6,120,113,0.9416666666666667,0.9391616672821838,Mean F1 over fixed ground-truth classes 0..5; extra predicted classes remain errors/FN.,0
+B,full8,160,151,0.94375,0.9422182700801593,Mean F1 over fixed ground-truth classes 0..7; extra predicted classes remain errors/FN.,0

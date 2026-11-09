@@ -1,0 +1,123 @@
+{
+  "command": [
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "01_hasil/addendum/data_inventory_task1_20261105/integrate_and_validate.py"
+  ],
+  "started_utc": "2026-11-05T09:18:26.842570+00:00",
+  "tests": [
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests",
+        "-p",
+        "test_task1_data_audit.py",
+        "-v"
+      ],
+      "started_utc": "2026-11-05T09:18:30.486934+00:00",
+      "completed_utc": "2026-11-05T09:18:31.984022+00:00",
+      "exit_code": 0,
+      "log": "test_task1_data_audit.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests",
+        "-p",
+        "test_final_control_notebook.py",
+        "-v"
+      ],
+      "started_utc": "2026-11-05T09:18:31.984022+00:00",
+      "completed_utc": "2026-11-05T09:18:32.400592+00:00",
+      "exit_code": 0,
+      "log": "test_final_control_notebook.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests",
+        "-p",
+        "test_frame_candidates.py",
+        "-v"
+      ],
+      "started_utc": "2026-11-05T09:18:32.400592+00:00",
+      "completed_utc": "2026-11-05T09:18:39.163173+00:00",
+      "exit_code": 0,
+      "log": "test_frame_candidates.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests",
+        "-p",
+        "test_interference_metrics.py",
+        "-v"
+      ],
+      "started_utc": "2026-11-05T09:18:39.164173+00:00",
+      "completed_utc": "2026-11-05T09:18:39.938049+00:00",
+      "exit_code": 0,
+      "log": "test_interference_metrics.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\tests",
+        "-p",
+        "test_confirmatory_statistics.py",
+        "-v"
+      ],
+      "started_utc": "2026-11-05T09:18:39.938049+00:00",
+      "completed_utc": "2026-11-05T09:18:47.560073+00:00",
+      "exit_code": 0,
+      "log": "test_confirmatory_statistics.log"
+    }
+  ],
+  "notebook_execution": "passed",
+  "previous_code_cells_preserved": 12,
+  "new_task1_cells_executed": 1,
+  "unexpected_protected_drift": [],
+  "audit_source_still_matches": true,
+  "acceptance": true,
+  "completed_utc": "2026-11-05T09:18:48.411611+00:00",
+  "notebook_sha256": "5b5001f72fc1e9891bbc780bab2ea3105b05954943fda748ef32f3f3599f101f",
+  "artifacts_sha256": {
+    "audit.json": "2dbd5026b458f754e8b5bde85920d71e4b47ee35ab8570e6f39c39e6bea0bafa",
+    "audit_report.md": "b5cb2576611c3adfda5207f8d7ce37a9e02d40d8b8749883f86d49078b448928",
+    "duplicate_impact.json": "f3910040b03fde6a2cf9e5e7a0de84fa7d28b41f061a420d44d39a95f0c1ad62",
+    "execution.json": "b1236d9de90a388777d3016910aaf16564a61e77ef3d0581ce744a5586f5fd36",
+    "file_integrity.jsonl": "720fc0ea19e23ada0e209b7f7f82989a5acff6f6b7829f700074cc707e115ffc",
+    "integrate_and_validate.py": "0b169aefd12faa0c3ae171ada84c6300b3f8dffb29fd076544fcdbad85c75642",
+    "integration_attempt_01.json": "e14a72cae93317ba3a83c2e078c8c72a918c0120a87be479d5059b738751db98",
+    "manifest_catalog.json": "9225c4436462a21d57d7d19365af8b566af937cfeb22163ba245c7bc40cb0eaa",
+    "notebook_execution.log": "0ea46d9acd3d3bffa55f15d68358b71b7c579a392626ba0b6511814628066c16",
+    "notebook_execution_verified.log": "745dfca47d864d165492663d07dfdfea033237244ed046d41dc6042d698ff8b2",
+    "notebook_outputs_before.json": "dcbfddbe49610f77945f265f162c9003de66c19bbaf74587b6f0723da5a3b566",
+    "protected_before.json": "4e580c033fb65e9c24228a6f611894e41c70886bf03d7e9fcb9da890943114f2",
+    "provenance.json": "6628bb7e7807605e2dd5cf391239bad55ed7906889d1f98f528bca191004bc66",
+    "provenance_review.py": "41443ee79cc15917fe5647d2bfffd00b8f2c451c32fd9ba9dd03457d4634592c",
+    "test_confirmatory_statistics.log": "5db4b30e4b4574be7bc7ce1b3993489880c72a3b7eabfbf937f471ac34103e9c",
+    "test_final_control_notebook.log": "0f293c9e5538bfb193c04339872fc378508341df9b4ba4a65c9ed42e78a5e23b",
+    "test_frame_candidates.log": "25300a99afbe5b5f583ef04877eeea2d56753560d3de72cca69289037087aea9",
+    "test_interference_metrics.log": "8ee0ab225797603a7fa3adf48d6c29d36cd6714ba4fc1a25922add5b87c14a91",
+    "test_task1_data_audit.log": "e15dc04a5b34f5bb8a57e87895ed5b6d0d696ff0768820ff8360ad536d224cad"
+  }
+}

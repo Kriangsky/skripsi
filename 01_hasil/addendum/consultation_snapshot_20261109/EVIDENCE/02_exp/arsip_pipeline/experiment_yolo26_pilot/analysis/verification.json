@@ -1,0 +1,24 @@
+{
+  "samples": 160,
+  "samples_per_class": 20,
+  "eligible": 43,
+  "flagged": 117,
+  "missing": 0,
+  "known_signer_samples": 0,
+  "human_responses_imported": 2,
+  "tests_passed": 26,
+  "tests_failed": 0,
+  "tests_command": ".\\.venv-bisindo\\Scripts\\python.exe -m unittest test_pilot_study test_bisindo_pipeline test_frame_candidates -v",
+  "source_split_and_hash_audit": "PASS",
+  "selected_png_pixel_equality": "160/160",
+  "blind_html_payload_audit": "PASS",
+  "javascript_stub_interaction_test": "PASS",
+  "real_browser_visual_verification": "BLOCKED: Computer Use could not determine Chrome URL confidently; stopped by tool policy",
+  "human_recognition_metrics": "COMPLETED",
+  "training_run": false,
+  "real_response_arithmetic_audit": "PASS: independent CSV/JSON counts, matrix totals/diagonals, agreement and kappa",
+  "analysis_response_sha256": {
+    "reviewer_1": "9f3e6f243b1f354f49d1495749022a12b6f400502282e12890d1b8fb639d8b18",
+    "reviewer_2": "60377a15023e20beb9d158b9f3ba7660e3342093baf5442a5321ab0f9b7ecda8"
+  }
+}

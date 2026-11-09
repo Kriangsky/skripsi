@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "kind": "CANDIDATE",
+  "status": "PROPOSED_NOT_APPROVED",
+  "training_authorized": false,
+  "freeze_authorized": false,
+  "external_scoring_authorized": false,
+  "approval": null,
+  "protocol_amended": false,
+  "task": "classify",
+  "model_variant": "yolo26n-cls",
+  "initial_checkpoint": {
+    "path": "02_exp/arsip_pipeline/experiment_yolo26_classification_pilot/checkpoints/yolo26n-cls.pt",
+    "sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+    "pretrained_domain": "ImageNet"
+  },
+  "class_mapping": [
+    "saya",
+    "kamu",
+    "senang",
+    "bingung",
+    "marah",
+    "apa_kabar",
+    "halo",
+    "tidur"
+  ],
+  "training_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "sampling_seed": 42,
+  "training": {
+    "epochs": 30,
+    "imgsz": 224,
+    "batch": 16,
+    "deterministic": true,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "cos_lr": false,
+    "patience": 0,
+    "nbs": 16,
+    "device": 0,
+    "workers": 0,
+    "amp": false,
+    "compile": false,
+    "pretrained": true,
+    "resume": false,
+    "single_cls": false,
+    "fraction": 1.0,
+    "cache": false,
+    "rect": false,
+    "multi_scale": 0.0,
+    "degrees": 0.0,
+    "translate": 0.0,
+    "scale": 0.0,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "fliplr": 0.0,
+    "flipud": 0.0,
+    "hsv_h": 0.0,
+    "hsv_s": 0.0,
+    "hsv_v": 0.0,
+    "bgr": 0.0,
+    "mosaic": 0.0,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "copy_paste": 0.0,
+    "close_mosaic": 0,
+    "erasing": 0.0,
+    "auto_augment": null,
+    "val": true,
+    "save": true,
+    "plots": true,
+    "exist_ok": false,
+    "verbose": true,
+    "task": "classify",
+    "dropout": 0.0
+  },
+  "independent_initialization": true,
+  "paired_seed_per_arm": true,
+  "preprocessing": {
+    "policy": "classification_pilot.letterbox",
+    "imgsz": 224,
+    "padding": 114,
+    "preserve_aspect_ratio": true,
+    "color": "RGB",
+    "tensor_scale": "uint8 / 255",
+    "normalize_mean": [
+      0,
+      0,
+      0
+    ],
+    "normalize_std": [
+      1,
+      1,
+      1
+    ],
+    "dataset_transforms": [
+      "Resize(224,224)",
+      "ToTensor",
+      "Normalize(identity)"
+    ],
+    "train_val_external_identical": true,
+    "crop": false,
+    "horizontal_flip": false,
+    "vertical_flip": false,
+    "randaugment": false,
+    "random_erasing": false
+  },
+  "data": {
+    "policy": "full locked internal training split; validation remains separate",
+    "split_lock": "02_exp/arsip_pipeline/experiment_yolo26_v3/split_lock.csv",
+    "split_lock_sha256": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+    "targets": {
+      "train": 240,
+      "val": 60
+    },
+    "internal_manifest": null,
+    "external_manifest": null,
+    "one_frame_per_video": true,
+    "frame_policy": "existing prediction-blind automatic selection; no semantic certification implied",
+    "common6_ids_pixels_gt_identical": true,
+    "validation_used_for_development": true,
+    "technical_failure_policy": "stop and report; no silent exclusion/replacement"
+  },
+  "arms": {
+    "A": {
+      "class_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "planned_train": 1440,
+      "planned_val": 360,
+      "planned_batches_per_epoch": 90,
+      "planned_optimizer_steps": 2700,
+      "planned_warmup_iterations": 270
+    },
+    "B": {
+      "class_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "planned_train": 1920,
+      "planned_val": 480,
+      "planned_batches_per_epoch": 120,
+      "planned_optimizer_steps": 3600,
+      "planned_warmup_iterations": 360
+    }
+  },
+  "budget": {
+    "primary": "equal epochs",
+    "step_matching": false,
+    "actual_counts_require_runtime_verification": true,
+    "confounding": "vocabulary + additional new-class examples + optimizer steps; not isolated class-count causality"
+  },
+  "checkpoint_selection": {
+    "file": "last.pt",
+    "completed_epochs": 30,
+    "weights": "framework EMA final snapshot",
+    "best_checkpoint_selection": false,
+    "early_stopping": false,
+    "best_seed_selection": false,
+    "resume": false
+  },
+  "framework": {
+    "ultralytics": "8.4.197",
+    "torch": "2.14.0+cu126",
+    "torchvision": "0.29.0+cu126",
+    "scheduler": "linear LambdaLR, epoch index 0..29; warmup interpolation",
+    "optimizer": "SGD",
+    "nesterov": true,
+    "accumulation": 1,
+    "planned_epoch30_lr": 0.00043,
+    "deterministic_limit": "warn_only controls; no cross-device/version bitwise guarantee"
+  },
+  "decisions": {
+    "h1_recommendation": "Option B: estimation-focused paired mean macro-F1 difference",
+    "h1_status": "PENDING_EXPLICIT_APPROVAL_AND_VERSIONED_ADDENDUM",
+    "ni_margin": null,
+    "h2_status": "PRESERVED_UNCHANGED",
+    "h2_threshold": 0.8,
+    "h2_rule": "both per-GT new-class mean recalls have hierarchical one-sided 95% lower bounds strictly above 0.80; intersection-union",
+    "academic_approval": "NOT_EVIDENCED",
+    "title_status": "PENDING_ACADEMIC_APPROVAL"
+  },
+  "deviations_from_stage1b": [
+    {
+      "change": "60/20 to 240/60 videos per class within unchanged locked splits",
+      "consequence": "A steps 690 to planned2700; B900 to planned3600; validation reused, not independent"
+    },
+    {
+      "change": "single fixed baseline recipe without previously proposed CV/grid/factorial or step-matched fits",
+      "consequence": "no tuned-optimality or H3 factorial claim; requires explicit protocol scope decision; no such fits authorized"
+    }
+  ],
+  "readiness": {
+    "status": "BLOCKED",
+    "existing_api": "stage1b only, TARGETS60/20; candidate is not directly executable",
+    "dependencies": [
+      "approve recipe/full-data and omitted CV/factorial scope",
+      "approve H1 Option B and versioned prospective addendum; H2 unchanged",
+      "document academic Classification/title/research-question approval",
+      "resolve duplicate-cluster/provenance/license/signer/exposure/semantic evidence",
+      "register final manifests; validate final-only implementation and runtime transform/step logging",
+      "explicit LANJUT TASK 3; no automatic continuation"
+    ]
+  }
+}

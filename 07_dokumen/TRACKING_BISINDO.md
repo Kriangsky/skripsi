@@ -319,3 +319,176 @@ Snapshot executed-notebook terpisah tidak dibuat; primary notebook beroutput dan
 
 Next TASK 1: count/schema/split inventory, common6 pairing, frame-manifest requirements, duplicate/leakage evidence,
 external exposure history dan missing provenance. Tidak inferensi Kaggle. Tunggu `LANJUT TASK 1`.
+
+
+## 12. TASK 1 — Data inventory, provenance & integrity audit (2026-11-05)
+
+**Status: COMPLETED / PASS audit. External/final readiness tetap BLOCKED. TASK 2 belum dimulai.**
+Authorization: lampiran pengguna `e5638f18-81af-461e-aa93-57c2be5a44c8/pasted-text-1.txt`, `LANJUT TASK 1` saja.
+Task ID/dependency/objective/components/files/inputs/acceptance mengikuti peta TASK 1 di bagian11;
+tambahan implementasi read-only: `05_kode/src/task1_data_audit.py`, `05_kode/tests/test_task1_data_audit.py`.
+Auditor legacy `audit_dataset.py` tidak diimport karena menulis saat import. Reuse SHA/safe-path/pixel helpers,
+`confirmatory_evaluation.enriched_predictions` dan `interference_metrics.align_predictions`; tidak menyalin algoritme ilmiah.
+
+### FACT — hasil actual-file audit
+
+- Expected/observed: internal2400 (300/kelas), external400 (50/kelas); locked train1920/val480;
+  external common6=300/full8=400. Seluruh2800 video fisik dihash, cocok split_lock; tidak ada missing/extra.
+- Mapping8kelas, unique IDs/paths, GT/source/split/folder labels valid. v2/v3 inventory/annotations konsisten.
+  Neutral GT400 punya filename/GT/original_filename lengkap/unik/konsisten lokal; origin semantics belum diverifikasi.
+- Setiap seed42–46: identical common6 A/B train360/val120; A val120/B full8 val160.
+  Semua640 manifest IDs/GT/video/selected-frame/processed-image hashes konsisten lintas seed;
+  actual shared PNG bytes dan selected JPEG diverifikasi, bukan hanya metadata CSV.
+- Ledger45250 file checks: video2800 +candidate-v3 JPEG33250 +external-v2 JPEG400
+  +development PNG5600 +selected development JPEG3200. Seluruh file tersedia/decode/hash valid.
+  Source video/metadata/protected historical artifacts dihash ulang pada akhir audit; mismatch0.
+- Actual video byte duplicates0. Temuan BARU:3 kelompok exact cached JPEG/RGB pairs antara
+  `train/senang/senang_223.mp4` dan `train/senang/senang_224.mp4`, frame7/10/14; keduanya locked train.
+  Hanya224 masuk development, memakai frame48. Cross-split decoded identity0 pada image yang diaudit.
+  Detail: `duplicate_impact.json`. Tidak menghapus/mengubah split. Ini bukan bukti semua frame video/near-duplicates bebas overlap.
+- Cache-v3:2800 records/33250 candidates; annotations masih needs_review2800/selected positive0.
+  Development semantics not_assessed640; technical flagged497/eligible143. Tidak menyamakan teknis dengan semantik.
+- Manifest final internal/external belum registered (null); manifest existing dikatalogkan, tidak dipromosikan jadi final.
+
+### UNVERIFIED / blockers dan scientific risks
+
+- External signer0/400 dan internal0/2400 tersedia pada locked metadata; tidak signer-independent.
+- Source citation lokal: draft [26] Pardede/BISINDO40Kata/Kaggle. Acquired version/archive hash/download log,
+  license binding, acquisition dan subset/rename provenance belum ditemukan dalam records yang diaudit.
+  Draft access date bukan receipt. Tidak menebak lisensi dari akses publik.
+- V2/v3 preprocessing external terbukti dari records dan actual cached files. Draft lama mengklaim filtering
+  blurry/transitional frames; implementasi historis/selection history lengkap belum dibuktikan. Jangan menyatakan untouched.
+- Tujuh completed Classification evaluation receipts yang ditemukan punya internal-only manifests;
+  tidak ada final scoring-start receipt pada scoped search. Ini bukan bukti bahwa scoring/tuning tidak pernah terjadi.
+  Owner/reviewer perlu meninjau history lengkap dan memberi attestation sendiri; agent tidak membuat attestation.
+- Dua reviewer menjawab160 training-pool pilot samples; reviewer1 ambiguous27, reviewer2 ambiguous12/invalid4.
+  Tidak berlaku sebagai external adjudication atau semantic verification seluruh640 Classification frames.
+- Near-duplicates, semua-frame video comparison, semantic/signer independence UNVERIFIED.
+  Pasangan senang223/224 perlu content-cluster review sebelum final design; tidak diubah pada TASK 1.
+
+### Actual commands / tests / evidence
+
+```powershell
+& .venv-bisindo/Scripts/python.exe 05_kode/src/task1_data_audit.py --out 01_hasil/addendum/data_inventory_task1_20261105
+& .venv-bisindo/Scripts/python.exe 01_hasil/addendum/data_inventory_task1_20261105/provenance_review.py
+& .venv-bisindo/Scripts/python.exe 01_hasil/addendum/data_inventory_task1_20261105/integrate_and_validate.py
+```
+
+Audit/provenance exit0. Integrasi pertama gagal saat render log (serialized source/output line lists vs strings);
+primary notebook belum ditulis. Attempt/error/source/log dipertahankan di `integration_attempt_01.json`.
+Perbaikan memakai `nbformat.reads`; eksekusi ulang safe notebook di kernel project lulus.
+12 code cells lama beserta source/output/execution_count dipertahankan persis. Sel TASK 1 menyimpan output nyata baru.
+Markdown current task diperbarui, tidak mengganti keluaran TASK 0.
+
+Tes terarah27/27 lulus: audit4, kontrak notebook3, frame_candidates6, interference4, confirmatory_statistics10.
+Commands/cwd/env/timestamps/exit disimpan di `validation.json`; source/input/artifact hashes tersedia.
+Full historical suite tidak diulang pada TASK 1; hasil TASK 0 terakhir91/92 dengan1 stale notebook-output expectation
+masih berlaku sebagai known failure, bukan klaim suite hijau. ZMQ Windows selector-thread warning tidak menggagalkan kernel.
+Final Markdown/line-ending-only check disimpan pada `final_verification.json` setelah command aktual.
+
+Evidence: [laporan](../01_hasil/addendum/data_inventory_task1_20261105/audit_report.md),
+[audit](../01_hasil/addendum/data_inventory_task1_20261105/audit.json),
+[provenance](../01_hasil/addendum/data_inventory_task1_20261105/provenance.json),
+[validation](../01_hasil/addendum/data_inventory_task1_20261105/validation.json).
+Outputs lain: file_integrity.jsonl, manifest_catalog.json, duplicate_impact.json, execution.json,
+protected_before.json, notebook_outputs_before.json, kernel/test logs dan validation recipes.
+
+**STOP:** tidak training/inference/scoring/freeze/reselection, tidak mengubah dataset/split/checkpoint/hasil lama,
+tidak commit/push. TASK 2 dependencies: review provenance/duplicate/semantic limits; konfirmasi approval akademik;
+audit effective recipe/seed history dan putuskan H1 margin justified atau approved estimation-only tanpa mengubah H2.
+TASK 2 perlu explicit `LANJUT TASK 2`.
+
+
+## 13. TASK 2 — Scientific decisions & final training configuration audit (2026-11-09)
+
+Otorisasi: lampiran `019b0b85-52cb-42a9-9806-740377cfe279/Pasted text.txt`, TASK 2 ONLY.
+Task/dependency: TASK 1 reported PASS; tidak mengulang45.250 checks. Goal TASK2 saja; TASK3 belum diotorisasi.
+Objective: actual Stage1b recipe/seed evidence + satu proposed final candidate + H1/H2/academic decision package.
+Status audit/test aktual: `01_hasil/addendum/scientific_decisions_task2_20261109/validation.json`.
+Status keputusan: **PROPOSED_NOT_APPROVED**; final readiness **BLOCKED**, bukan freeze atau amendment.
+Peta TASK2 lama “Freeze scientific decisions” dibatasi otorisasi sekarang: audit dan proposal, bukan freeze.
+
+### FACT / evidence dan batas
+
+- Sepuluh full runs42–46 A/B: yolo26n-cls/ImageNet pinned SHA `0dd6f8db…279e81`, init fresh independen;
+  224px,30epoch,batch=nbs16,SGD lr0.01,momentum.937,weight_decay.0005,linear/lrf.01,warmup3.
+  Actual steps A690/B900; akhir epoch30 LR.00043, bukan nominal terminal.0001.
+- `ControlledTrainer.build_dataset` mengganti train/val Compose. Sepuluh checkpoint menyimpan
+  Resize224→ToTensor→Normalize identitas; synthetic RGB test mendukung /255. Tidak ada crop/flip/RandAugment/
+  erasing efektif. Bukan inferensi dari args.yaml/augment=False saja. Historical per-batch trace tidak tersedia;
+  checkpoint Compose berasal validation attachment, source train override sama. Source framework lokal
+  direkonstruksi dan dihash sekarang; byte-identitas framework historis tidak dibuktikan hanya oleh versi sama.
+- Last.pt30 berisi EMA; epoch=-1/optimizerNone pada checkpoint stripped bukan nol epoch. Completion didukung
+  results30 baris/counters/trained_models. Deterministictrue/workers0/ampfalse bukan jaminan lintasmesin bit-identical.
+- Seed42–46 sudah menjadi contoh pada handoff bertanggal2026-11-02 §22 (hadir commit8b3bf45 tanggal3Nov);
+  protokol3Nov menetapkan daftar itu setelah pilot42 diketahui. Semua registered seeds dipertahankan.
+  Alasan angka/jumlah5 dan waktu pemilihan tepat tidak ditemukan; tidak mengklaim pemilihan bebas hasil.
+  Semua10 full fits accounted; omitted-attempt/riwayat di luar repo belum diattest. Failure/preflight/probe
+  dan replikasi42 dipertahankan, bukan seed tambahan.
+
+### PROPOSAL — satu candidate, belum disetujui
+
+- `candidate_config.json`: training hyperparameters, no-augmentation, letterbox, init/seeds/last30 sama.
+  Full locked internal TRAIN240/kelas, VAL60/kelas tetap terpisah, satu frame/video; A1440/360,B1920/480.
+  Planned steps2700/3600, warmup270/360; bukan measured final counts. API existing masih TARGETS60/20/gateStage1b;
+  kandidat ini belum runnable. Tidak mengubah source training atau analysis_plan approved/historical.
+- Deviation: Stage1b60/20→full240/60; satu fixed baseline tanpa menjalankan rencana CV/grid/factorial/step-matched.
+  Scope deviation harus disetujui/versioned; H3 tidak dijalankan, historical plans tidak dihapus.
+  Equal epochs menambah data dan steps pada B; bukan isolated causal class-count/compute-matched comparison.
+- H1 rekomendasi **Option B**, mean pairedΔmacro-F1 common6 +two-sided95% hierarchical CI.
+  Option A tetap tersedia hanya jika ada acceptable-loss justification δ yang substantif dan bebas outcome.
+  Historical.02 tidak punya justifikasi; tidak mengganti margin supaya lulus. Belum amend protocol/H1.
+- H2 verbatim tetap: recall/accuracy bersyarat masing-masing GT halo/tidur; point≥.80 deskriptif,
+  kedua lower one-sided95%>.80 untuk success konfirmatori, intersection-union, equality gagal.
+  ArgmaxB8, paired common6, seeds dan bootstrap existing tetap.
+- Approval peneliti Classification/title Addendum01 tercatat; approval akademik formal pembimbing/program
+  belum ditemukan. Review Classification vs Detection, frame-based title/RQ, H1/full-data/scope dan batas klaim.
+  Analysis_plan/title notebook berbeda dari title Addendum01; belum disinkronkan sebagai approval fiktif.
+  Pilot42 dan seluruh multiseed internal telah diketahui sebelum proposal; disclose tanggal/exposure nyata,
+  jangan backdate preregistration. Author/reviewer sendiri harus memberi approval/attestation.
+
+### TASK1 unresolved dibawa
+
+- Tiga candidate-frame pairs f7/f10/f14 dari **dua video** senang223/224; kedua locked TRAIN, video bytes berbeda.
+  JPEG/RGB per-pair sama; development hanya224/f48. Bukan3 pasangan video atau cross-split leakage terbukti.
+  Full-data memasukkan keduanya: content-cluster/semantic review masih diperlukan, tanpa edit dataset/split otomatis.
+- Kaggle acquired-version/archive/download/rename/subset/license evidence belum lengkap; citation bukan receipt.
+- External signer/session0/400 dan internal0/2400; tidak ada signer-independent claim.
+- Exposure attestation tidak lengkap meski preprocessingv2/v3 terbukti dan scoped receipt search internal-only.
+- Final internal/external manifests null; semantic labels belum expert verified. Technical flags bukan gesture semantics.
+
+### Scope perubahan / outputs / acceptance
+
+Notebook primer: dua sel read-only TASK2, mempertahankan source/output/execution_count seluruh sel kode lama;
+default flagsFalse dan opt-in refusal tetap. Existing Python/reader/statistics direuse, tidak ada pipeline ilmiah baru.
+Files: notebook primer, testbaru `05_kode/tests/test_task2_configuration.py`, tracker ini; folder bukti baru
+`01_hasil/addendum/scientific_decisions_task2_20261109/` berisi report, candidate/audit/seed/decisionJSON,
+snapshots, audit/assembly/validation scripts dan actual logs/inventory. Folder parsial5Nov tetap utuh.
+
+Commands TASK2 (project root):
+
+```powershell
+& .venv-bisindo/Scripts/python.exe 01_hasil/addendum/scientific_decisions_task2_20261109/audit_task2.py
+& .venv-bisindo/Scripts/python.exe 01_hasil/addendum/scientific_decisions_task2_20261109/prepare_package.py
+& .venv-bisindo/Scripts/python.exe 01_hasil/addendum/scientific_decisions_task2_20261109/validate_task2.py
+```
+
+Audit attempt1 gagal assertion stringSGD karena ANSI logs; original logs tidak diubah. Attempt2 stripANSI sebelum
+assertion dan berhasil; bukan kegagalan model fit. Kandidat tetap proposal. Hasil tes/notebook/preservation aktual
+disimpan validator; suite legacy penuh tidak diulang (known stale notebook-output expectation Task0 tetap).
+
+TASK3 dependencies: persetujuan explicit recipe/full-data/omitted-CV+factorial, H1B/versioned prospective addendum,
+approval akademik dan rencana menyelesaikan evidence/manifests; final-only release interface/runtime logging/scoped
+authorization masih perlu implementasi. `LANJUT TASK3` tidak memberi izin training/scoring/freeze otomatis.
+**STOP TASK2. MENUNGGU PERSETUJUAN: LANJUT TASK 3**
+
+### TASK2 — hasil validasi aktual
+
+**COMPLETED / PASS audit dan proposed package; keputusan/final readiness BLOCKED.**
+Validator exit0:25/25tes (candidate8/notebook3/statistics10/interference4), runtime compatibility dan diffcheck exit0.
+Seluruh notebook aman dieksekusi; hanya2 selTASK2 menyimpan output baru. Seluruh13 code cells historis source/
+outputs/execution_count identik;2026 protected files drift0; recorded source hashes lima seed cocok.
+Attempt sandbox notebook macet sebelum hasil; hanya PIDs validator Task2 dihentikan; retry kernel lokal lulus
+dengan warning WindowsZMQ selector-thread. Cause stall belum dipastikan. Evidence attempt/log tetap ada.
+Follow-up dokumentasi/serialization ditutup pada `final_verification.json`; bytes akhir/hash inventory di sana.
+Tidak training/forward/Kaggle inference/scoring/amendment/freeze/data-split changes; TASK3 tidak dimulai.

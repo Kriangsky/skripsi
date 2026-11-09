@@ -1,0 +1,9 @@
+{
+  "imgsz": 224,
+  "padding": 0.15,
+  "fill": 114,
+  "manifest_sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+  "cache_sha256": "2061a83fa605b0194324499ba7f9b9f69ddfd21ca86a907db01786fdcb3afb12",
+  "coverage_sha256": "7f8f0fabf7f40158b324d2e2a72115393af756c63778fa90ffa4a4216120d3e1",
+  "interpretation": "Hand masked context-only; face/body may remain. No landmarks retained unchanged as separate stratum."
+}

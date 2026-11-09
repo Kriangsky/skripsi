@@ -1,0 +1,13 @@
+test_atomic_reject_without_semantic_review_or_with_stale_catalog (test_frame_candidates.CandidateTests.test_atomic_reject_without_semantic_review_or_with_stale_catalog) ... ok
+test_detector_success_only_creates_candidates_not_positive_labels (test_frame_candidates.CandidateTests.test_detector_success_only_creates_candidates_not_positive_labels) ... 2026-11-05 16:18:34.397984: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-11-05 16:18:35.362225: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+ok
+test_flagged_candidate_requires_justification (test_frame_candidates.CandidateTests.test_flagged_candidate_requires_justification) ... ok
+test_hand_roi_blur_border_and_missing_hand_flags (test_frame_candidates.CandidateTests.test_hand_roi_blur_border_and_missing_hand_flags) ... ok
+test_middle_sampling_and_short_videos (test_frame_candidates.CandidateTests.test_middle_sampling_and_short_videos) ... ok
+test_no_positive_from_detection_and_partial_human_selection (test_frame_candidates.CandidateTests.test_no_positive_from_detection_and_partial_human_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 5.608s
+
+OK

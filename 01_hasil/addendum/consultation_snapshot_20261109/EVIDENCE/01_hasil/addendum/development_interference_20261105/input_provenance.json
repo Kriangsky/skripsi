@@ -1,0 +1,49 @@
+{
+  "inputs_sha256": {
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\07_dokumen\\protokol\\analysis_plan.json": "122793e63c677dd5a3635d3a40995dfeb3dccdee572046365ee218e2b1c38987",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\evaluation\\predictions.csv": "5a813c007f426bfda01768b44f65548b0334075c235b0dc2cc257c761d2e70cf",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\research_config.json": "7eba0cb6dcd3133bf7c471a50ee88945619acbbfb87abe1e4b39d8f902cefd69",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\runs\\trained_models.json": "82569ad6798fcbb3b52617584416351531591a8c9fc3f6661e2d1791ed9d2438",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\evaluation\\predictions.csv": "62a99440aa61a1d43fe034f1f79f4781b22051956256198a71b498a85bc9b287",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\research_config.json": "b222e81ed77b556f9e44ea840ba133cc38b1b555bd8e9ce0422defa3531d08ea",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs\\trained_models.json": "c62422bd191c7436477f5e7f101e1bfcf48ed3879b8b72d042be5869d12ae162",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\evaluation\\predictions.csv": "3dac65ed231d6850223ed5f40b6031bb934031ea5cd38e31ce2e40672c429a55",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\research_config.json": "747a8c7f5a251883dec30dc0b166239d353d02fa6ca730190f0072da044f31ec",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\runs\\trained_models.json": "441543aec64117597bec16c3449b2975f4e8bcbb28b316995bfb8e2aa7d84264",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\evaluation\\predictions.csv": "9f74eb65493d44e22210c179c37b0d2530b2a8227206703f7681129135c5b35e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\research_config.json": "bc907a40886b5a33c9283ec00aaf2d70256ee79ffa2a023b571881346fe745b8",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\runs\\trained_models.json": "7c4f16760d04f203fd35ff62b9593b45c1e0bd225baef29a74c61d90ae053ce7",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\evaluation\\predictions.csv": "8c6b35747e222fc5481ea3cb4dce9f3e6bdba09affff564ac323477d4921d151",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\research_config.json": "fc8529b092d324fd12bfbee9f6420cba85d123d41b4744ea96001e54eaea7c41",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\runs\\trained_models.json": "24cc4b7750bcf1f18dc7892307c2ecab124f873b52f55e3fe65363c69116cd90"
+  },
+  "source_sha256": {
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\analysis_paired.py": "c0c9433f12852a7f342c52a36a151fd4f419e01f5980e2ada0674ddecea0be24",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\audit_dataset.py": "9a04c56430872230f9a7d12a4e68a0811650e392f05278cb10b17a295e2b5073",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\bisindo_pipeline.py": "0f8aa793bb2e91eb88b29359de81b2cbec26a682952567cd7da980997eb7c8f1",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\classification_diagnostics.py": "a2db59d81385eee60432c4fe8a6be140dd82838949d8ac03ef7b596bcc02d122",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\classification_pilot.py": "8e8a5be2f8057214772151e56db1d39479a55fd2f3c470a58c0a008a082f6e65",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\classification_research.py": "5b75e780bdc1b23747606dec52f671ad107e3cd0cfc6244161e972c0c7e68ae9",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\classification_workflow.py": "6a3a01b14c17d53f117b89d768e06f27f2951e402c12bb0cbea67ae8479dd27d",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\confirmatory_evaluation.py": "4973eb1b6755cfb57027348a3c5492c559638d15b7a6ed70624fffee4103b6dc",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\confirmatory_statistics.py": "033be07134e3f9750e245f0a11cdfe72250adab3464c937854e51ea9cfb6a7c0",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\exploratory_stage1b_runner.py": "c81c4f8c8dde329d4a6938ada995f9c038d960eca5344c2a199c57024bcf73a4",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\frame_candidates.py": "0e4a9a636775caed2b837f37eb5781072bb108bc5b5c4beeda78417cdcdb07a7",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\interference_metrics.py": "a86c14e397e8c69a7b71cd3ad3ae7961f823b013658a76ca66f31b638ceced3e",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\pilot_study.py": "030cb1bc7283608be9f6ab50a99010c2fd75e9901e5795384830a0c4f2ee5668",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\power_precision.py": "38cc7c1d1ab41e3e7190d414378e7afecb47d150517252a7f7384f3f5f2c1003",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\training_pilot.py": "fa44757bd3a5813f29fea92352c146d94b7ac6ce61c9a286c370d2b31ab60446",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\training_pilot_eval.py": "21b89b9a78ba421d1c32b4d0a09b05a23138ce69b4e5d403348f1e8a77ef21d5",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src\\verify_notebook.py": "d3472b046608dad44cecb746c6df5d0be1dbe216b77c593c436aac822196c65b"
+  },
+  "timestamp_utc": "2026-11-05T05:31:44.374531+00:00",
+  "git": {
+    "commit": "89df4d256a26ad1de3828ea24d6319f42da8f1ee",
+    "working_tree": "?? 01_hasil/addendum/\n?? 05_kode/src/confirmatory_evaluation.py\n?? 05_kode/src/confirmatory_statistics.py\n?? 05_kode/src/interference_metrics.py\n?? 05_kode/tests/test_confirmatory_statistics.py\n?? 05_kode/tests/test_interference_metrics.py\n?? 07_dokumen/protokol/HYPOTHESES_ENDPOINTS_ADDENDUM.md\n?? 07_dokumen/protokol/analysis_plan.json\n?? 07_dokumen/rencana/confirmatory_addendum_implementation.md"
+  }
+}

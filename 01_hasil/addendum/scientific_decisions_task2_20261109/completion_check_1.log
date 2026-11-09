@@ -1,0 +1,11 @@
+SKIPPED training: RUN_TRAINING=False; zero model fits
+SKIPPED freeze: RUN_FREEZE=False; no scientific artifacts frozen
+SKIPPED external scoring: RUN_EXTERNAL_SCORING=False; no external predictions accessed
+test_default_flags_and_opt_in_refused (test_final_control_notebook.FinalControlTests.test_default_flags_and_opt_in_refused) ... ok
+test_no_training_inference_freeze_or_algorithm_copy (test_final_control_notebook.FinalControlTests.test_no_training_inference_freeze_or_algorithm_copy) ... ok
+test_schema_sections_and_python (test_final_control_notebook.FinalControlTests.test_schema_sections_and_python) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.026s
+
+OK

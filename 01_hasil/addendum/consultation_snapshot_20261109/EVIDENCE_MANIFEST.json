@@ -1,0 +1,1979 @@
+{
+  "schema_version": 1,
+  "date_local": "2026-11-09",
+  "timezone": "Asia/Bangkok",
+  "verification_scope": "Saved outputs cross-check; no training/inference/bootstrap rerun; metadata/tests/audit execution historical only",
+  "artifacts": [
+    {
+      "source_path": "01_hasil/addendum/data_inventory_task1_20261105/audit.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/data_inventory_task1_20261105/audit.json",
+      "sha256": "2dbd5026b458f754e8b5bde85920d71e4b47ee35ab8570e6f39c39e6bea0bafa",
+      "size_bytes": 490996,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/data_inventory_task1_20261105/audit_report.md",
+      "exported_path": "EVIDENCE/01_hasil/addendum/data_inventory_task1_20261105/audit_report.md",
+      "sha256": "53a1c4cc0771ff9bea7fb53436fe228335babcbcd15e4f7faa022293aed3aa21",
+      "size_bytes": 11149,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "01_hasil/addendum/data_inventory_task1_20261105/duplicate_impact.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/data_inventory_task1_20261105/duplicate_impact.json",
+      "sha256": "f3910040b03fde6a2cf9e5e7a0de84fa7d28b41f061a420d44d39a95f0c1ad62",
+      "size_bytes": 7673,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/data_inventory_task1_20261105/final_verification.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/data_inventory_task1_20261105/final_verification.json",
+      "sha256": "27a1595884125b143e3ca44e90dd20bcda017ad0626ea9f6ab96951596eda8a9",
+      "size_bytes": 4463,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/data_inventory_task1_20261105/manifest_catalog.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/data_inventory_task1_20261105/manifest_catalog.json",
+      "sha256": "9225c4436462a21d57d7d19365af8b566af937cfeb22163ba245c7bc40cb0eaa",
+      "size_bytes": 8548,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/data_inventory_task1_20261105/provenance.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/data_inventory_task1_20261105/provenance.json",
+      "sha256": "6628bb7e7807605e2dd5cf391239bad55ed7906889d1f98f528bca191004bc66",
+      "size_bytes": 15355,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/data_inventory_task1_20261105/test_task1_data_audit.log",
+      "exported_path": "EVIDENCE/01_hasil/addendum/data_inventory_task1_20261105/test_task1_data_audit.log",
+      "sha256": "e15dc04a5b34f5bb8a57e87895ed5b6d0d696ff0768820ff8360ad536d224cad",
+      "size_bytes": 705,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/data_inventory_task1_20261105/validation.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/data_inventory_task1_20261105/validation.json",
+      "sha256": "0185ffeaf571e0da73570606b6f65e5e1aa9603b2005ccbb76f8ef6934eabbdf",
+      "size_bytes": 5342,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/accuracy_decomposition.csv",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/accuracy_decomposition.csv",
+      "sha256": "705e6c9efb9508e91955ba0d0e1662589d0e4e393125f1b2e2e742c80c779fa1",
+      "size_bytes": 647,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/analysis_details.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/analysis_details.json",
+      "sha256": "8af1c9d4cdd89c534e487864ddf9fe3eeed5f62b945b5110c0c2eaad873cc3d2",
+      "size_bytes": 1438,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/bootstrap_intervals.csv",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/bootstrap_intervals.csv",
+      "sha256": "ca9863ca247edadef7fc53504c58112df1f28bc1e225bb7535f1e4a81613a12a",
+      "size_bytes": 2409,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/class_interference.csv",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/class_interference.csv",
+      "sha256": "3733ce1429eed19ed82ac0def2d81ffaad107e7f4d720249eb02018ce0376c18",
+      "size_bytes": 2104,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/common6_primary_results.csv",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/common6_primary_results.csv",
+      "sha256": "ba45b38c4aedae9dfdefc768de5b4936dd9ecefc6e1c6172cbcfb2c252d2eaca",
+      "size_bytes": 779,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/external_evaluation_report.md",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/external_evaluation_report.md",
+      "sha256": "b43e529a0c9db659a79ab702b4662ce7475f7377ca582f1866373880fb40f14d",
+      "size_bytes": 2199,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/full8_results.csv",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/full8_results.csv",
+      "sha256": "0a2e1947dee45fefb131e4263180e2df202f43a92cfb72b2fc1ec7d4832f1dc7",
+      "size_bytes": 3622,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/input_provenance.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/input_provenance.json",
+      "sha256": "32e2f669b5d5f83ddf515f530a49c338a49d0c095295149e831bcb4ba411b2f0",
+      "size_bytes": 8406,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/development_interference_20261105/intrusion_rates.csv",
+      "exported_path": "EVIDENCE/01_hasil/addendum/development_interference_20261105/intrusion_rates.csv",
+      "sha256": "7646c555aab4a23d4bf24e69e1a7b320f269a92b074c75a6174afbb9c29f765a",
+      "size_bytes": 1315,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/final_control_task0/completion.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/final_control_task0/completion.json",
+      "sha256": "b151b49c58dbc263a1d35b3061990b81afd8032caa8614c933258120b159ed0d",
+      "size_bytes": 2501,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "01_hasil/addendum/final_control_task0/existing_regression_canonical_temp.log",
+      "exported_path": "EVIDENCE/01_hasil/addendum/final_control_task0/existing_regression_canonical_temp.log",
+      "sha256": "9a64bffed5f1352754823276739ece7a5756039ab1d87efb3abe1d5a0e17c3eb",
+      "size_bytes": 15450,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/final_control_task0/validation.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/final_control_task0/validation.json",
+      "sha256": "aa29e83124887e1dfca563fb7034d47dd180d662c0d6aec5ecea8ce3a7ae04ea",
+      "size_bytes": 5398,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/candidate_config.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/candidate_config.json",
+      "sha256": "0eeb3bd6d504ea81a61edfe833f975036d7199c6ba2186be07bce6853f1df8a5",
+      "size_bytes": 6562,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/effective_configuration.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/effective_configuration.json",
+      "sha256": "e02fcb21e0236edad8bd20db9305ec49e9aa4bc3344de3530022ff40c3f6a0bd",
+      "size_bytes": 120699,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/final_verification.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/final_verification.json",
+      "sha256": "289733ff17e9ffa0fe57fa719e7f047074bd858c269383cb5ea9fdb7b07bac47",
+      "size_bytes": 10362,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/report.md",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/report.md",
+      "sha256": "7c107e220e0e0387833c7c30dd42f303eb90577805571f2550916d03f91a82a5",
+      "size_bytes": 20341,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/scientific_decisions.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/scientific_decisions.json",
+      "sha256": "5bd950d9acee14e81575af01402b4b9f95b3d2aae239187bb690a22e5ed598c3",
+      "size_bytes": 1031,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/seed_provenance.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/seed_provenance.json",
+      "sha256": "c6d93805ce32657b6ee89271a44520ac471c2e73fbf5a06488813402a270f802",
+      "size_bytes": 1809,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/test_confirmatory_statistics.log",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/test_confirmatory_statistics.log",
+      "sha256": "84cf43801ddadc4a03e3ef3a7335fd75b3c6885ff006888458e587c2fedbcdf3",
+      "size_bytes": 1675,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/test_final_control_notebook.log",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/test_final_control_notebook.log",
+      "sha256": "c818dc1fc5cadb569c57608619acd8ead1576e6590492489f156915e12030aab",
+      "size_bytes": 724,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/test_interference_metrics.log",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/test_interference_metrics.log",
+      "sha256": "a97f13b26b7af74c873f0bf837cfd61471c64df06000a187199ab13aab9fba18",
+      "size_bytes": 683,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/test_task2_configuration.log",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/test_task2_configuration.log",
+      "sha256": "639f75d32cd052bec1d89042d46f805f048b950430495398b2342b90984ca14a",
+      "size_bytes": 1379,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/addendum/scientific_decisions_task2_20261109/validation.json",
+      "exported_path": "EVIDENCE/01_hasil/addendum/scientific_decisions_task2_20261109/validation.json",
+      "sha256": "a94bf20cc232b5ea7932b3211e9aedc851d2e68ea63affa32878380f07151614",
+      "size_bytes": 12573,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "01_hasil/tahap1a/exploratory_development_stage1a_20261103/exploratory_paired/exploratory_analysis.json",
+      "exported_path": "EVIDENCE/01_hasil/tahap1a/exploratory_development_stage1a_20261103/exploratory_paired/exploratory_analysis.json",
+      "sha256": "8875ed4753871fdcb12d0011f6df1edbe526474aa9f149d16f351265d6524bc0",
+      "size_bytes": 1488,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_all_fits.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_all_fits.csv",
+      "sha256": "9b974785bda25322d8c79464ff39cfe52321ba6d8b6ed5a7b54f91f2b7567124",
+      "size_bytes": 1975,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_all_metrics.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_all_metrics.csv",
+      "sha256": "3d5991be975ca2fea97068ce1096e7a5569c10f84c1f481fc138130e98f17bf0",
+      "size_bytes": 2222,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_epoch30_curves.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_epoch30_curves.csv",
+      "sha256": "762549e6f15e0a43b320d32229c5cbbfcecf2b5c28d1beda890c77248079fb6b",
+      "size_bytes": 243,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_failures.json",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_failures.json",
+      "sha256": "908d22f387ea633c0cd3d703b94bbacbcbf5379322097eb043ca0ab3f6a238e8",
+      "size_bytes": 485,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_final_verification.json",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_final_verification.json",
+      "sha256": "9a2e4951e31e83a9b478ee260ab194c78311c4358711a596026cf4e6d90f04ef",
+      "size_bytes": 2017,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_first_phase_timing.json",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_first_phase_timing.json",
+      "sha256": "f09355c27546a2edd9effc3fd753547b008cd834ca4af8e1c947e9700755f828",
+      "size_bytes": 380,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_linear_probes.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_linear_probes.csv",
+      "sha256": "367bcc50099ad821f4b7d081e48187b4938c89784ce70dddb9dd5661c7e2ceda",
+      "size_bytes": 645,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_masking_all_seeds.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_masking_all_seeds.csv",
+      "sha256": "a73c5a21cb86ce5e0fce88572cebe81abf2e3052bc3ddb86fc02b60d7079df94",
+      "size_bytes": 5429,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_masking_summary.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_masking_summary.csv",
+      "sha256": "a3b40ee7308cadaa81e6eeb3da25208dcc5fc69abad9fc511747b25ac083e70c",
+      "size_bytes": 299,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_model_summary.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_model_summary.csv",
+      "sha256": "344c61c7b4f303c062f12853d0de29f1c1b477d353175f88e129ea0892b894e2",
+      "size_bytes": 324,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_new_class_metrics.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_new_class_metrics.csv",
+      "sha256": "620c74a0141209d5da11304992950899630ea14b7cfbbb028957149e695b4c72",
+      "size_bytes": 568,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_paired_per_seed.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_paired_per_seed.csv",
+      "sha256": "843f35a20b412f87f274e12668adae325c03b5ef765926b88630d19a564dafac",
+      "size_bytes": 803,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_probe_summary.csv",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_probe_summary.csv",
+      "sha256": "87af5d8aa37075d700657e2d97cae5e5fb1666bdf589d9ca6333b31ee7e3c78e",
+      "size_bytes": 238,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_provenance.json",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_provenance.json",
+      "sha256": "777c40a4810d0accad688974eea13a009db47921ff50a4c95076a1e5638aeaba",
+      "size_bytes": 1397,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_stage1b_report.md",
+      "exported_path": "EVIDENCE/01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_stage1b_report.md",
+      "sha256": "acb04fd4ac8dc79e41b708ced8367d951c2abf6283f4e3bf1f16c9d8463b9954",
+      "size_bytes": 10601,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_classification_notebook_20261102/evaluation/comparison_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_classification_notebook_20261102/evaluation/comparison_metrics.csv",
+      "sha256": "ae6c9e55572f0e3ab1dd56996067319e3c32289cd88e78613ca47a28ecf08b5d",
+      "size_bytes": 503,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_classification_notebook_20261102/pilot_conclusion.md",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_classification_notebook_20261102/pilot_conclusion.md",
+      "sha256": "f9d658139000010df66af892635aac84bd4cb785998d2294b4608c1c12adb989",
+      "size_bytes": 2999,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_classification_pilot/evaluation/comparison_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_classification_pilot/evaluation/comparison_metrics.csv",
+      "sha256": "ae6c9e55572f0e3ab1dd56996067319e3c32289cd88e78613ca47a28ecf08b5d",
+      "size_bytes": 503,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_classification_pilot/pilot_conclusion.md",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_classification_pilot/pilot_conclusion.md",
+      "sha256": "0e63ab2d2ce4937b40a7e5bdd0c9db6aba060147d3106ed41c21412c97020fe6",
+      "size_bytes": 3309,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/confusion_matrix.png",
+      "exported_path": "FIGURES/02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/confusion_matrix.png",
+      "sha256": "579d2080dc3006af406cc20d5459eaea49632badea74311e861dd9f840d101df",
+      "size_bytes": 105475,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/inter_reviewer_agreement.json",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/inter_reviewer_agreement.json",
+      "sha256": "6c931a71e6acf2d3e574ef2f6421179880f1cfb18a24249e6faa131feb023749",
+      "size_bytes": 1293,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/per_class_results.csv",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/per_class_results.csv",
+      "sha256": "34185ff97a22c64abf9e61456970acd8596f113461529886d129e413049e8f42",
+      "size_bytes": 1917,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/pilot_report.md",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/pilot_report.md",
+      "sha256": "b93264b96e325ed4730454de484064f57e96290635223fb0fe138d480c491ff0",
+      "size_bytes": 4755,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/pilot_summary.csv",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/pilot_summary.csv",
+      "sha256": "ce241e5a881cd3db2a0abeee14179117fe0f913c309881478e23bdf944b741c0",
+      "size_bytes": 1143,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/reviewer_1_confusion.csv",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/reviewer_1_confusion.csv",
+      "sha256": "6f2139d97032f9aada6b0eb4cf6c7329214ba1625d25e5abf4d39da110521097",
+      "size_bytes": 300,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/reviewer_2_confusion.csv",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/reviewer_2_confusion.csv",
+      "sha256": "2d0f156aa6e8c2d08a99ed62bb3d107463764ebf6f891ef035f7246d9afe7e45",
+      "size_bytes": 300,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/verification.json",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_pilot/analysis/verification.json",
+      "sha256": "0021c6c111500df61421f6f7485602755cc1056f26b4b50d9c52b760904916d0",
+      "size_bytes": 1060,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/responses/reviewer_1.json",
+      "exported_path": null,
+      "sha256": "9f3e6f243b1f354f49d1495749022a12b6f400502282e12890d1b8fb639d8b18",
+      "size_bytes": 28683,
+      "artifact_category": "PRIVATE_OR_DETAILED_POINTER",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_pilot/responses/reviewer_2.json",
+      "exported_path": null,
+      "sha256": "60377a15023e20beb9d158b9f3ba7660e3342093baf5442a5321ab0f9b7ecda8",
+      "size_bytes": 29000,
+      "artifact_category": "PRIVATE_OR_DETAILED_POINTER",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/arsip_pipeline/experiment_yolo26_training_pilot/pilot_conclusion.md",
+      "exported_path": "EVIDENCE/02_exp/arsip_pipeline/experiment_yolo26_training_pilot/pilot_conclusion.md",
+      "sha256": "1d76aee9c735afe80ddf175b14cb3fc82daccf3efe4fb6ec9cc482197a2f42c1",
+      "size_bytes": 449,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/apa_kabar_halo_diagnostics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/apa_kabar_halo_diagnostics.csv",
+      "sha256": "5c79d6d952397724ab1fda3d6879454e5829d7aae118d1191a43d96a840bb167",
+      "size_bytes": 15754,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/comparison_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/comparison_metrics.csv",
+      "sha256": "ae6c9e55572f0e3ab1dd56996067319e3c32289cd88e78613ca47a28ecf08b5d",
+      "size_bytes": 503,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_A_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_A_common6.csv",
+      "sha256": "1d5b913f814345a83baa163f9c13e5896026f728126b9e3b9abc1a313c2515fc",
+      "size_bytes": 168,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_A_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_A_common6.png",
+      "sha256": "0a01b206d07a060bd941f382e51415ad792b19be1bfbb224eacc92b79cb75a86",
+      "size_bytes": 70720,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_B_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_B_common6.csv",
+      "sha256": "dd7b3b9dffdb5d8923e7cbdea3db24b6a9c6be794fb2e06de9d8c62a401330e7",
+      "size_bytes": 248,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_B_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_B_common6.png",
+      "sha256": "f8c107f12b316e2f9feaa9e4178291b8be69c3f360c2fa75ca29f583a60c3155",
+      "size_bytes": 77113,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_B_full8.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_B_full8.csv",
+      "sha256": "cd1655fae19d8ccddc8ab8071f4a8a48ad55675a014edfd2b43ee948579c1793",
+      "size_bytes": 250,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_B_full8.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/confusion_B_full8.png",
+      "sha256": "1c7a92f7c994f20e930d6324d16cd5729d62401f94d213891ac46c1af03fba21",
+      "size_bytes": 78105,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/per_class_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/per_class_metrics.csv",
+      "sha256": "2050843ac5c8a317991d2188c667ca984466fcf9bcb9fcaec61742860ec042a9",
+      "size_bytes": 1414,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/predictions.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/predictions.csv",
+      "sha256": "5a813c007f426bfda01768b44f65548b0334075c235b0dc2cc257c761d2e70cf",
+      "size_bytes": 71572,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/manifest.csv",
+      "exported_path": null,
+      "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+      "size_bytes": 441189,
+      "artifact_category": "PRIVATE_OR_DETAILED_POINTER",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/reports/experiment_config.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/reports/experiment_config.json",
+      "sha256": "60b74d1b0511a49b51123a31d13df9983aa08034fb2aac8bcf25a4d56f1baa2c",
+      "size_bytes": 2926,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A/args.yaml",
+      "sha256": "ba52dc46a5a3182dbf54fe13790dd65483891d2965230a6e009d9c5e0d9e095a",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A/results.csv",
+      "sha256": "43f586faba21d82e9809434be05b1663015a2dc21bd7dcfaa081b79670f5bcb3",
+      "size_bytes": 2093,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A/results.png",
+      "sha256": "4f466fc1bcb26847d9c68db7c999d8db6677e7fae95f95f9c7cd2ecacaa33bea",
+      "size_bytes": 143408,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A/weights/last.pt",
+      "exported_path": null,
+      "sha256": "03727737a647405bdc6154c925c4575f2b77bf45f48a2ef21a92d02d044f54b7",
+      "size_bytes": 3197452,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_A_execution.json",
+      "sha256": "4e199368cf21504625b30b3475fb96fc54e8d4285c81a8e27c2a75e62d83a394",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B/args.yaml",
+      "sha256": "e2dca12108494445b5f855fcbbc150878b1f216a672dc35b4884d576993bb9f9",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B/results.csv",
+      "sha256": "aac3a77850a7636dc64a59cfbd88b110b85296d778dc985beed72f15d7ec1288",
+      "size_bytes": 2067,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B/results.png",
+      "sha256": "1e34b7fe761a86535f6ce9ad44bc6a022d629070c4dfd08e00779ddde2dfd2de",
+      "size_bytes": 150079,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B/weights/last.pt",
+      "exported_path": null,
+      "sha256": "e544a04b4798f1d76a2096c844fd768bd53e50aa2fa4e1c17a419eef3fbc67bd",
+      "size_bytes": 3202636,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/model_B_execution.json",
+      "sha256": "cf58e5027258bd2b4f5e403dba055b19d1d154d12ba501cc5e317f86fc06ce02",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/trained_models.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/trained_models.json",
+      "sha256": "82569ad6798fcbb3b52617584416351531591a8c9fc3f6661e2d1791ed9d2438",
+      "size_bytes": 1045,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/apa_kabar_halo_diagnostics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/apa_kabar_halo_diagnostics.csv",
+      "sha256": "b6175f961eedc4e6db5f98ad6f2361dfe0e4b0b72d5e359ca056b5713e977521",
+      "size_bytes": 15804,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/comparison_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/comparison_metrics.csv",
+      "sha256": "27bd8bd9b4b2ca11f8486c0fa09aa385cd066e8082f417b6be6512e91b8ed621",
+      "size_bytes": 504,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_A_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_A_common6.csv",
+      "sha256": "eb464233149a5366009cac2bf7ffb9a033b3b1cc75d489a5fc7f3c8580c4f0ff",
+      "size_bytes": 168,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_A_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_A_common6.png",
+      "sha256": "56fe3663812b75ec85d32d13d04e6f2aca532228761189e2a4e1412c97fcacda",
+      "size_bytes": 71007,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_B_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_B_common6.csv",
+      "sha256": "7fdc69eb0f3f4eb5006f6c8c51c7ae13bbdb9611e9e79a33326b928f028db649",
+      "size_bytes": 248,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_B_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_B_common6.png",
+      "sha256": "dc7789ed396fca7da9b61dba9fccbe6f8a2891bbbb54cd1e1fc12bc006c6a080",
+      "size_bytes": 77018,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_B_full8.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_B_full8.csv",
+      "sha256": "e385c773e116242310ff6998d8eccc7efb51f54db6b1fd5123b2a37bacc807a0",
+      "size_bytes": 250,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_B_full8.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/confusion_B_full8.png",
+      "sha256": "35d6c37891aa309216b7907f765a35d3ca9288d004840cdf62bf4c6166a73572",
+      "size_bytes": 78054,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/per_class_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/per_class_metrics.csv",
+      "sha256": "11550d3cbe76d15f15855cd9cd52c7955fd230a8c01bbcec2a9a4fc0f04f5235",
+      "size_bytes": 1326,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/predictions.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/predictions.csv",
+      "sha256": "62a99440aa61a1d43fe034f1f79f4781b22051956256198a71b498a85bc9b287",
+      "size_bytes": 72403,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/manifest.csv",
+      "exported_path": null,
+      "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+      "size_bytes": 441189,
+      "artifact_category": "PRIVATE_OR_DETAILED_POINTER",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/reports/experiment_config.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/reports/experiment_config.json",
+      "sha256": "8ad0d199fffd35a6c4497e1f11bc19b1e882718db760b7419371a6709881c05a",
+      "size_bytes": 2926,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A/args.yaml",
+      "sha256": "e06c3590035a01c01f92d6ebbd2fb5f564c89affd69777c801321e598f513df6",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A/results.csv",
+      "sha256": "79bcdc21a77659dbb68331c80c29db843bb68447fdf6cea373645b9da2bc71bf",
+      "size_bytes": 2043,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A/results.png",
+      "sha256": "fec9aba2e45e48aed6c2177b1c77b935fd158b104587321740821bf4ef048f56",
+      "size_bytes": 141660,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A/weights/last.pt",
+      "exported_path": null,
+      "sha256": "20533ef76136e29f105f96bcd9aeda09d530a2bcc65198beaf94bf9df4ebe5e7",
+      "size_bytes": 3197452,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_A_execution.json",
+      "sha256": "d27d0ab535cfbf4516de6c500ef1ce3988e78f2aca53649216294ca11dc61611",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B/args.yaml",
+      "sha256": "ab967061585204369ba29ad1719ade3c5c31a61f1e97100647b2ec7d4603e880",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B/results.csv",
+      "sha256": "6899c6ce3cf21d671297d859c09c69afb1e90790cb1aacbd61ecea3ae3720d7a",
+      "size_bytes": 2076,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B/results.png",
+      "sha256": "a06985a1270238f43b37ae32f10903c3f5d626a08bae411e34e24688928cc495",
+      "size_bytes": 140526,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B/weights/last.pt",
+      "exported_path": null,
+      "sha256": "ddcd40f906c52f6228689eaed78235ece77b7372ad5de819c47976d5b229dd79",
+      "size_bytes": 3202636,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/model_B_execution.json",
+      "sha256": "9bc1508c6eb62cafbc5a956ea5f68bf131ba837e67952f6e0f0e1c9d9f83e782",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/trained_models.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/trained_models.json",
+      "sha256": "c62422bd191c7436477f5e7f101e1bfcf48ed3879b8b72d042be5869d12ae162",
+      "size_bytes": 1045,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/apa_kabar_halo_diagnostics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/apa_kabar_halo_diagnostics.csv",
+      "sha256": "da6fa7cbc35ba40272dea1b58c957f198f5533b3f369b213d98cb53315656a4a",
+      "size_bytes": 15976,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/comparison_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/comparison_metrics.csv",
+      "sha256": "aace494c0a6e01c22c0752dedb8024bbe026b5626836b472225ca5fe6d5cc843",
+      "size_bytes": 503,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_A_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_A_common6.csv",
+      "sha256": "f647de73bd04c0b1d46c393d0045dff0d3f2d4a5d41867a003dee2f8b94d60d2",
+      "size_bytes": 168,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_A_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_A_common6.png",
+      "sha256": "d8b09ddcc41fca6a118d5ee447f28eef7554b48d299ef27bfd521320d6f48358",
+      "size_bytes": 70318,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_B_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_B_common6.csv",
+      "sha256": "d42b94a3bef357e293fbfc8d9ce8a784618a5759a4a89fbb9c843798cf8926a5",
+      "size_bytes": 248,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_B_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_B_common6.png",
+      "sha256": "b5e49b06ce3f91525b3e8f0d44d1701f7f792b1b9620fa3bcebcd9ddf3d2865d",
+      "size_bytes": 77164,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_B_full8.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_B_full8.csv",
+      "sha256": "886e327ae107599a6b6b3216563fed49d83efa555c38ec248858adc77a7b2419",
+      "size_bytes": 250,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_B_full8.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/confusion_B_full8.png",
+      "sha256": "dd63025be709827a3334c5338aa5a5bc528e834758fa25f4ac2b9262886d1e8b",
+      "size_bytes": 78184,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/per_class_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/per_class_metrics.csv",
+      "sha256": "e1538d81ce240bbc0ce886f3535327f4bee35b048199a0df6e1e3773c254e9e2",
+      "size_bytes": 1287,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/predictions.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/predictions.csv",
+      "sha256": "3dac65ed231d6850223ed5f40b6031bb934031ea5cd38e31ce2e40672c429a55",
+      "size_bytes": 71658,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/manifest.csv",
+      "exported_path": null,
+      "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+      "size_bytes": 441189,
+      "artifact_category": "PRIVATE_OR_DETAILED_POINTER",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/reports/experiment_config.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/reports/experiment_config.json",
+      "sha256": "6cc4e524f5e9ebaa00cea5e64a9ca1bb458d7cd95864966738ce4cc314223e7f",
+      "size_bytes": 2926,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A/args.yaml",
+      "sha256": "d6ebe56d3dc70c887df2eac902817f27b0c35e936262336beb018558007cde71",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A/results.csv",
+      "sha256": "7aaf2ca853ebd837534df821b77c41c4e7ee54875b9ec5e584db32e7cda1487c",
+      "size_bytes": 2098,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A/results.png",
+      "sha256": "033dd1f4eefe012d650ce1e2ffe5130ea881209a016e2ad6e708cf4f613d84ce",
+      "size_bytes": 132332,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A/weights/last.pt",
+      "exported_path": null,
+      "sha256": "8b5af75865038f6c14a1dcd22cb9331495f0120ae92ff1b45ae6fe0d83f18db6",
+      "size_bytes": 3197452,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_A_execution.json",
+      "sha256": "8f9f7f3f0ba21d2c433fbe51294004a62f2b1ded25c3261da8d2a4c2861e9a73",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B/args.yaml",
+      "sha256": "f81c13773bd8acbd6497b2c5e4d1d158e317bb8b3715f17a6bb0d93dc1c04d71",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B/results.csv",
+      "sha256": "b8790a5148011ce8bcd5ce4dbe81b554cd3eed63d91116095beb495af726ed49",
+      "size_bytes": 2071,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B/results.png",
+      "sha256": "760112877d9eb4c2a68ca68818980b69b5b76adae37e58ea09ae6bea60a7d03e",
+      "size_bytes": 133672,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B/weights/last.pt",
+      "exported_path": null,
+      "sha256": "79fa00f026422a7d41dd51cf6e49f251a96418be55bea873076a0e00d71a8e80",
+      "size_bytes": 3202636,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/model_B_execution.json",
+      "sha256": "ac63c0ffc7927d646d2b1027aafd9e86bd4e4a3132ee812032c755d17b5c0e0d",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/trained_models.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/trained_models.json",
+      "sha256": "441543aec64117597bec16c3449b2975f4e8bcbb28b316995bfb8e2aa7d84264",
+      "size_bytes": 1045,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/apa_kabar_halo_diagnostics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/apa_kabar_halo_diagnostics.csv",
+      "sha256": "d325a0f9926ca53f9664699ad6a2a860da11adda18b3acf3ecb59512efc80e30",
+      "size_bytes": 16094,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/comparison_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/comparison_metrics.csv",
+      "sha256": "454d7ade84ca8950a18e3108488d2dccd0e8d212b4c01b8cd3dfe84eb9ce8b1c",
+      "size_bytes": 503,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_A_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_A_common6.csv",
+      "sha256": "3af946c82ababbeadb640ce6b36214c7c2ddd176c3df563d2bc18dea5edb7eac",
+      "size_bytes": 168,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_A_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_A_common6.png",
+      "sha256": "42d1ecb3dd823da4531ed0ed829c9d216cf7f54b33c6850e66088798fee07dbd",
+      "size_bytes": 70633,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_B_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_B_common6.csv",
+      "sha256": "1e80cdf1ee5ea901cca1cf8c7094d9a5c9b232977f629c5f3f0fe4b810909324",
+      "size_bytes": 248,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_B_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_B_common6.png",
+      "sha256": "80f0d245dd67cb92cb0a13912307bba885f30caa6426ea82b13285043016b21f",
+      "size_bytes": 77276,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_B_full8.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_B_full8.csv",
+      "sha256": "4bf90ab4bc5f5641e70cef647e709269e0e18ddf03542b0f70f6dfb53b38a0b9",
+      "size_bytes": 250,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_B_full8.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/confusion_B_full8.png",
+      "sha256": "fd24a9249ae3a4b3e41290d10570c019f726bfe12ed75cbef46d4de6e7cf249e",
+      "size_bytes": 78262,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/per_class_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/per_class_metrics.csv",
+      "sha256": "13afd76eaeaf41aee09ef23560a6af1dfc4989f98c4bccadad3845b78191033e",
+      "size_bytes": 1236,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/predictions.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/predictions.csv",
+      "sha256": "9f74eb65493d44e22210c179c37b0d2530b2a8227206703f7681129135c5b35e",
+      "size_bytes": 72004,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/manifest.csv",
+      "exported_path": null,
+      "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+      "size_bytes": 441189,
+      "artifact_category": "PRIVATE_OR_DETAILED_POINTER",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/reports/experiment_config.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/reports/experiment_config.json",
+      "sha256": "cf9ef0951ae6b8ca38a45fa8c22c128d8e57cba750f21f6bb7612109c78e1d19",
+      "size_bytes": 2926,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A/args.yaml",
+      "sha256": "1616c54f5ed2ed9d65b513e34311bde10e0b7113fb2164c0154ece2c20e6cbdb",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A/results.csv",
+      "sha256": "1aa2cab7edb66083eb47474bc9274e5c8ac980100d82545c945b66a688652593",
+      "size_bytes": 2083,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A/results.png",
+      "sha256": "0989d8403d522b91815146045eb5ec864158ecfc3d31bf04502af2727c99c079",
+      "size_bytes": 142996,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A/weights/last.pt",
+      "exported_path": null,
+      "sha256": "e03c41f67d1f64c84eaaedba9ddd51c1cd0c0384fb412a44b81d957b025c53ba",
+      "size_bytes": 3197452,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_A_execution.json",
+      "sha256": "d8a82f06d0ec8d65bd0023424f330859f3f61f5ef44273dae6974ed02b142849",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B/args.yaml",
+      "sha256": "5142b97b1daf089dcd89ee5ba7535ea1706919004e1eab416358f009c43a7460",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B/results.csv",
+      "sha256": "d2d0a50a2e3a56ecbdc7324368d9c27bb96c27dcf91d6fc00aee20e1f17f1938",
+      "size_bytes": 2082,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B/results.png",
+      "sha256": "21408c3278d39a61aa4998a5d7efe49deee255f0e39cb8dfe75c54394f54136f",
+      "size_bytes": 136840,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B/weights/last.pt",
+      "exported_path": null,
+      "sha256": "bbe8dac6bad0e452ef18543b795ae816008bf1673bbe99bf9e13aa6acba7bc76",
+      "size_bytes": 3202636,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/model_B_execution.json",
+      "sha256": "61233b311c1ba172d2805ab8b2a2a61b4274902a342fcf59d70c4d3c413af633",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/trained_models.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/trained_models.json",
+      "sha256": "7c4f16760d04f203fd35ff62b9593b45c1e0bd225baef29a74c61d90ae053ce7",
+      "size_bytes": 1045,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/apa_kabar_halo_diagnostics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/apa_kabar_halo_diagnostics.csv",
+      "sha256": "c611fca77511f0734e0c1bc34e818be1e981a6d4b629d439943d59731e712262",
+      "size_bytes": 15973,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/comparison_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/comparison_metrics.csv",
+      "sha256": "d6be29849add0a3e5a5dd5e430e664f77779163456a7da111fa4000c7f9a22f7",
+      "size_bytes": 517,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_A_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_A_common6.csv",
+      "sha256": "fcae382c83a7496204c9bc74fee791269e2e0e867a6814eca281e09c1335ad99",
+      "size_bytes": 168,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_A_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_A_common6.png",
+      "sha256": "8632dc514f2d28471372409686b36494bfd3c4fa20a03eabb74c9c4f6d91108e",
+      "size_bytes": 71041,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_B_common6.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_B_common6.csv",
+      "sha256": "52b82f9714d7628c8c5cfee7388eed95fa1486f8ce786a791f81b82b10d61f21",
+      "size_bytes": 248,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_B_common6.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_B_common6.png",
+      "sha256": "ff030f2321591bf2d05540efc226e41b1d40571724fb0bb0e094b6044b77e297",
+      "size_bytes": 76879,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_B_full8.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_B_full8.csv",
+      "sha256": "f7911c802fab9d3ff782e7ca52b884baa6a17c0997ba25f472b7ac232763be48",
+      "size_bytes": 250,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_B_full8.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/confusion_B_full8.png",
+      "sha256": "a5c73d952b1dfe76838561cf0b9af377b86fd81483f1a42453a15222e36aa908",
+      "size_bytes": 77869,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/per_class_metrics.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/per_class_metrics.csv",
+      "sha256": "c789801a43718c93b87ad5ac98b8195f6eaa9f822c900937da55dd0d6b3abc18",
+      "size_bytes": 1347,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/predictions.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/predictions.csv",
+      "sha256": "8c6b35747e222fc5481ea3cb4dce9f3e6bdba09affff564ac323477d4921d151",
+      "size_bytes": 72149,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/manifest.csv",
+      "exported_path": null,
+      "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+      "size_bytes": 441189,
+      "artifact_category": "PRIVATE_OR_DETAILED_POINTER",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/reports/experiment_config.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/reports/experiment_config.json",
+      "sha256": "2b286af1337078152a69395e5a6befad9da2943a8fe03f0ed1017d0e7f91b784",
+      "size_bytes": 2926,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A/args.yaml",
+      "sha256": "a1e1932de44df1b9fd0d3d4ef69d0706c3668c469a8f3ac7aef98ab1ca8dc1a1",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A/results.csv",
+      "sha256": "3de90d4dc1d9c6e1df8692163babd3e09ac9d0ef97a6960c054a666cb5fb862e",
+      "size_bytes": 2097,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A/results.png",
+      "sha256": "b1e886737db773f7cd7c7b22e08b921a21565228fdd53265e62f29d8e4524951",
+      "size_bytes": 133785,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A/weights/last.pt",
+      "exported_path": null,
+      "sha256": "af538ffb291a31666a4861ce309714784eb1ed795d6896540bc828af86342242",
+      "size_bytes": 3197452,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_A_execution.json",
+      "sha256": "a9d30f6e92edb28e4d3dc37520144019c84b30c3dc194db781ac585c0a9ce6f0",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B/args.yaml",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B/args.yaml",
+      "sha256": "aa12e56e36cdb6657c0347193698970540d30bcccf2626b0464819c367bac356",
+      "size_bytes": 2146,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B/results.csv",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B/results.csv",
+      "sha256": "d8bbaef52fa0e298ce63447e7448fef3e4779f2cfdd4b7c6961348ac9f58756e",
+      "size_bytes": 2101,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B/results.png",
+      "exported_path": "FIGURES/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B/results.png",
+      "sha256": "5475e8f7852e459ada088d7a5eaa6457e410e23af7aff6dc199420dd37386504",
+      "size_bytes": 125489,
+      "artifact_category": "EXISTING_FIGURE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B/weights/last.pt",
+      "exported_path": null,
+      "sha256": "f5bb4d80995be7e668f4153bada040beca84467d968dce04e3e866e0cdb90fdb",
+      "size_bytes": 3202636,
+      "artifact_category": "CHECKPOINT_POINTER",
+      "scientific_purpose": "Identitas byte checkpoint; model besar tidak disalin",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B_execution.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/model_B_execution.json",
+      "sha256": "9685b0b085fac8371adcbd738ffe497d5a1d0240d0c7aafa0444514f09d9ecf5",
+      "size_bytes": 3330,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/trained_models.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/trained_models.json",
+      "sha256": "24cc4b7750bcf1f18dc7892307c2ecab124f873b52f55e3fe65363c69116cd90",
+      "size_bytes": 1045,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed42_attempt2/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed42_attempt2/exploratory_probe_summary.json",
+      "sha256": "12094dc7752563e0f90ec96363f641d91935bb8dd035c1ffa5165899d4a25ebf",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed43/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed43/exploratory_probe_summary.json",
+      "sha256": "809eb255332744722b6350c1c73e0750d3467a4cfca0271a72fd977e41fa9084",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed44/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed44/exploratory_probe_summary.json",
+      "sha256": "a22ad394fe2e440d515afef5d02dc9929776e7d284777d7bbb88238d4492cb18",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed45/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed45/exploratory_probe_summary.json",
+      "sha256": "c3edda93c1a7c07854f54f50cb633e1988813918b6f45d2d7ec191e2e00f4a21",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed46/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_A_seed46/exploratory_probe_summary.json",
+      "sha256": "044e699316a8949cd53ceaec666eea07026dee15ae8796d6c4d3a90379af9fc6",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed42/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed42/exploratory_probe_summary.json",
+      "sha256": "5c9dbe7226b742cf5bb536ff9751077802ba41fbfac2c080dbbeee11fb19d7dc",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed43/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed43/exploratory_probe_summary.json",
+      "sha256": "e2e89f4b94de143accd59cf67b9c5953c6586e7e39d606baa05a1882c8de3ad8",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed44/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed44/exploratory_probe_summary.json",
+      "sha256": "10574a075bc62b51ac0396e105010ec8ea6e17d81f3f5f6c664d4770a01536d6",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed45/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed45/exploratory_probe_summary.json",
+      "sha256": "b2eb0780e7d20125eb61f490f8ed7d7780cdf0ef11d57b3a93ba05828c7512f2",
+      "size_bytes": 678,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed46/exploratory_probe_summary.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/linear_probes/exploratory_development_stage1b_user_20261103_v1_probe_B_seed46/exploratory_probe_summary.json",
+      "sha256": "012d1d64aa7db0f45b415312fa40f6a85cefca779c876a85e2f82a6357592676",
+      "size_bytes": 691,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "02_exp/tahap1b/mask_inputs/exploratory_development_stage1b_user_20261103_v1_exploratory_masks/exploratory_mask_provenance.json",
+      "exported_path": "EVIDENCE/02_exp/tahap1b/mask_inputs/exploratory_development_stage1b_user_20261103_v1_exploratory_masks/exploratory_mask_provenance.json",
+      "sha256": "ead7dd78bed3715c65c8b11d2c4ee8ef3d70712df2385aad7c856c53f7a7a8f4",
+      "size_bytes": 450,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/h1_effect_sensitivity.md",
+      "exported_path": "EVIDENCE/03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/h1_effect_sensitivity.md",
+      "sha256": "f7b42dff14794f1d42e6c2e8dd0aa997f4f60b747fe11fb70a8995f592a2914d",
+      "size_bytes": 754,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/h1_power_scenarios.csv",
+      "exported_path": "EVIDENCE/03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/h1_power_scenarios.csv",
+      "sha256": "cd4dcb3dffd48432dc36e456601fb9a8d117be3f9d94594dec9c305a5459f86a",
+      "size_bytes": 11919,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/h2_power_scenarios.csv",
+      "exported_path": "EVIDENCE/03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/h2_power_scenarios.csv",
+      "sha256": "2e997c7f58e10e94d7085ed9483e4109a1fd96ba5b72b703fe087b3796bb9df5",
+      "size_bytes": 1220,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/power_precision_report.md",
+      "exported_path": "EVIDENCE/03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/power_precision_report.md",
+      "sha256": "44b3943a039923f8e74cbf22596589a9b2f5b8bb326187a0a20aa17194b1a813",
+      "size_bytes": 4505,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/simulation_provenance.json",
+      "exported_path": "EVIDENCE/03_insight_exp/arsip_tahap1a/experiment_yolo26_classification_diag_v1/reports/power/simulation_provenance.json",
+      "sha256": "45939964bb82ef3d9c2cf90bbc7a6b641ab355a3631c27fd6610438bc2d4867c",
+      "size_bytes": 395,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_exploratory_multiseed/exploratory_multiseed_summary.json",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_exploratory_multiseed/exploratory_multiseed_summary.json",
+      "sha256": "ede119eb461827aef93c0048ba96642ee475b5774498e101d7ff448ce76ebb41",
+      "size_bytes": 1120,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed42/exploratory_masked_metrics.csv",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed42/exploratory_masked_metrics.csv",
+      "sha256": "e4344c5251b56178f68ba8a72ff701e59447235c8312d6d13b8ec4349ce4cde9",
+      "size_bytes": 1176,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed42/exploratory_masked_report.md",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed42/exploratory_masked_report.md",
+      "sha256": "81f5ad964ad1b66c083259adbb48864d952fbbfd30b4c92bb5c77e8bd226ba00",
+      "size_bytes": 1684,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed43/exploratory_masked_metrics.csv",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed43/exploratory_masked_metrics.csv",
+      "sha256": "196f5295fc9e064e623bc4943d1a689c695230190a566882ad4c6e8fcda794ab",
+      "size_bytes": 1142,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed43/exploratory_masked_report.md",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed43/exploratory_masked_report.md",
+      "sha256": "fac9364d7678df7d952b8cfb5dfffd1eb2992d336872a996f034322bae518198",
+      "size_bytes": 1650,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed44/exploratory_masked_metrics.csv",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed44/exploratory_masked_metrics.csv",
+      "sha256": "eb27eef5eecefbbb542035458fbcfbc5b0001f56bf07ede0d7f8d4459d71451b",
+      "size_bytes": 1150,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed44/exploratory_masked_report.md",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed44/exploratory_masked_report.md",
+      "sha256": "2c75dc6aa546f5fb73befd44c16d934fabb1d48d0106e46b60f2f57866d153ca",
+      "size_bytes": 1658,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed45/exploratory_masked_metrics.csv",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed45/exploratory_masked_metrics.csv",
+      "sha256": "1e4248c90e49b5d8b080e2d97d01811c59a8a2c2750cc5f9a0a12d1e68a9a10d",
+      "size_bytes": 1176,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed45/exploratory_masked_report.md",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed45/exploratory_masked_report.md",
+      "sha256": "50d27a3a6733b67747a6b7f34a3c2c044d0dd51dd58b039f0ecf8e563ff15d93",
+      "size_bytes": 1684,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed46/exploratory_masked_metrics.csv",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed46/exploratory_masked_metrics.csv",
+      "sha256": "c33f9124316addc31810889b23467de55cdda7ced5208d414b40ca059a1b5136",
+      "size_bytes": 1172,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed46/exploratory_masked_report.md",
+      "exported_path": "EVIDENCE/03_insight_exp/tahap1b/exploratory_development_stage1b_user_20261103_v1_masked_eval_seed46/exploratory_masked_report.md",
+      "sha256": "cd11949d0e84f8a7f288548f9a79b8ad3a9a3c4f825524e75e735b877c269e3e",
+      "size_bytes": 1680,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "source_path": "05_kode/src/analysis_paired.py",
+      "exported_path": "EVIDENCE/05_kode/src/analysis_paired.py",
+      "sha256": "c0c9433f12852a7f342c52a36a151fd4f419e01f5980e2ada0674ddecea0be24",
+      "size_bytes": 9265,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "05_kode/src/classification_diagnostics.py",
+      "exported_path": "EVIDENCE/05_kode/src/classification_diagnostics.py",
+      "sha256": "a2db59d81385eee60432c4fe8a6be140dd82838949d8ac03ef7b596bcc02d122",
+      "size_bytes": 17984,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "05_kode/src/classification_pilot.py",
+      "exported_path": "EVIDENCE/05_kode/src/classification_pilot.py",
+      "sha256": "8e8a5be2f8057214772151e56db1d39479a55fd2f3c470a58c0a008a082f6e65",
+      "size_bytes": 40382,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "05_kode/src/classification_research.py",
+      "exported_path": "EVIDENCE/05_kode/src/classification_research.py",
+      "sha256": "5b75e780bdc1b23747606dec52f671ad107e3cd0cfc6244161e972c0c7e68ae9",
+      "size_bytes": 15173,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "05_kode/src/confirmatory_statistics.py",
+      "exported_path": "EVIDENCE/05_kode/src/confirmatory_statistics.py",
+      "sha256": "033be07134e3f9750e245f0a11cdfe72250adab3464c937854e51ea9cfb6a7c0",
+      "size_bytes": 4783,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "05_kode/src/frame_candidates.py",
+      "exported_path": "EVIDENCE/05_kode/src/frame_candidates.py",
+      "sha256": "0e4a9a636775caed2b837f37eb5781072bb108bc5b5c4beeda78417cdcdb07a7",
+      "size_bytes": 24965,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "05_kode/src/interference_metrics.py",
+      "exported_path": "EVIDENCE/05_kode/src/interference_metrics.py",
+      "sha256": "a86c14e397e8c69a7b71cd3ad3ae7961f823b013658a76ca66f31b638ceced3e",
+      "size_bytes": 5537,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "05_kode/src/pilot_study.py",
+      "exported_path": "EVIDENCE/05_kode/src/pilot_study.py",
+      "sha256": "030cb1bc7283608be9f6ab50a99010c2fd75e9901e5795384830a0c4f2ee5668",
+      "size_bytes": 38999,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "07_dokumen/TRACKING_BISINDO.md",
+      "exported_path": "EVIDENCE/07_dokumen/TRACKING_BISINDO.md",
+      "sha256": "2401e0b5410aa510789610f39d6fdbc6e725cbaae17068e4601b3b43cb848f82",
+      "size_bytes": 45042,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "07_dokumen/protokol/HYPOTHESES_ENDPOINTS_ADDENDUM.md",
+      "exported_path": "EVIDENCE/07_dokumen/protokol/HYPOTHESES_ENDPOINTS_ADDENDUM.md",
+      "sha256": "a0b557615af7cac04592f72de6a1ad37f90f35bfd8715121399087b47b550ea2",
+      "size_bytes": 10896,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "07_dokumen/protokol/PREREGISTRATION.md",
+      "exported_path": "EVIDENCE/07_dokumen/protokol/PREREGISTRATION.md",
+      "sha256": "24e21743168f3457933f0f17db76e52d420b5f005da774a7f9230c71f1ac7a70",
+      "size_bytes": 18866,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "07_dokumen/protokol/PREREGISTRATION_ADDENDUM_01.md",
+      "exported_path": "EVIDENCE/07_dokumen/protokol/PREREGISTRATION_ADDENDUM_01.md",
+      "sha256": "1242f435e86aaa1c4e62f55c8ed3a30e66f6dcb65e00b8d7570606bac09b2ba6",
+      "size_bytes": 3926,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "07_dokumen/protokol/analysis_plan.json",
+      "exported_path": "EVIDENCE/07_dokumen/protokol/analysis_plan.json",
+      "sha256": "122793e63c677dd5a3635d3a40995dfeb3dccdee572046365ee218e2b1c38987",
+      "size_bytes": 3211,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "07_dokumen/protokol/external_scoring_readiness.md",
+      "exported_path": "EVIDENCE/07_dokumen/protokol/external_scoring_readiness.md",
+      "sha256": "2facca8dc01ea4fbeaf0fcd51314a4474d4fef8bbe9865e7b8ef88801522d1f1",
+      "size_bytes": 13627,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    },
+    {
+      "source_path": "07_dokumen/protokol/reproducibility_manifest.json",
+      "exported_path": "EVIDENCE/07_dokumen/protokol/reproducibility_manifest.json",
+      "sha256": "f161597726bb41866c81fbf0a2c48ad62fd84658e13d30c521f52196d961efd8",
+      "size_bytes": 19503,
+      "artifact_category": "SOURCE_EVIDENCE",
+      "scientific_purpose": "Verifikasi klaim lokal; interpretasi/verification limits pada report section terkait",
+      "evidence_status": "VERIFIED_FROM_ARTIFACT"
+    }
+  ]
+}

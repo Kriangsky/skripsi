@@ -1,0 +1,1926 @@
+CELL 1
+from pathlib import Path
+from datetime import datetime, timezone
+import importlib.metadata as metadata
+import json
+import platform
+import sys
+
+# Resolve from repository root, notebook folder, or the existing compatibility runtime.
+candidates = [Path.cwd().resolve(), *Path.cwd().resolve().parents]
+roots = [p for p in candidates if (p/'05_kode/src/confirmatory_evaluation.py').is_file()]
+if not roots:
+    raise FileNotFoundError('Open notebook inside the BISINDO repository')
+ROOT = roots[0]
+sys.path.insert(0, str(ROOT/'05_kode/src'))
+import confirmatory_evaluation as evaluation
+import confirmatory_statistics as statistics
+import interference_metrics as interference
+import classification_research as research
+
+BASE = ['saya', 'kamu', 'senang', 'bingung', 'marah', 'apa_kabar']
+EXTRA = ['halo', 'tidur']
+ALL_CLASSES = BASE + EXTRA
+SEEDS = [42, 43, 44, 45, 46]
+PLAN_PATH = ROOT/'07_dokumen/protokol/analysis_plan.json'
+PLAN = evaluation.read(PLAN_PATH)
+assert PLAN['class_mapping'] == ALL_CLASSES == list(interference.ALL_CLASSES)
+assert PLAN['training_seeds'] == SEEDS
+assert PLAN['task'] == 'classify' and PLAN['model_variant'] == 'yolo26n-cls'
+RUN_TRAINING = False
+RUN_FREEZE = False
+RUN_EXTERNAL_SCORING = False
+print({'status': 'VERIFIED', 'classes': ALL_CLASSES, 'seeds': SEEDS,
+       'task': PLAN['task'], 'primary_metric': 'paired common6 macro-F1 B minus A; B full8 argmax'})
+{'status': 'VERIFIED', 'classes': ['saya', 'kamu', 'senang', 'bingung', 'marah', 'apa_kabar', 'halo', 'tidur'], 'seeds': [42, 43, 44, 45, 46], 'task': 'classify', 'primary_metric': 'paired common6 macro-F1 B minus A; B full8 argmax'}
+
+CELL 2
+AUDIT_STARTED_UTC = datetime.now(timezone.utc).isoformat()
+ENVIRONMENT = {'python': sys.version, 'executable': sys.executable,
+               'platform': platform.platform(),
+               'packages': {name: metadata.version(name) for name in
+                            ['nbformat', 'nbclient', 'ipykernel', 'numpy', 'pandas', 'scipy', 'torch', 'torchvision', 'ultralytics']},
+               'git': evaluation.git_state(ROOT)}
+SOURCE_HASHES = {str(p.relative_to(ROOT)): evaluation.sha(p)
+                 for p in sorted((ROOT/'05_kode/src').glob('*.py'))}
+print(json.dumps({'started_utc': AUDIT_STARTED_UTC, 'environment': ENVIRONMENT,
+                  'source_sha256': SOURCE_HASHES, 'plan_sha256': evaluation.sha(PLAN_PATH)}, indent=2))
+{
+  "started_utc": "2026-11-05T09:18:29.742664+00:00",
+  "environment": {
+    "python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "packages": {
+      "nbformat": "5.10.4",
+      "nbclient": "0.10.0",
+      "ipykernel": "6.29.4",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scipy": "1.17.1",
+      "torch": "2.14.0+cu126",
+      "torchvision": "0.29.0+cu126",
+      "ultralytics": "8.4.197"
+    },
+    "git": {
+      "commit": "69812a750b1486c0df163cf46cdf95ea9c452d40",
+      "working_tree": "?? 01_hasil/addendum/data_inventory_task1_20261105/\n?? 05_kode/src/task1_data_audit.py\n?? 05_kode/tests/test_task1_data_audit.py"
+    }
+  },
+  "source_sha256": {
+    "05_kode\\src\\analysis_paired.py": "c0c9433f12852a7f342c52a36a151fd4f419e01f5980e2ada0674ddecea0be24",
+    "05_kode\\src\\audit_dataset.py": "9a04c56430872230f9a7d12a4e68a0811650e392f05278cb10b17a295e2b5073",
+    "05_kode\\src\\bisindo_pipeline.py": "0f8aa793bb2e91eb88b29359de81b2cbec26a682952567cd7da980997eb7c8f1",
+    "05_kode\\src\\classification_diagnostics.py": "a2db59d81385eee60432c4fe8a6be140dd82838949d8ac03ef7b596bcc02d122",
+    "05_kode\\src\\classification_pilot.py": "8e8a5be2f8057214772151e56db1d39479a55fd2f3c470a58c0a008a082f6e65",
+    "05_kode\\src\\classification_research.py": "5b75e780bdc1b23747606dec52f671ad107e3cd0cfc6244161e972c0c7e68ae9",
+    "05_kode\\src\\classification_workflow.py": "6a3a01b14c17d53f117b89d768e06f27f2951e402c12bb0cbea67ae8479dd27d",
+    "05_kode\\src\\confirmatory_evaluation.py": "4973eb1b6755cfb57027348a3c5492c559638d15b7a6ed70624fffee4103b6dc",
+    "05_kode\\src\\confirmatory_statistics.py": "033be07134e3f9750e245f0a11cdfe72250adab3464c937854e51ea9cfb6a7c0",
+    "05_kode\\src\\exploratory_stage1b_runner.py": "c81c4f8c8dde329d4a6938ada995f9c038d960eca5344c2a199c57024bcf73a4",
+    "05_kode\\src\\frame_candidates.py": "0e4a9a636775caed2b837f37eb5781072bb108bc5b5c4beeda78417cdcdb07a7",
+    "05_kode\\src\\interference_metrics.py": "a86c14e397e8c69a7b71cd3ad3ae7961f823b013658a76ca66f31b638ceced3e",
+    "05_kode\\src\\pilot_study.py": "030cb1bc7283608be9f6ab50a99010c2fd75e9901e5795384830a0c4f2ee5668",
+    "05_kode\\src\\power_precision.py": "38cc7c1d1ab41e3e7190d414378e7afecb47d150517252a7f7384f3f5f2c1003",
+    "05_kode\\src\\task1_data_audit.py": "cce4e8fcf099ccc0ce62a219866d36c8c4a48bcbc2884a2429ee8638fdb52098",
+    "05_kode\\src\\training_pilot.py": "fa44757bd3a5813f29fea92352c146d94b7ac6ce61c9a286c370d2b31ab60446",
+    "05_kode\\src\\training_pilot_eval.py": "21b89b9a78ba421d1c32b4d0a09b05a23138ce69b4e5d403348f1e8a77ef21d5",
+    "05_kode\\src\\verify_notebook.py": "d3472b046608dad44cecb746c6df5d0be1dbe216b77c593c436aac822196c65b"
+  },
+  "plan_sha256": "122793e63c677dd5a3635d3a40995dfeb3dccdee572046365ee218e2b1c38987"
+}
+
+CELL 3
+ARTIFACT_INVENTORY = {}
+for name, value in PLAN['artifacts'].items():
+    if value is None:
+        ARTIFACT_INVENTORY[name] = {'status': 'BLOCKED', 'path': None}
+    else:
+        path = evaluation.resolve(ROOT, value)
+        if not path.is_file():
+            raise FileNotFoundError(path)
+        ARTIFACT_INVENTORY[name] = {'status': 'VERIFIED existence/hash only', 'path': value,
+                                    'sha256': evaluation.sha(path)}
+print(json.dumps(ARTIFACT_INVENTORY, indent=2))
+print('TASK 1 PLANNED: count/schema/split/duplicate/exposure checks; not executed by this cell.')
+{
+  "addendum": {
+    "status": "VERIFIED existence/hash only",
+    "path": "07_dokumen/protokol/HYPOTHESES_ENDPOINTS_ADDENDUM.md",
+    "sha256": "a0b557615af7cac04592f72de6a1ad37f90f35bfd8715121399087b47b550ea2"
+  },
+  "experiment_config": {
+    "status": "BLOCKED",
+    "path": null
+  },
+  "initial_checkpoint": {
+    "status": "VERIFIED existence/hash only",
+    "path": "02_exp/arsip_pipeline/experiment_yolo26_classification_pilot/checkpoints/yolo26n-cls.pt",
+    "sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81"
+  },
+  "dataset_manifest": {
+    "status": "VERIFIED existence/hash only",
+    "path": "02_exp/arsip_pipeline/experiment_yolo26_v3/split_lock.csv",
+    "sha256": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e"
+  },
+  "split_mapping": {
+    "status": "VERIFIED existence/hash only",
+    "path": "02_exp/arsip_pipeline/experiment_yolo26_v3/split_lock.csv",
+    "sha256": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e"
+  },
+  "external_manifest": {
+    "status": "BLOCKED",
+    "path": null
+  },
+  "internal_manifest": {
+    "status": "BLOCKED",
+    "path": null
+  },
+  "environment": {
+    "status": "BLOCKED",
+    "path": null
+  },
+  "scientific_decision": {
+    "status": "BLOCKED",
+    "path": null
+  },
+  "provenance_review": {
+    "status": "BLOCKED",
+    "path": null
+  },
+  "exposure_review": {
+    "status": "BLOCKED",
+    "path": null
+  },
+  "validation_record": {
+    "status": "BLOCKED",
+    "path": null
+  }
+}
+TASK 1 PLANNED: count/schema/split/duplicate/exposure checks; not executed by this cell.
+
+CELL 4
+TASK1_DIRECTORY = ROOT/'01_hasil/addendum/data_inventory_task1_20261105'
+TASK1_AUDIT = evaluation.read(TASK1_DIRECTORY/'audit.json')
+TASK1_PROVENANCE = evaluation.read(TASK1_DIRECTORY/'provenance.json')
+TASK1_DUPLICATES = evaluation.read(TASK1_DIRECTORY/'duplicate_impact.json')
+assert TASK1_AUDIT['schema_version'] == 1 and TASK1_AUDIT['task'] == 1
+assert TASK1_AUDIT['technical_audit_passed'] is True
+assert TASK1_AUDIT['class_mapping'] == ALL_CLASSES
+assert [row['seed'] for row in TASK1_AUDIT['internal_pairing']] == SEEDS
+print(json.dumps({'task': 1, 'status': 'VERIFIED read-only audit; external readiness BLOCKED',
+                  'audit_completed_utc': TASK1_AUDIT['completed_utc'],
+                  'expected': TASK1_AUDIT['expected'], 'observed': TASK1_AUDIT['observed'],
+                  'class_split_counts': TASK1_AUDIT['class_split_counts'],
+                  'pairing': TASK1_AUDIT['internal_pairing'],
+                  'frame_provenance': TASK1_AUDIT['frame_provenance'],
+                  'actual_video_duplicate_groups': len(TASK1_AUDIT['duplicates']['actual_video_groups']),
+                  'decoded_rgb_duplicate_groups': len(TASK1_DUPLICATES['groups']),
+                  'cross_split_groups': TASK1_DUPLICATES['cross_split_groups'],
+                  'duplicate_interpretation': TASK1_DUPLICATES['interpretation'],
+                  'near_duplicate_status': TASK1_AUDIT['duplicates']['near_duplicates'],
+                  'final_manifests': TASK1_AUDIT['final_manifest_paths'],
+                  'provenance': TASK1_PROVENANCE['evidence_table'],
+                  'audit_sha256': evaluation.sha(TASK1_DIRECTORY/'audit.json'),
+                  'provenance_sha256': evaluation.sha(TASK1_DIRECTORY/'provenance.json')}, indent=2))
+
+{
+  "task": 1,
+  "status": "VERIFIED read-only audit; external readiness BLOCKED",
+  "audit_completed_utc": "2026-11-05T09:12:49.827514+00:00",
+  "expected": {
+    "internal": 2400,
+    "external": 400,
+    "internal_train": 1920,
+    "internal_val": 480,
+    "external_common6": 300,
+    "external_full8": 400
+  },
+  "observed": {
+    "inventory_rows": 2800,
+    "internal": 2400,
+    "external": 400,
+    "internal_train": 1920,
+    "internal_val": 480,
+    "external_common6": 300,
+    "external_full8": 400,
+    "physical_video_files": 2800,
+    "physical_verified_files": 2800
+  },
+  "class_split_counts": [
+    {
+      "source": "test",
+      "split": "test",
+      "class_name": "apa_kabar",
+      "n": 50
+    },
+    {
+      "source": "test",
+      "split": "test",
+      "class_name": "bingung",
+      "n": 50
+    },
+    {
+      "source": "test",
+      "split": "test",
+      "class_name": "halo",
+      "n": 50
+    },
+    {
+      "source": "test",
+      "split": "test",
+      "class_name": "kamu",
+      "n": 50
+    },
+    {
+      "source": "test",
+      "split": "test",
+      "class_name": "marah",
+      "n": 50
+    },
+    {
+      "source": "test",
+      "split": "test",
+      "class_name": "saya",
+      "n": 50
+    },
+    {
+      "source": "test",
+      "split": "test",
+      "class_name": "senang",
+      "n": 50
+    },
+    {
+      "source": "test",
+      "split": "test",
+      "class_name": "tidur",
+      "n": 50
+    },
+    {
+      "source": "train",
+      "split": "train",
+      "class_name": "apa_kabar",
+      "n": 240
+    },
+    {
+      "source": "train",
+      "split": "train",
+      "class_name": "bingung",
+      "n": 240
+    },
+    {
+      "source": "train",
+      "split": "train",
+      "class_name": "halo",
+      "n": 240
+    },
+    {
+      "source": "train",
+      "split": "train",
+      "class_name": "kamu",
+      "n": 240
+    },
+    {
+      "source": "train",
+      "split": "train",
+      "class_name": "marah",
+      "n": 240
+    },
+    {
+      "source": "train",
+      "split": "train",
+      "class_name": "saya",
+      "n": 240
+    },
+    {
+      "source": "train",
+      "split": "train",
+      "class_name": "senang",
+      "n": 240
+    },
+    {
+      "source": "train",
+      "split": "train",
+      "class_name": "tidur",
+      "n": 240
+    },
+    {
+      "source": "train",
+      "split": "val",
+      "class_name": "apa_kabar",
+      "n": 60
+    },
+    {
+      "source": "train",
+      "split": "val",
+      "class_name": "bingung",
+      "n": 60
+    },
+    {
+      "source": "train",
+      "split": "val",
+      "class_name": "halo",
+      "n": 60
+    },
+    {
+      "source": "train",
+      "split": "val",
+      "class_name": "kamu",
+      "n": 60
+    },
+    {
+      "source": "train",
+      "split": "val",
+      "class_name": "marah",
+      "n": 60
+    },
+    {
+      "source": "train",
+      "split": "val",
+      "class_name": "saya",
+      "n": 60
+    },
+    {
+      "source": "train",
+      "split": "val",
+      "class_name": "senang",
+      "n": 60
+    },
+    {
+      "source": "train",
+      "split": "val",
+      "class_name": "tidur",
+      "n": 60
+    }
+  ],
+  "pairing": [
+    {
+      "seed": 42,
+      "common6_val_n": 120,
+      "B_full8_val_n": 160,
+      "shared_train_n": 360,
+      "shared_val_n": 120,
+      "identical_common6_samples_gt_video_and_image_hashes": true
+    },
+    {
+      "seed": 43,
+      "common6_val_n": 120,
+      "B_full8_val_n": 160,
+      "shared_train_n": 360,
+      "shared_val_n": 120,
+      "identical_common6_samples_gt_video_and_image_hashes": true
+    },
+    {
+      "seed": 44,
+      "common6_val_n": 120,
+      "B_full8_val_n": 160,
+      "shared_train_n": 360,
+      "shared_val_n": 120,
+      "identical_common6_samples_gt_video_and_image_hashes": true
+    },
+    {
+      "seed": 45,
+      "common6_val_n": 120,
+      "B_full8_val_n": 160,
+      "shared_train_n": 360,
+      "shared_val_n": 120,
+      "identical_common6_samples_gt_video_and_image_hashes": true
+    },
+    {
+      "seed": 46,
+      "common6_val_n": 120,
+      "B_full8_val_n": 160,
+      "shared_train_n": 360,
+      "shared_val_n": 120,
+      "identical_common6_samples_gt_video_and_image_hashes": true
+    }
+  ],
+  "frame_provenance": {
+    "v3_selected_positive_frames": 0,
+    "v3_review_status": [
+      {
+        "source": "test",
+        "review_status": "needs_review",
+        "n": 400
+      },
+      {
+        "source": "train",
+        "review_status": "needs_review",
+        "n": 2400
+      }
+    ],
+    "development_semantic_status": {
+      "not_assessed": 640
+    },
+    "development_technical_status": {
+      "flagged": 497,
+      "eligible": 143
+    },
+    "candidate_config": {
+      "protocol": "human_selected_positive_v1",
+      "primary_fractions": [
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ],
+      "fallback_fractions": [
+        0.05,
+        0.1,
+        0.15,
+        0.85,
+        0.9,
+        0.95
+      ],
+      "quality_heuristics": {
+        "border_margin": 0.01,
+        "min_hand_side_px": 16,
+        "min_hand_area_px": 256,
+        "min_focus": 60.0
+      },
+      "annotation_recipe_sha256": "fd5eaec095608c591afd96835059bbbb88c944c7df7a96dcd65c251eb996f151",
+      "split_lock_sha256": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+      "note": "Technical visibility/blur checks are heuristics; only human class-aware review establishes a gesture positive."
+    }
+  },
+  "actual_video_duplicate_groups": 0,
+  "decoded_rgb_duplicate_groups": 3,
+  "cross_split_groups": 0,
+  "duplicate_interpretation": "3 exact candidate frame pairs for senang_223/senang_224, both locked training. Only224 appears in Stage1b manifest, using f48, not duplicate f7/f10/f14. No cross-split identity found within audited images. Not proof of all-frame/near-duplicate or signer independence.",
+  "near_duplicate_status": "UNVERIFIED: not evaluated",
+  "final_manifests": {
+    "external_manifest": null,
+    "internal_manifest": null
+  },
+  "provenance": [
+    {
+      "topic": "Dataset source",
+      "status": "PARTIALLY VERIFIED",
+      "evidence": "Historical draft reference [26] cites Anggi Yohanes Pardede, BISINDO 40 Kata mp4, Kaggle; URL in source passages.",
+      "limitation": "Citation is local documentary evidence; no archive/version-to-local-byte binding verified."
+    },
+    {
+      "topic": "Version/acquisition",
+      "status": "UNVERIFIED",
+      "evidence": "Draft lists access date Jun 10 2026; preparation records bind local hashes.",
+      "limitation": "Draft date is not an acquisition receipt. Need dataset version ID, download/acquisition log, original archive hash, subset/rename mapping provenance."
+    },
+    {
+      "topic": "License",
+      "status": "UNVERIFIED",
+      "evidence": "Scoped filename search recorded; no dataset license/version receipt found.",
+      "limitation": "Need license text tied to acquired version, author attribution and reuse conditions. No license inferred from public availability."
+    },
+    {
+      "topic": "Signer/session",
+      "status": "UNVERIFIED",
+      "evidence": "External nonempty signer=0/400; internal=0/2400.",
+      "limitation": "Need trustworthy source records or reviewer-backed provenance; hashes do not establish signer independence."
+    },
+    {
+      "topic": "Historical v2/v3 exposure",
+      "status": "VERIFIED preprocessing",
+      "evidence": "400 external v2 annotation/frame records; 400 external v3 candidate-cache records and actual cached image byte/RGB checks in audit.json/file_integrity.jsonl.",
+      "limitation": "Previously opened/preprocessed; not untouched. Draft describes filtering blurry/transitional frames, without complete underlying acquisition/selection audit trail."
+    },
+    {
+      "topic": "External scoring/tuning history",
+      "status": "UNVERIFIED completeness",
+      "evidence": "7 discovered completed Classification evaluation receipts have internal-only manifests; 0 final scoring-start receipts found in scoped search.",
+      "limitation": "Absence in these records is not proof of absence elsewhere. Owner/reviewer must review historical external inference, score viewing, frame/threshold/model/checkpoint/hyperparameter selection; do not generate attestation."
+    },
+    {
+      "topic": "Neutral filename GT",
+      "status": "VERIFIED local consistency",
+      "evidence": "400 unique neutral filename/GT/original-filename CSV rows map to physical external files and locked class IDs; original filename class tokens match CSV.",
+      "limitation": "Original archive labels and semantic gesture correctness unverified. Mapping CSV alone is not authoritative acquisition provenance."
+    },
+    {
+      "topic": "Semantic/ambiguity review",
+      "status": "PARTIAL, internal only",
+      "evidence": "Two reviewer response exports cover 160 training-pool pilot samples; original exports match; counts below. Classification technical contact-sheet review has expert_verified_n=0 and semantic_unassessed_n=640.",
+      "limitation": "No complete external semantic adjudication. Review responses are not relabelled into final manifests; reviewer expertise/independence not established by hashes."
+    }
+  ],
+  "audit_sha256": "2dbd5026b458f754e8b5bde85920d71e4b47ee35ab8570e6f39c39e6bea0bafa",
+  "provenance_sha256": "6628bb7e7807605e2dd5cf391239bad55ed7906889d1f98f528bca191004bc66"
+}
+
+CELL 5
+WORKS = {seed: evaluation.resolve(ROOT, PLAN['development_runs'][str(seed)]) for seed in SEEDS}
+REFERENCE_CONFIG = evaluation.read(WORKS[42]/'reports/experiment_config.json')
+print(json.dumps({'preprocessing_recorded': REFERENCE_CONFIG['preprocessing'],
+                  'evaluation_checkpoint': REFERENCE_CONFIG['evaluation_checkpoint'],
+                  'source_snapshot_recorded': REFERENCE_CONFIG['source_snapshot'],
+                  'config_sha256': evaluation.sha(WORKS[42]/'reports/experiment_config.json'),
+                  'frame_policy_source': ['05_kode/src/frame_candidates.py', '05_kode/src/pilot_study.py',
+                                          '05_kode/src/classification_pilot.py'],
+                  'final_frame_provenance_status': 'BLOCKED: final manifests unresolved'}, indent=2))
+{
+  "preprocessing_recorded": "Full-frame aspect-preserving letterbox to 224x224, gray114; RGB/255; no crop/flip",
+  "evaluation_checkpoint": "last.pt after 30 epochs, same for A/B",
+  "source_snapshot_recorded": {
+    "split_lock.csv": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+    "candidates.csv": "2061a83fa605b0194324499ba7f9b9f69ddfd21ca86a907db01786fdcb3afb12",
+    "candidate_config.json": "eb986c300d2d618372f955e87565f7f32c8abbfd3d7b3a34f2e229361f0eb618",
+    "human_pilot_manifest": "6d033a09eb54c5f0af011f3b7fecf7fe5a9b2e5532610c9d8468961ae43128fd"
+  },
+  "config_sha256": "60b74d1b0511a49b51123a31d13df9983aa08034fb2aac8bcf25a4d56f1baa2c",
+  "frame_policy_source": [
+    "05_kode/src/frame_candidates.py",
+    "05_kode/src/pilot_study.py",
+    "05_kode/src/classification_pilot.py"
+  ],
+  "final_frame_provenance_status": "BLOCKED: final manifests unresolved"
+}
+
+CELL 6
+import pandas as pd
+RUN_ROWS = []
+for seed, work in WORKS.items():
+    config = evaluation.read(work/'reports/experiment_config.json')
+    trained = evaluation.read(work/'runs/trained_models.json')
+    assert {x['model'] for x in trained['models']} == {'A', 'B'} and len(trained['models']) == 2
+    for item in trained['models']:
+        model = item['model']
+        checkpoint = work/'runs'/f'model_{model}'/'weights/last.pt'
+        execution = evaluation.read(work/'runs'/f'model_{model}_execution.json')
+        curve = pd.read_csv(work/'runs'/f'model_{model}'/'results.csv')
+        curve.columns = curve.columns.str.strip()
+        actual_sha = evaluation.sha(checkpoint)
+        assert actual_sha == item['sha256']
+        assert item['seed'] == seed and item['epoch'] == 30
+        assert item['initial_checkpoint_sha256'] == execution['initial_checkpoint_sha256'] == research.PINNED_SHA
+        assert curve.epoch.tolist() == list(range(1, 31))
+        args = execution['actual_args']
+        for key in ['seed', 'epochs', 'imgsz', 'batch', 'optimizer']:
+            assert args[key] == config['training'][key]
+        RUN_ROWS.append({'seed': seed, 'model': model, 'tier': 'development',
+                         'checkpoint': str(checkpoint.relative_to(ROOT)), 'sha256': actual_sha,
+                         'optimizer_steps': execution['actual_optimizer_steps'],
+                         'recorded_training_seconds': float(curve.time.iloc[-1]),
+                         'effective_args': args})
+print(pd.DataFrame([{k:v for k,v in row.items() if k != 'effective_args'} for row in RUN_ROWS]).to_string(index=False))
+print('Effective historical arguments:')
+print(json.dumps(RUN_ROWS, indent=2))
+FAILURE_PATH = ROOT/'01_hasil/tahap1b/exploratory_development_stage1b_agent_execution_20261103_v2/exploratory_failures.json'
+print('Historical failures:', json.dumps(evaluation.read(FAILURE_PATH), indent=2))
+ seed model        tier                                                                                                    checkpoint                                                           sha256  optimizer_steps  recorded_training_seconds
+   42     A development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed42\runs\model_A\weights\last.pt 03727737a647405bdc6154c925c4575f2b77bf45f48a2ef21a92d02d044f54b7              690                    53.1245
+   42     B development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed42\runs\model_B\weights\last.pt e544a04b4798f1d76a2096c844fd768bd53e50aa2fa4e1c17a419eef3fbc67bd              900                    67.1860
+   43     A development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed43\runs\model_A\weights\last.pt 20533ef76136e29f105f96bcd9aeda09d530a2bcc65198beaf94bf9df4ebe5e7              690                    54.3363
+   43     B development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed43\runs\model_B\weights\last.pt ddcd40f906c52f6228689eaed78235ece77b7372ad5de819c47976d5b229dd79              900                    98.6959
+   44     A development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed44\runs\model_A\weights\last.pt 8b5af75865038f6c14a1dcd22cb9331495f0120ae92ff1b45ae6fe0d83f18db6              690                    71.4346
+   44     B development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed44\runs\model_B\weights\last.pt 79fa00f026422a7d41dd51cf6e49f251a96418be55bea873076a0e00d71a8e80              900                   105.4270
+   45     A development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed45\runs\model_A\weights\last.pt e03c41f67d1f64c84eaaedba9ddd51c1cd0c0384fb412a44b81d957b025c53ba              690                    54.0118
+   45     B development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed45\runs\model_B\weights\last.pt bbe8dac6bad0e452ef18543b795ae816008bf1673bbe99bf9e13aa6acba7bc76              900                    69.7820
+   46     A development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed46\runs\model_A\weights\last.pt af538ffb291a31666a4861ce309714784eb1ed795d6896540bc828af86342242              690                    54.0315
+   46     B development 02_exp\tahap1b\full_runs\exploratory_development_stage1b_user_20261103_v1_seed46\runs\model_B\weights\last.pt f5bb4d80995be7e668f4153bada040beca84467d968dce04e3e866e0cdb90fdb              900                    70.1394
+
+Effective historical arguments:
+[
+  {
+    "seed": 42,
+    "model": "A",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\runs\\model_A\\weights\\last.pt",
+    "sha256": "03727737a647405bdc6154c925c4575f2b77bf45f48a2ef21a92d02d044f54b7",
+    "optimizer_steps": 690,
+    "recorded_training_seconds": 53.1245,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed42\\datasets\\A",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed42\\runs",
+      "name": "model_A",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 42,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed42\\runs\\model_A"
+    }
+  },
+  {
+    "seed": 42,
+    "model": "B",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\runs\\model_B\\weights\\last.pt",
+    "sha256": "e544a04b4798f1d76a2096c844fd768bd53e50aa2fa4e1c17a419eef3fbc67bd",
+    "optimizer_steps": 900,
+    "recorded_training_seconds": 67.186,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed42\\datasets\\B",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed42\\runs",
+      "name": "model_B",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 42,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed42\\runs\\model_B"
+    }
+  },
+  {
+    "seed": 43,
+    "model": "A",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs\\model_A\\weights\\last.pt",
+    "sha256": "20533ef76136e29f105f96bcd9aeda09d530a2bcc65198beaf94bf9df4ebe5e7",
+    "optimizer_steps": 690,
+    "recorded_training_seconds": 54.3363,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed43\\datasets\\A",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs",
+      "name": "model_A",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 43,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs\\model_A"
+    }
+  },
+  {
+    "seed": 43,
+    "model": "B",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs\\model_B\\weights\\last.pt",
+    "sha256": "ddcd40f906c52f6228689eaed78235ece77b7372ad5de819c47976d5b229dd79",
+    "optimizer_steps": 900,
+    "recorded_training_seconds": 98.6959,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed43\\datasets\\B",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs",
+      "name": "model_B",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 43,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed43\\runs\\model_B"
+    }
+  },
+  {
+    "seed": 44,
+    "model": "A",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\runs\\model_A\\weights\\last.pt",
+    "sha256": "8b5af75865038f6c14a1dcd22cb9331495f0120ae92ff1b45ae6fe0d83f18db6",
+    "optimizer_steps": 690,
+    "recorded_training_seconds": 71.4346,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed44\\datasets\\A",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed44\\runs",
+      "name": "model_A",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 44,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed44\\runs\\model_A"
+    }
+  },
+  {
+    "seed": 44,
+    "model": "B",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\runs\\model_B\\weights\\last.pt",
+    "sha256": "79fa00f026422a7d41dd51cf6e49f251a96418be55bea873076a0e00d71a8e80",
+    "optimizer_steps": 900,
+    "recorded_training_seconds": 105.427,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed44\\datasets\\B",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed44\\runs",
+      "name": "model_B",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 44,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed44\\runs\\model_B"
+    }
+  },
+  {
+    "seed": 45,
+    "model": "A",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\runs\\model_A\\weights\\last.pt",
+    "sha256": "e03c41f67d1f64c84eaaedba9ddd51c1cd0c0384fb412a44b81d957b025c53ba",
+    "optimizer_steps": 690,
+    "recorded_training_seconds": 54.0118,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed45\\datasets\\A",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed45\\runs",
+      "name": "model_A",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 45,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed45\\runs\\model_A"
+    }
+  },
+  {
+    "seed": 45,
+    "model": "B",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\runs\\model_B\\weights\\last.pt",
+    "sha256": "bbe8dac6bad0e452ef18543b795ae816008bf1673bbe99bf9e13aa6acba7bc76",
+    "optimizer_steps": 900,
+    "recorded_training_seconds": 69.782,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed45\\datasets\\B",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed45\\runs",
+      "name": "model_B",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 45,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed45\\runs\\model_B"
+    }
+  },
+  {
+    "seed": 46,
+    "model": "A",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\runs\\model_A\\weights\\last.pt",
+    "sha256": "af538ffb291a31666a4861ce309714784eb1ed795d6896540bc828af86342242",
+    "optimizer_steps": 690,
+    "recorded_training_seconds": 54.0315,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed46\\datasets\\A",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed46\\runs",
+      "name": "model_A",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 46,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed46\\runs\\model_A"
+    }
+  },
+  {
+    "seed": 46,
+    "model": "B",
+    "tier": "development",
+    "checkpoint": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\runs\\model_B\\weights\\last.pt",
+    "sha256": "f5bb4d80995be7e668f4153bada040beca84467d968dce04e3e866e0cdb90fdb",
+    "optimizer_steps": 900,
+    "recorded_training_seconds": 70.1394,
+    "effective_args": {
+      "task": "classify",
+      "mode": "train",
+      "model": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiment_yolo26_classification_pilot\\checkpoints\\yolo26n-cls.pt",
+      "data": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed46\\datasets\\B",
+      "epochs": 30,
+      "time": null,
+      "patience": 0,
+      "batch": 16,
+      "imgsz": 224,
+      "save": true,
+      "save_period": -1,
+      "cache": false,
+      "device": "0",
+      "workers": 0,
+      "project": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed46\\runs",
+      "name": "model_B",
+      "exist_ok": false,
+      "pretrained": true,
+      "cls_remap": true,
+      "optimizer": "SGD",
+      "verbose": true,
+      "seed": 46,
+      "deterministic": true,
+      "single_cls": false,
+      "rect": false,
+      "cos_lr": false,
+      "close_mosaic": 0,
+      "resume": false,
+      "amp": false,
+      "fraction": 1.0,
+      "profile": false,
+      "freeze": null,
+      "multi_scale": 0.0,
+      "compile": false,
+      "channels_last": null,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "dropout": 0.0,
+      "val": true,
+      "split": "val",
+      "save_json": false,
+      "conf": null,
+      "iou": 0.7,
+      "max_det": 300,
+      "quantize": null,
+      "dnn": false,
+      "plots": true,
+      "nms": null,
+      "source": null,
+      "vid_stride": 1,
+      "stream_buffer": false,
+      "visualize": false,
+      "augment": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "retina_masks": false,
+      "embed": null,
+      "show": false,
+      "save_frames": false,
+      "save_txt": false,
+      "save_conf": false,
+      "save_crop": false,
+      "show_labels": true,
+      "show_conf": true,
+      "show_boxes": true,
+      "line_width": null,
+      "format": "torchscript",
+      "optimize": false,
+      "dynamic": false,
+      "simplify": true,
+      "opset": null,
+      "workspace": null,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "distill_model": null,
+      "dis": 6.0,
+      "box": 7.5,
+      "cls": 0.5,
+      "cls_pw": 0.0,
+      "dfl": 1.5,
+      "pose": 12.0,
+      "kobj": 1.0,
+      "rle": 1.0,
+      "angle": 1.0,
+      "dlog": 1.0,
+      "dgrad": 0.5,
+      "dlam": 1.0,
+      "nbs": 16,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.0,
+      "bgr": 0.0,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "copy_paste_mode": "flip",
+      "auto_augment": null,
+      "erasing": 0.0,
+      "cfg": null,
+      "tracker": "tracktrack.yaml",
+      "save_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\exploratory_development_stage1b_user_20261103_v1_seed46\\runs\\model_B"
+    }
+  }
+]
+Historical failures: [
+  {
+    "status_label": "exploratory/development",
+    "event": "hard_stop",
+    "seed": 42,
+    "kind": "linear_probe",
+    "model": "A",
+    "error": "RuntimeError: Ultralytics already imported with different settings directory; run pilot CLI in a fresh process"
+  },
+  {
+    "event": "runner_preflight_failed_before_any_fit",
+    "error": "Empty-directory assertion counted an empty settings subdirectory as a file; corrected check in v2; v1 session preserved."
+  }
+]
+
+CELL 7
+if RUN_TRAINING:
+    raise PermissionError('TASK 0: final training controller not authorized/implemented; LANJUT TASK 3/4 and scoped approval required')
+print('SKIPPED training: RUN_TRAINING=False; zero model fits')
+SKIPPED training: RUN_TRAINING=False; zero model fits
+
+CELL 8
+DEVELOPMENT = ROOT/'01_hasil/addendum/development_interference_20261105'
+summary = pd.read_csv(DEVELOPMENT/'common6_primary_results.csv', keep_default_na=False)
+required = {'seed', 'n', 'macro_f1_A', 'macro_f1_B', 'delta', 'evidence_tier'}
+if not required.issubset(summary.columns):
+    raise ValueError('Existing development summary schema changed')
+assert set(summary.evidence_tier) == {'development'}
+assert set(summary.loc[summary.seed.ne('mean'), 'seed'].astype(int)) == set(SEEDS)
+details = evaluation.read(DEVELOPMENT/'analysis_details.json')
+assert details['evidence_tier'] == 'development' and details['training_seeds'] == SEEDS
+print(summary.to_string(index=False))
+print({'recorded_common6_n': details['n_videos'], 'recorded_full8_n': details['n_full8_videos'],
+       'ni_decision': details['ni_decision'],
+       'report_sha256': evaluation.sha(DEVELOPMENT/'common6_primary_results.csv')})
+seed   n  macro_f1_A  macro_f1_B     delta evidence_tier              ci95_low            ci95_high    lower_one_sided95    upper_one_sided95         bootstrap_se                      ni_decision
+  42 120    0.931776    0.930042 -0.001734   development                                                                                                                                           
+  43 120    0.932625    0.930894 -0.001731   development                                                                                                                                           
+  44 120    0.947500    0.931947 -0.015553   development                                                                                                                                           
+  45 120    0.956626    0.923807 -0.032819   development                                                                                                                                           
+  46 120    0.930972    0.939162  0.008190   development                                                                                                                                           
+mean 120    0.939900    0.931170 -0.008729   development -0.030222818611814216 0.007612139862988273 -0.02533392899552548 0.004769276688499423 0.009390094823896081 not tested: development evidence
+{'recorded_common6_n': 120, 'recorded_full8_n': 160, 'ni_decision': 'not tested: development evidence', 'report_sha256': 'ba45b38c4aedae9dfdefc768de5b4936dd9ecefc6e1c6172cbcfb2c252d2eaca'}
+
+CELL 9
+print({'plan_status': PLAN['status'], 'ni_status': PLAN['ni_status'],
+       'h2_status': PLAN['h2_status'], 'external_readiness': 'BLOCKED'})
+# An expected refusal is evidence of the gate, not a successful final validation.
+if PLAN['status'] != 'final':
+    try:
+        evaluation.validate_plan(PLAN, ROOT)
+    except ValueError as error:
+        if str(error) != 'Final Classification configuration unresolved':
+            raise
+        print('VERIFIED expected refusal:', str(error))
+    else:
+        raise AssertionError('Draft plan unexpectedly accepted')
+else:
+    print('Final plan present: complete readiness checks require separately approved TASK 6')
+{'plan_status': 'draft_blocked', 'ni_status': 'NI_MARGIN_UNRESOLVED', 'h2_status': 'preserved_compatible', 'external_readiness': 'BLOCKED'}
+VERIFIED expected refusal: Final Classification configuration unresolved
+
+CELL 10
+if RUN_FREEZE:
+    raise PermissionError('TASK 0: freeze disabled; complete approved TASK 6 first')
+print('SKIPPED freeze: RUN_FREEZE=False; no scientific artifacts frozen')
+SKIPPED freeze: RUN_FREEZE=False; no scientific artifacts frozen
+
+CELL 11
+if RUN_EXTERNAL_SCORING:
+    raise PermissionError('TASK 0: scoring disabled; TASK 7 requires approval bound to validated freeze hash')
+print('SKIPPED external scoring: RUN_EXTERNAL_SCORING=False; no external predictions accessed')
+SKIPPED external scoring: RUN_EXTERNAL_SCORING=False; no external predictions accessed
+
+CELL 12
+print({'metrics_module': str(Path(interference.__file__).relative_to(ROOT)),
+       'statistics_module': str(Path(statistics.__file__).relative_to(ROOT)),
+       'evaluation_module': str(Path(evaluation.__file__).relative_to(ROOT)),
+       'functions': [interference.interference.__name__, statistics.bootstrap.__name__, evaluation.export_reports.__name__],
+       'status': 'IMPLEMENTED in existing modules; final analysis PLANNED'})
+{'metrics_module': '05_kode\\src\\interference_metrics.py', 'statistics_module': '05_kode\\src\\confirmatory_statistics.py', 'evaluation_module': '05_kode\\src\\confirmatory_evaluation.py', 'functions': ['interference', 'bootstrap', 'export_reports'], 'status': 'IMPLEMENTED in existing modules; final analysis PLANNED'}
+
+CELL 13
+AUDIT_COMPLETED_UTC = datetime.now(timezone.utc).isoformat()
+assert not any([RUN_TRAINING, RUN_FREEZE, RUN_EXTERNAL_SCORING])
+print({'audit_started_utc': AUDIT_STARTED_UTC, 'audit_completed_utc': AUDIT_COMPLETED_UTC,
+       'audit_status': 'COMPLETED safe inspection cells',
+       'model_fits_this_execution': 0, 'external_scoring_this_execution': False,
+       'final_freeze_this_execution': False, 'next_task': 'PLANNED TASK 1; awaiting LANJUT TASK 1'})
+{'audit_started_utc': '2026-11-05T09:18:29.742664+00:00', 'audit_completed_utc': '2026-11-05T09:18:30.247318+00:00', 'audit_status': 'COMPLETED safe inspection cells', 'model_fits_this_execution': 0, 'external_scoring_this_execution': False, 'final_freeze_this_execution': False, 'next_task': 'PLANNED TASK 1; awaiting LANJUT TASK 1'}
+

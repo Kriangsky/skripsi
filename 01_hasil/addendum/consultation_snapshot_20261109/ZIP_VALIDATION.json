@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "zip_size_bytes": 2922419,
+  "zip_size_MiB": 2.787,
+  "zip_sha256": "22187073a3795ee1ecc037cd8c2973c10424abf21d3a5bfb0e63c719c28652ef",
+  "zip_crc": "PASS",
+  "package_file_hashes": "PASS",
+  "source_hashes": "PASS",
+  "common6_macro_recall_accuracy_identity": "PASS",
+  "primary_vs_ten_run_f1": "PASS",
+  "sources": 219,
+  "metrics": 1777
+}

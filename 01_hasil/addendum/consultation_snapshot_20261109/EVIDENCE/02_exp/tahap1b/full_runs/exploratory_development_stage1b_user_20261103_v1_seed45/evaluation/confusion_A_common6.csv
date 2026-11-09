@@ -1,0 +1,7 @@
+,saya,kamu,senang,bingung,marah,apa_kabar
+saya,20,0,0,0,0,0
+kamu,0,20,0,0,0,0
+senang,0,0,20,0,0,0
+bingung,0,0,0,20,0,0
+marah,0,3,0,2,15,0
+apa_kabar,0,0,0,0,0,20

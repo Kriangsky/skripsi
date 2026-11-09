@@ -1,0 +1,180 @@
+{
+  "groups": [
+    {
+      "digest": "4d66c1a31c3ebaca25542ceb3fcd3f8040de0a6ee807c852a235ddf06c240252",
+      "rows": [
+        {
+          "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidate_frames\\4e6a9215409eb2a94637_f00000007.jpg",
+          "kind": "candidate_v3",
+          "sample_id": "4e6a9215409eb2a94637",
+          "source": "train",
+          "split": "train",
+          "expected_sha256": "b9c75b065b5e1dd911bc08c32eba4926eeb2f0ffa8a15112e41495a2b7f546b0",
+          "expected_width": 640,
+          "expected_height": 360,
+          "bytes": 51658,
+          "sha256": "b9c75b065b5e1dd911bc08c32eba4926eeb2f0ffa8a15112e41495a2b7f546b0",
+          "width": 640,
+          "height": 360,
+          "pixel_sha_bgr": "055d1db7a73683c24c3c27e45ee3aa30e3630b4b444f9ec70e9a2f1403a575db",
+          "pixel_sha_rgb": "4d66c1a31c3ebaca25542ceb3fcd3f8040de0a6ee807c852a235ddf06c240252",
+          "status": "VERIFIED"
+        },
+        {
+          "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidate_frames\\65b66157ac7407a82942_f00000007.jpg",
+          "kind": "candidate_v3",
+          "sample_id": "65b66157ac7407a82942",
+          "source": "train",
+          "split": "train",
+          "expected_sha256": "b9c75b065b5e1dd911bc08c32eba4926eeb2f0ffa8a15112e41495a2b7f546b0",
+          "expected_width": 640,
+          "expected_height": 360,
+          "bytes": 51658,
+          "sha256": "b9c75b065b5e1dd911bc08c32eba4926eeb2f0ffa8a15112e41495a2b7f546b0",
+          "width": 640,
+          "height": 360,
+          "pixel_sha_bgr": "055d1db7a73683c24c3c27e45ee3aa30e3630b4b444f9ec70e9a2f1403a575db",
+          "pixel_sha_rgb": "4d66c1a31c3ebaca25542ceb3fcd3f8040de0a6ee807c852a235ddf06c240252",
+          "status": "VERIFIED"
+        }
+      ],
+      "cross_split": false
+    },
+    {
+      "digest": "09aa9566544aef165a3209aeb6f9bafcbd577d5f5926fadca2bfda1442fe2e4e",
+      "rows": [
+        {
+          "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidate_frames\\4e6a9215409eb2a94637_f00000010.jpg",
+          "kind": "candidate_v3",
+          "sample_id": "4e6a9215409eb2a94637",
+          "source": "train",
+          "split": "train",
+          "expected_sha256": "040209d90f7a1768809732993595fae2444867937df1fd617cc80087e5e5066a",
+          "expected_width": 640,
+          "expected_height": 360,
+          "bytes": 53589,
+          "sha256": "040209d90f7a1768809732993595fae2444867937df1fd617cc80087e5e5066a",
+          "width": 640,
+          "height": 360,
+          "pixel_sha_bgr": "8b0c1fcdfae8be1a751451b31b8ee7ee0c8f4833bb7c12f1baff05e93e446cf3",
+          "pixel_sha_rgb": "09aa9566544aef165a3209aeb6f9bafcbd577d5f5926fadca2bfda1442fe2e4e",
+          "status": "VERIFIED"
+        },
+        {
+          "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidate_frames\\65b66157ac7407a82942_f00000010.jpg",
+          "kind": "candidate_v3",
+          "sample_id": "65b66157ac7407a82942",
+          "source": "train",
+          "split": "train",
+          "expected_sha256": "040209d90f7a1768809732993595fae2444867937df1fd617cc80087e5e5066a",
+          "expected_width": 640,
+          "expected_height": 360,
+          "bytes": 53589,
+          "sha256": "040209d90f7a1768809732993595fae2444867937df1fd617cc80087e5e5066a",
+          "width": 640,
+          "height": 360,
+          "pixel_sha_bgr": "8b0c1fcdfae8be1a751451b31b8ee7ee0c8f4833bb7c12f1baff05e93e446cf3",
+          "pixel_sha_rgb": "09aa9566544aef165a3209aeb6f9bafcbd577d5f5926fadca2bfda1442fe2e4e",
+          "status": "VERIFIED"
+        }
+      ],
+      "cross_split": false
+    },
+    {
+      "digest": "2aef19c3f83481bf784373cefc4f0cd20ba182b1beb548e6393a13169b9c1714",
+      "rows": [
+        {
+          "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidate_frames\\4e6a9215409eb2a94637_f00000014.jpg",
+          "kind": "candidate_v3",
+          "sample_id": "4e6a9215409eb2a94637",
+          "source": "train",
+          "split": "train",
+          "expected_sha256": "d6ba4b4ed77138f34a0da908e8a261df24712b11bce6e70064982a254c9ee28e",
+          "expected_width": 640,
+          "expected_height": 360,
+          "bytes": 53026,
+          "sha256": "d6ba4b4ed77138f34a0da908e8a261df24712b11bce6e70064982a254c9ee28e",
+          "width": 640,
+          "height": 360,
+          "pixel_sha_bgr": "d87946c84e7d84bd44d1eaa943ebf876b00bad970dbf3a7c939f65e84370dda1",
+          "pixel_sha_rgb": "2aef19c3f83481bf784373cefc4f0cd20ba182b1beb548e6393a13169b9c1714",
+          "status": "VERIFIED"
+        },
+        {
+          "path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidate_frames\\65b66157ac7407a82942_f00000014.jpg",
+          "kind": "candidate_v3",
+          "sample_id": "65b66157ac7407a82942",
+          "source": "train",
+          "split": "train",
+          "expected_sha256": "d6ba4b4ed77138f34a0da908e8a261df24712b11bce6e70064982a254c9ee28e",
+          "expected_width": 640,
+          "expected_height": 360,
+          "bytes": 53026,
+          "sha256": "d6ba4b4ed77138f34a0da908e8a261df24712b11bce6e70064982a254c9ee28e",
+          "width": 640,
+          "height": 360,
+          "pixel_sha_bgr": "d87946c84e7d84bd44d1eaa943ebf876b00bad970dbf3a7c939f65e84370dda1",
+          "pixel_sha_rgb": "2aef19c3f83481bf784373cefc4f0cd20ba182b1beb548e6393a13169b9c1714",
+          "status": "VERIFIED"
+        }
+      ],
+      "cross_split": false
+    }
+  ],
+  "development_membership": [
+    {
+      "seed": 42,
+      "duplicate_source_video_membership": [
+        {
+          "sample_id": "65b66157ac7407a82942",
+          "video": "train/senang/senang_224.mp4",
+          "candidate_id": "65b66157ac7407a82942_f00000048"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "duplicate_source_video_membership": [
+        {
+          "sample_id": "65b66157ac7407a82942",
+          "video": "train/senang/senang_224.mp4",
+          "candidate_id": "65b66157ac7407a82942_f00000048"
+        }
+      ]
+    },
+    {
+      "seed": 44,
+      "duplicate_source_video_membership": [
+        {
+          "sample_id": "65b66157ac7407a82942",
+          "video": "train/senang/senang_224.mp4",
+          "candidate_id": "65b66157ac7407a82942_f00000048"
+        }
+      ]
+    },
+    {
+      "seed": 45,
+      "duplicate_source_video_membership": [
+        {
+          "sample_id": "65b66157ac7407a82942",
+          "video": "train/senang/senang_224.mp4",
+          "candidate_id": "65b66157ac7407a82942_f00000048"
+        }
+      ]
+    },
+    {
+      "seed": 46,
+      "duplicate_source_video_membership": [
+        {
+          "sample_id": "65b66157ac7407a82942",
+          "video": "train/senang/senang_224.mp4",
+          "candidate_id": "65b66157ac7407a82942_f00000048"
+        }
+      ]
+    }
+  ],
+  "cross_split_groups": 0,
+  "internal_folder_labels_verified": true,
+  "neutral_original_names_unique": true,
+  "interpretation": "3 exact candidate frame pairs for senang_223/senang_224, both locked training. Only224 appears in Stage1b manifest, using f48, not duplicate f7/f10/f14. No cross-split identity found within audited images. Not proof of all-frame/near-duplicate or signer independence."
+}

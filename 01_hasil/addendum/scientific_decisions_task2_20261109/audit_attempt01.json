@@ -1,0 +1,10 @@
+{
+  "status": "FAILED_AUDIT_ASSERTION_NOT_TRAINING",
+  "command": ".venv-bisindo/Scripts/python.exe 01_hasil/addendum/scientific_decisions_task2_20261109/audit_task2.py",
+  "exit_code": 1,
+  "error": "AssertionError checking literal optimizer: SGD in historical training log",
+  "cause": "ANSI terminal color escape between optimizer label and SGD in some logs",
+  "fix": "Strip ANSI color sequences before constructor string assertion; preserve original logs",
+  "historical_files_modified": false,
+  "note": "First command tool output holds original traceback; this record does not fabricate exact failure timestamp. Snapshots were already saved; package/notebook not yet modified."
+}

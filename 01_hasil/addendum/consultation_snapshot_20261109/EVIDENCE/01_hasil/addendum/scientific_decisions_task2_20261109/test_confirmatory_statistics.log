@@ -1,0 +1,15 @@
+test_actual_file_duplicate_and_split_checks_on_synthetic_manifests (test_confirmatory_statistics.StatisticsTests.test_actual_file_duplicate_and_split_checks_on_synthetic_manifests) ... ok
+test_bootstrap_reproducibility_and_f1_recomputed (test_confirmatory_statistics.StatisticsTests.test_bootstrap_reproducibility_and_f1_recomputed) ... ok
+test_design_effect_and_simultaneous_intervals (test_confirmatory_statistics.StatisticsTests.test_design_effect_and_simultaneous_intervals) ... ok
+test_development_exports_and_all_seeds_enforced (test_confirmatory_statistics.StatisticsTests.test_development_exports_and_all_seeds_enforced) ... ok
+test_draft_actual_plan_cannot_freeze (test_confirmatory_statistics.StatisticsTests.test_draft_actual_plan_cannot_freeze) ... ok
+test_final_gate_checks_provenance_exposure_validation_and_seed_coverage (test_confirmatory_statistics.StatisticsTests.test_final_gate_checks_provenance_exposure_validation_and_seed_coverage) ... ok
+test_freeze_approval_binding_drift_and_no_overwrite (test_confirmatory_statistics.StatisticsTests.test_freeze_approval_binding_drift_and_no_overwrite) ... ok
+test_multiple_seed_mean_not_pooled_trials (test_confirmatory_statistics.StatisticsTests.test_multiple_seed_mean_not_pooled_trials) ... ok
+test_ni_boundary_and_unresolved_margin (test_confirmatory_statistics.StatisticsTests.test_ni_boundary_and_unresolved_margin) ... ok
+test_premature_external_scoring_rejected_before_inference (test_confirmatory_statistics.StatisticsTests.test_premature_external_scoring_rejected_before_inference) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 14.390s
+
+OK

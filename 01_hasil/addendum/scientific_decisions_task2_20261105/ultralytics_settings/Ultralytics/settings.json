@@ -1,0 +1,19 @@
+{
+  "settings_version": "0.0.8",
+  "datasets_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\datasets",
+  "weights_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\weights",
+  "runs_dir": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\runs",
+  "uuid": "3b2d9e7d7ab266762ec8f5295d6562469f4b5cb55a1de32de7dc6f6a37bc5bde",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "mlflow": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

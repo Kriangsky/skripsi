@@ -1,0 +1,339 @@
+[
+  {
+    "path": "02_exp\\arsip_pipeline\\experiment_yolo26\\manifest.csv",
+    "sha256": "4b5d7b11848b72df44b8f0b12b587b6bf3a22f4a21290129e4f5448b6f3c44fb",
+    "rows": 2803,
+    "columns": [
+      "video",
+      "class_name",
+      "source",
+      "signer",
+      "session",
+      "split",
+      "include",
+      "exclude_reason",
+      "frame_index",
+      "x1",
+      "y1",
+      "x2",
+      "y2",
+      "reviewed"
+    ],
+    "sources": {
+      "train": 2403,
+      "test": 400
+    },
+    "splits": {
+      "train": 1922,
+      "val": 481,
+      "test": 400
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  },
+  {
+    "path": "02_exp\\arsip_pipeline\\experiment_yolo26_classification_notebook_20261102\\manifest.csv",
+    "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "rows": 640,
+    "columns": [
+      "video",
+      "sample_id",
+      "source",
+      "class_name",
+      "class_id",
+      "video_sha256",
+      "split",
+      "signer",
+      "label_provenance",
+      "semantic_status",
+      "candidate_id",
+      "frame_index",
+      "source_frame_sha256",
+      "source_frame_path",
+      "pixel_sha256",
+      "processed_pixel_sha256",
+      "image_sha256",
+      "quality_status",
+      "quality_flags",
+      "focus",
+      "frame_width",
+      "frame_height",
+      "selection_reason",
+      "cache_error",
+      "selection_failure"
+    ],
+    "sources": {
+      "train": 640
+    },
+    "splits": {
+      "train": 480,
+      "val": 160
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  },
+  {
+    "path": "02_exp\\arsip_pipeline\\experiment_yolo26_classification_pilot\\manifest.csv",
+    "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "rows": 640,
+    "columns": [
+      "video",
+      "sample_id",
+      "source",
+      "class_name",
+      "class_id",
+      "video_sha256",
+      "split",
+      "signer",
+      "label_provenance",
+      "semantic_status",
+      "candidate_id",
+      "frame_index",
+      "source_frame_sha256",
+      "source_frame_path",
+      "pixel_sha256",
+      "processed_pixel_sha256",
+      "image_sha256",
+      "quality_status",
+      "quality_flags",
+      "focus",
+      "frame_width",
+      "frame_height",
+      "selection_reason",
+      "cache_error",
+      "selection_failure"
+    ],
+    "sources": {
+      "train": 640
+    },
+    "splits": {
+      "train": 480,
+      "val": 160
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  },
+  {
+    "path": "02_exp\\arsip_pipeline\\experiment_yolo26_pilot\\pilot_manifest_private.csv",
+    "sha256": "6d033a09eb54c5f0af011f3b7fecf7fe5a9b2e5532610c9d8468961ae43128fd",
+    "rows": 160,
+    "columns": [
+      "video",
+      "sample_id",
+      "source",
+      "class_name",
+      "class_id",
+      "video_sha256",
+      "split",
+      "signer",
+      "video_id",
+      "seed",
+      "split_lock_sha256",
+      "source_metadata_sha256"
+    ],
+    "sources": {
+      "train": 160
+    },
+    "splits": {
+      "train": 160
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  },
+  {
+    "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\manifest.csv",
+    "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "rows": 640,
+    "columns": [
+      "video",
+      "sample_id",
+      "source",
+      "class_name",
+      "class_id",
+      "video_sha256",
+      "split",
+      "signer",
+      "label_provenance",
+      "semantic_status",
+      "candidate_id",
+      "frame_index",
+      "source_frame_sha256",
+      "source_frame_path",
+      "pixel_sha256",
+      "processed_pixel_sha256",
+      "image_sha256",
+      "quality_status",
+      "quality_flags",
+      "focus",
+      "frame_width",
+      "frame_height",
+      "selection_reason",
+      "cache_error",
+      "selection_failure"
+    ],
+    "sources": {
+      "train": 640
+    },
+    "splits": {
+      "train": 480,
+      "val": 160
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  },
+  {
+    "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\manifest.csv",
+    "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "rows": 640,
+    "columns": [
+      "video",
+      "sample_id",
+      "source",
+      "class_name",
+      "class_id",
+      "video_sha256",
+      "split",
+      "signer",
+      "label_provenance",
+      "semantic_status",
+      "candidate_id",
+      "frame_index",
+      "source_frame_sha256",
+      "source_frame_path",
+      "pixel_sha256",
+      "processed_pixel_sha256",
+      "image_sha256",
+      "quality_status",
+      "quality_flags",
+      "focus",
+      "frame_width",
+      "frame_height",
+      "selection_reason",
+      "cache_error",
+      "selection_failure"
+    ],
+    "sources": {
+      "train": 640
+    },
+    "splits": {
+      "train": 480,
+      "val": 160
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  },
+  {
+    "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\manifest.csv",
+    "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "rows": 640,
+    "columns": [
+      "video",
+      "sample_id",
+      "source",
+      "class_name",
+      "class_id",
+      "video_sha256",
+      "split",
+      "signer",
+      "label_provenance",
+      "semantic_status",
+      "candidate_id",
+      "frame_index",
+      "source_frame_sha256",
+      "source_frame_path",
+      "pixel_sha256",
+      "processed_pixel_sha256",
+      "image_sha256",
+      "quality_status",
+      "quality_flags",
+      "focus",
+      "frame_width",
+      "frame_height",
+      "selection_reason",
+      "cache_error",
+      "selection_failure"
+    ],
+    "sources": {
+      "train": 640
+    },
+    "splits": {
+      "train": 480,
+      "val": 160
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  },
+  {
+    "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\manifest.csv",
+    "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "rows": 640,
+    "columns": [
+      "video",
+      "sample_id",
+      "source",
+      "class_name",
+      "class_id",
+      "video_sha256",
+      "split",
+      "signer",
+      "label_provenance",
+      "semantic_status",
+      "candidate_id",
+      "frame_index",
+      "source_frame_sha256",
+      "source_frame_path",
+      "pixel_sha256",
+      "processed_pixel_sha256",
+      "image_sha256",
+      "quality_status",
+      "quality_flags",
+      "focus",
+      "frame_width",
+      "frame_height",
+      "selection_reason",
+      "cache_error",
+      "selection_failure"
+    ],
+    "sources": {
+      "train": 640
+    },
+    "splits": {
+      "train": 480,
+      "val": 160
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  },
+  {
+    "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\manifest.csv",
+    "sha256": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "rows": 640,
+    "columns": [
+      "video",
+      "sample_id",
+      "source",
+      "class_name",
+      "class_id",
+      "video_sha256",
+      "split",
+      "signer",
+      "label_provenance",
+      "semantic_status",
+      "candidate_id",
+      "frame_index",
+      "source_frame_sha256",
+      "source_frame_path",
+      "pixel_sha256",
+      "processed_pixel_sha256",
+      "image_sha256",
+      "quality_status",
+      "quality_flags",
+      "focus",
+      "frame_width",
+      "frame_height",
+      "selection_reason",
+      "cache_error",
+      "selection_failure"
+    ],
+    "sources": {
+      "train": 640
+    },
+    "splits": {
+      "train": 480,
+      "val": 160
+    },
+    "classification": "HISTORICAL EVIDENCE / development or legacy; not approved final manifest"
+  }
+]

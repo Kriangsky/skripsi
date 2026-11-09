@@ -1,0 +1,11 @@
+﻿model,seed,train,val,steps,seconds,accuracy,macro_precision,macro_recall,macro_F1,full8_F1,source
+A,42,360,120,690,53.1245,0.9333333333333333,0.9398133013693655,0.9333333333333333,0.9317756044925641,N/A,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/comparison_metrics.csv
+B,42,480,160,900,67.186,0.925,0.947957839262187,0.925,0.9300418783462919,0.9354640789917368,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/comparison_metrics.csv
+A,43,360,120,690,54.3363,0.9333333333333333,0.9435786435786435,0.9333333333333333,0.9326249749869775,N/A,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/comparison_metrics.csv
+B,43,480,160,900,98.6959,0.925,0.9507936507936507,0.925,0.9308942013767204,0.9298634501033882,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/comparison_metrics.csv
+A,44,360,120,690,71.4346,0.95,0.9570707070707071,0.95,0.9475002122060946,N/A,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/comparison_metrics.csv
+B,44,480,160,900,105.427,0.9333333333333333,0.9456654456654456,0.9333333333333333,0.9319470937339606,0.9428515916307662,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/comparison_metrics.csv
+A,45,360,120,690,54.0118,0.9583333333333334,0.9631093544137023,0.9583333333333334,0.956626061277224,N/A,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/comparison_metrics.csv
+B,45,480,160,900,69.782,0.925,0.938053613053613,0.925,0.9238073337649323,0.9305668272045128,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/comparison_metrics.csv
+A,46,360,120,690,54.0315,0.9333333333333333,0.9425465838509317,0.9333333333333333,0.9309718426908904,N/A,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/comparison_metrics.csv
+B,46,480,160,900,70.1394,0.9416666666666667,0.9491341991341992,0.9416666666666667,0.9391616672821838,0.9422182700801593,02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/comparison_metrics.csv

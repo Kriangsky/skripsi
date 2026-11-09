@@ -1,0 +1,14 @@
+{
+  "training_seeds_observed": [
+    42
+  ],
+  "paired_seed_sd_observed": null,
+  "n_pilot": 120,
+  "correctness_discordance_count": 1,
+  "predicted_label_disagreement_count": 6,
+  "repetitions": 10000,
+  "statistics_rng": 20261103,
+  "external_images_read": 0,
+  "model_fits": 0,
+  "source_predictions_sha256": "5a813c007f426bfda01768b44f65548b0334075c235b0dc2cc257c761d2e70cf"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "recommended_h1": "B",
+  "approved_h1": null,
+  "protocol_amended": false,
+  "h1_options": {
+    "A": "NI only after substantive outcome-independent delta justification and approval",
+    "B": "mean paired macro-F1 delta with two-sided95% hierarchical CI; no NI success claim"
+  },
+  "h2_verbatim": "- H2 kemampuan baru: accuracy B pada GT halo **dan** GT tidur masing-masing ≥ **0.80**.\n  Ambang 80% per kelas disetujui peneliti pada 2026-11-03, sebelum run baru.\n  Laporkan point estimate dan CI per kelas. Aturan konfirmatori yang diusulkan: lower one-sided 95% CI\n  masing-masing kelas > 0.80 (intersection-union: kedua komponen harus lolos).\n  Point estimate ≥ 0.80 saja disebut memenuhi target deskriptif, bukan lulus pengujian konfirmatori.",
+  "h2_threshold": 0.8,
+  "h2_success": "both lower one-sided95% bounds >0.80; equality fails",
+  "academic_approval_evidence": null,
+  "signatures": null,
+  "finalization_blocked": true,
+  "task3_authorized": false
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "05_kode/src/task1_data_audit.py",
+    "--out",
+    "01_hasil/addendum/data_inventory_task1_20261105"
+  ],
+  "cwd": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa",
+  "started_utc": "2026-11-05T09:10:00.736358+00:00",
+  "status": "completed",
+  "exit_code": 0,
+  "completed_utc": "2026-11-05T09:12:49.858251+00:00"
+}

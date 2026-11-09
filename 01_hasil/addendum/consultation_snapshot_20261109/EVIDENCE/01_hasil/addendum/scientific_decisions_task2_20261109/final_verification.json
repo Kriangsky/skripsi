@@ -1,0 +1,162 @@
+{
+  "started_utc": "2026-11-09T05:24:40.738281+00:00",
+  "command": [
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "01_hasil/addendum/scientific_decisions_task2_20261109/final_checks.py"
+  ],
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "05_kode/tests",
+        "-p",
+        "test_task2_configuration.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "completion_check_0.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "05_kode/tests",
+        "-p",
+        "test_final_control_notebook.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "completion_check_1.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "05_kode/check_runtime.py",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa"
+      ],
+      "exit_code": 0,
+      "log": "completion_check_2.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "completion_check_3.log"
+    }
+  ],
+  "task2_status": "PASS",
+  "final_readiness": "BLOCKED",
+  "historical_code_cells_preserved": 13,
+  "task2_outputs_executed": 2,
+  "protected_files_checked": 2026,
+  "unexpected_protected_drift": [],
+  "seed_approval_records_verified": [
+    {
+      "seed": 42,
+      "sha256": "db5d497cf8baf3ad03e86b6d1c42dcc9287da4793ace4f464944d636dcaee3a6"
+    },
+    {
+      "seed": 43,
+      "sha256": "ac20d650719b9e4b7b54310b23262cf158d8144fccdbf8c4b7dc6dad1a7d6152"
+    },
+    {
+      "seed": 44,
+      "sha256": "fa333c229b5d6c7ec18816e3bb7e5072900d7f58fd6d4bf2bf5c6a7f3b4c3382"
+    },
+    {
+      "seed": 45,
+      "sha256": "172f4e1d89463706814626e58927eb7e175b695e779c10ae0fff8dcbf8528b42"
+    },
+    {
+      "seed": 46,
+      "sha256": "f923b9a81810d065cce07ad2b89ec7d52c62e6fd2b822e66b955821cc3a5e675"
+    }
+  ],
+  "all_ten_full_fits_retained": true,
+  "tracker_append_only": true,
+  "scientific_decisions_approved": false,
+  "task3_started": false,
+  "no_training_scoring_or_freeze": true,
+  "no_data_or_split_modification": true,
+  "prior_validation": "validation.json; 25/25 tests; full safe notebook execution PASS",
+  "notebook_sha256": "c44a7199af8da6c2c96667f80dca1958b3fb085003fa11d97f684684ce7b3c48",
+  "tracker_sha256": "2401e0b5410aa510789610f39d6fdbc6e725cbaae17068e4601b3b43cb848f82",
+  "completed_utc": "2026-11-09T05:24:45.213843+00:00",
+  "changed_file_inventory_task2": [
+    "06_notebook/eksperimen/BISINDO_FINAL_EXPERIMENT_CONTROL.ipynb",
+    "07_dokumen/TRACKING_BISINDO.md",
+    "05_kode/tests/test_task2_configuration.py",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\audit_attempt01.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\audit_attempt02.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\audit_task2.py",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\candidate_config.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\completion_check_0.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\completion_check_1.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\completion_check_2.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\completion_check_3.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\effective_configuration.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\final_check_0.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\final_check_1.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\final_checks.py",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\notebook_before.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\notebook_execution.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\notebook_sandbox_attempt.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\plan.md",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\prepare_package.py",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\protected_before.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\report.md",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\scientific_decisions.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\seed_provenance.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\test_confirmatory_statistics.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\test_final_control_notebook.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\test_interference_metrics.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\test_task2_configuration.log",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\tracker_before.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\ultralytics_settings\\Ultralytics\\settings.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\validate_task2.py",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\validation.json",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\final_verification.json"
+  ],
+  "artifacts_sha256": {
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\audit_attempt01.json": "893b465fc48a99198a435831eed8c29ba475ad639e8d5a6c986189f8377a10ac",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\audit_attempt02.log": "b56ae72e1521c023981ebc8107de4cbfae512f5a3faac3d9105aa29cabba09ed",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\audit_task2.py": "932e32dd3696f178ad801d2b2c49ff2a4a242b38d5f13953757ebb6ed68f47f9",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\candidate_config.json": "0eeb3bd6d504ea81a61edfe833f975036d7199c6ba2186be07bce6853f1df8a5",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\completion_check_0.log": "9438f724dfbee34ebfcefaf0dca302b0f9236b61e164fc3c1b3f0449553e2718",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\completion_check_1.log": "333c3309bd7a20908522c3732d5e090ad4efc29da39d1b01b0450cea8aacbcf1",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\completion_check_2.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\completion_check_3.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\effective_configuration.json": "e02fcb21e0236edad8bd20db9305ec49e9aa4bc3344de3530022ff40c3f6a0bd",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\final_check_0.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\final_check_1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\final_checks.py": "af40b94137f0444c819e34a6ed0ac54ec9a9f0fa17020ec375d145f28a93714f",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\notebook_before.json": "37a9b43fd385dcf1c2dfc6669f937509a5ddff94bfa723423bce24f27cda3c67",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\notebook_execution.json": "0bc7dd69b0cbc3818ad720e3623a88a8dc65e5026b5d6c9804a8d65560a42577",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\notebook_sandbox_attempt.json": "e3b60f66a3a9e8055dad2a17daef5a0dfc3093a4f21a95fe24c2147b68ba652c",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\plan.md": "2b499ce75393851a7c17d23c038a8275c647c4c5bcca8a5635b803c1245e9b97",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\prepare_package.py": "7a5b194304118e768cd63abe1be3f14542a56622cf6c81fe390ecc6d276ebbe6",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\protected_before.json": "2da214e2b42e125ff83fe421c6327fe838eec9667c66778542cab4ade8be2dd3",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\report.md": "7c107e220e0e0387833c7c30dd42f303eb90577805571f2550916d03f91a82a5",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\scientific_decisions.json": "5bd950d9acee14e81575af01402b4b9f95b3d2aae239187bb690a22e5ed598c3",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\seed_provenance.json": "c6d93805ce32657b6ee89271a44520ac471c2e73fbf5a06488813402a270f802",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\test_confirmatory_statistics.log": "84cf43801ddadc4a03e3ef3a7335fd75b3c6885ff006888458e587c2fedbcdf3",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\test_final_control_notebook.log": "c818dc1fc5cadb569c57608619acd8ead1576e6590492489f156915e12030aab",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\test_interference_metrics.log": "a97f13b26b7af74c873f0bf837cfd61471c64df06000a187199ab13aab9fba18",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\test_task2_configuration.log": "639f75d32cd052bec1d89042d46f805f048b950430495398b2342b90984ca14a",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\tracker_before.json": "a019bd3a1a00a0a0e820fef9ff6abbf840a1749e4a157c59ccd3fdcd360d9c40",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\ultralytics_settings\\Ultralytics\\settings.json": "f5f0361c4b9aae169fb63b761d975c687f8e9794fea693a75e82d39e4cd3ea50",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\validate_task2.py": "e70cab63e89f9dea38eeaa57a4769b10872c93abf97e60886c8d15e56ba1e7f4",
+    "01_hasil\\addendum\\scientific_decisions_task2_20261109\\validation.json": "a94bf20cc232b5ea7932b3211e9aedc851d2e68ea63affa32878380f07151614"
+  },
+  "new_test_sha256": "c2daa3d9396f68deed908db015abe88c918a0d905f4b773ab2bd5d16a5c3083f"
+}

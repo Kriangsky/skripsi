@@ -1,0 +1,43 @@
+{
+  "started_utc": "2026-11-05T06:16:31.569005+00:00",
+  "command": [
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.compat_runtime",
+  "environment_overrides": {
+    "TEMP": "C:\\Users\\Ricardo Cuthbert\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Ricardo Cuthbert\\AppData\\Local\\Temp",
+    "PYTHONPATH": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\05_kode\\src"
+  },
+  "reason": "Resolve short Windows TEMP alias; no test/source/historical notebook edits",
+  "initial_validation_note": "baseline_drift README was intentional; separator exclusion bug in initial checker",
+  "baseline_unexpected_drift": [],
+  "preserved_baseline_files": 49,
+  "notebook_code_cells_executed": 12,
+  "new_tests_passed": 17,
+  "exit_code": 1,
+  "completed_utc": "2026-11-05T06:17:58.949638+00:00",
+  "full_regression_green": false,
+  "only_known_historical_failure": true,
+  "task0_acceptance": true,
+  "notebook_sha256": "23bc38e6a1c3caf7cc004e9ab520c082b53de826e666205451aea34907a9d2dc",
+  "artifacts_sha256": {
+    "append_only_check.json": "84f25da1d3ad91ded974c6c073194410b1eafaab34f92d9903d93828281130e0",
+    "baseline.json": "81a423faa6ee3b10b9b2ec5f3d6e43f03c7ecaa0e82aef157bcb041d0c18a686",
+    "completion_checks.py": "1be9d4289e853f8ff7ac0a7a54b8ef29c3b1193a29989869e4de7989521b9d90",
+    "existing_regression.log": "ab96e9973684fcfb641e61cb2d5ad87be316b2e69e25fd5d4020fff7e5c3014d",
+    "existing_regression_canonical_temp.log": "9a64bffed5f1352754823276739ece7a5756039ab1d87efb3abe1d5a0e17c3eb",
+    "interference_synthetic.log": "da9fc1e631b68d2b641fee5137028cd0514a1481bbe1e6fd6d7f9300702e02bb",
+    "notebook_contract.log": "bc043613480e6d1084b4ce2a41471446308a958cc331aa28b8489e5b34e53adf",
+    "notebook_execution.log": "32ef4b340b9646b69df67eda6366e9eb1906be92f026cda1ad98f0d6f9409194",
+    "notebook_inventory.json": "0b8825c774cf4ccf2fbc56d16b80337abc70da286b745c8239af874eef8968c2",
+    "sandbox_attempt.json": "a73b6227cc39469e86e173530f464235f3cf3b6040910569ed2b64968b73244c",
+    "statistics_synthetic.log": "c91ce0c8a0d46afcfe7972963d27393d2561dbcbf55b2ac217ecc563e795ec2e",
+    "validate_task0.py": "a867a2cb73472295b7ddaffbac8284bdf6a6deedf0541d7f496cff30fb6d8246",
+    "validation.json": "aa29e83124887e1dfca563fb7034d47dd180d662c0d6aec5ecea8ce3a7ae04ea"
+  }
+}

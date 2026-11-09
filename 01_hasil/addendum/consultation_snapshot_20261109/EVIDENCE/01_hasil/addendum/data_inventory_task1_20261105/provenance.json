@@ -1,0 +1,272 @@
+{
+  "task": 1,
+  "started_utc": "2026-11-05T09:13:28.699604+00:00",
+  "completed_utc": "2026-11-05T09:13:29.196425+00:00",
+  "command": [
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "01_hasil/addendum/data_inventory_task1_20261105/provenance_review.py"
+  ],
+  "evidence_table": [
+    {
+      "topic": "Dataset source",
+      "status": "PARTIALLY VERIFIED",
+      "evidence": "Historical draft reference [26] cites Anggi Yohanes Pardede, BISINDO 40 Kata mp4, Kaggle; URL in source passages.",
+      "limitation": "Citation is local documentary evidence; no archive/version-to-local-byte binding verified."
+    },
+    {
+      "topic": "Version/acquisition",
+      "status": "UNVERIFIED",
+      "evidence": "Draft lists access date Jun 10 2026; preparation records bind local hashes.",
+      "limitation": "Draft date is not an acquisition receipt. Need dataset version ID, download/acquisition log, original archive hash, subset/rename mapping provenance."
+    },
+    {
+      "topic": "License",
+      "status": "UNVERIFIED",
+      "evidence": "Scoped filename search recorded; no dataset license/version receipt found.",
+      "limitation": "Need license text tied to acquired version, author attribution and reuse conditions. No license inferred from public availability."
+    },
+    {
+      "topic": "Signer/session",
+      "status": "UNVERIFIED",
+      "evidence": "External nonempty signer=0/400; internal=0/2400.",
+      "limitation": "Need trustworthy source records or reviewer-backed provenance; hashes do not establish signer independence."
+    },
+    {
+      "topic": "Historical v2/v3 exposure",
+      "status": "VERIFIED preprocessing",
+      "evidence": "400 external v2 annotation/frame records; 400 external v3 candidate-cache records and actual cached image byte/RGB checks in audit.json/file_integrity.jsonl.",
+      "limitation": "Previously opened/preprocessed; not untouched. Draft describes filtering blurry/transitional frames, without complete underlying acquisition/selection audit trail."
+    },
+    {
+      "topic": "External scoring/tuning history",
+      "status": "UNVERIFIED completeness",
+      "evidence": "7 discovered completed Classification evaluation receipts have internal-only manifests; 0 final scoring-start receipts found in scoped search.",
+      "limitation": "Absence in these records is not proof of absence elsewhere. Owner/reviewer must review historical external inference, score viewing, frame/threshold/model/checkpoint/hyperparameter selection; do not generate attestation."
+    },
+    {
+      "topic": "Neutral filename GT",
+      "status": "VERIFIED local consistency",
+      "evidence": "400 unique neutral filename/GT/original-filename CSV rows map to physical external files and locked class IDs; original filename class tokens match CSV.",
+      "limitation": "Original archive labels and semantic gesture correctness unverified. Mapping CSV alone is not authoritative acquisition provenance."
+    },
+    {
+      "topic": "Semantic/ambiguity review",
+      "status": "PARTIAL, internal only",
+      "evidence": "Two reviewer response exports cover 160 training-pool pilot samples; original exports match; counts below. Classification technical contact-sheet review has expert_verified_n=0 and semantic_unassessed_n=640.",
+      "limitation": "No complete external semantic adjudication. Review responses are not relabelled into final manifests; reviewer expertise/independence not established by hashes."
+    }
+  ],
+  "historical_draft_passages": [
+    {
+      "path": "07_dokumen\\draft_paper\\Effect of Training Set Expansion on YOLOv26 Performance for Real-Time BISINDO Phrase Recognition.md",
+      "line": 55,
+      "text": "Data were collected from two sources. For the training and validation sets, gesture data were recorded by the research team using a standard webcam under varied but controlled conditions, including different lighting levels and slight variations in signer position following practices established in recent sign language dataset construction studies [24], [25]. Each gesture was captured as still frames extracted from short video sequences, yielding 300 images per class. For the independent test set, 50 video clips per class were sourced from an existing public BISINDO repository on Kaggle [26] and converted to frames using the same extraction pipeline. The total dataset therefore contains 350 samples per class, with 300 self-recorded samples used for training and validation, and 50 Kaggle-sourced samples reserved exclusively for testing."
+    },
+    {
+      "path": "07_dokumen\\draft_paper\\Effect of Training Set Expansion on YOLOv26 Performance for Real-Time BISINDO Phrase Recognition.md",
+      "line": 58,
+      "text": "The Kaggle test dataset was originally collected in MP4 video format, published by Pardede [26] and contains 40 BISINDO words with approximately 50 video clips per word. Since YOLO26 operates on static image frames rather than raw video sequences, all test videos were initially converted to individual frames using OpenCV's video capture pipeline. Frames were sampled at a uniform interval to reduce redundancy from consecutive near-identical frames, a commonly adopted practice in sign language video preprocessing [27], [28], [29]. Blurry or transitional frames were eliminated; only those with distinct hand gestures were kept. For each of the eight target phrases, this procedure produced 50 suitable image samples per class, which made up the independent test set. "
+    },
+    {
+      "path": "07_dokumen\\draft_paper\\Effect of Training Set Expansion on YOLOv26 Performance for Real-Time BISINDO Phrase Recognition.md",
+      "line": 66,
+      "text": "The annotated dataset was divided into three non-overlapping subsets. The self-recorded dataset of 300 images per class was split into a training set and a validation set at an 80:20 ratio, insisting on 240 training samples and 60 validation samples per class. The Kaggle-sourced dataset of 50 images per class was reserved exclusively as the independent test set and was not used at any point during training or validation. This design ensures that test set performance reflects genuine generalization to unseen data from an independent source, strengthening the validity of the comparative evaluation."
+    },
+    {
+      "path": "07_dokumen\\draft_paper\\Effect of Training Set Expansion on YOLOv26 Performance for Real-Time BISINDO Phrase Recognition.md",
+      "line": 74,
+      "text": "| **Test** | Kaggle [26]  | 50 | 300 | 300 |"
+    },
+    {
+      "path": "07_dokumen\\draft_paper\\Effect of Training Set Expansion on YOLOv26 Performance for Real-Time BISINDO Phrase Recognition.md",
+      "line": 155,
+      "text": "[26]\tAnggi Yohanes Pardede, “BISINDO 40 Kata mp4,” *Kaggle*, 2024, Accessed: Jun. 10, 2026. [Online]. Available: [https://www.kaggle.com/datasets/anggiyohanespardede/bisindo-40-kata-mp4](https://www.kaggle.com/datasets/anggiyohanespardede/bisindo-40-kata-mp4)"
+    }
+  ],
+  "completed_evaluation_receipts": [
+    {
+      "path": "02_exp\\arsip_pipeline\\experiment_yolo26_classification_notebook_20261102\\evaluation\\evaluation_complete.json",
+      "keys": [
+        "models",
+        "release_fingerprint",
+        "timestamp"
+      ],
+      "manifest_sources": {
+        "train": 640
+      }
+    },
+    {
+      "path": "02_exp\\arsip_pipeline\\experiment_yolo26_classification_pilot\\evaluation\\evaluation_complete.json",
+      "keys": [
+        "models",
+        "release_fingerprint",
+        "timestamp"
+      ],
+      "manifest_sources": {
+        "train": 640
+      }
+    },
+    {
+      "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\evaluation\\evaluation_complete.json",
+      "keys": [
+        "models",
+        "release_fingerprint",
+        "timestamp"
+      ],
+      "manifest_sources": {
+        "train": 640
+      }
+    },
+    {
+      "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\evaluation\\evaluation_complete.json",
+      "keys": [
+        "models",
+        "release_fingerprint",
+        "timestamp"
+      ],
+      "manifest_sources": {
+        "train": 640
+      }
+    },
+    {
+      "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\evaluation\\evaluation_complete.json",
+      "keys": [
+        "models",
+        "release_fingerprint",
+        "timestamp"
+      ],
+      "manifest_sources": {
+        "train": 640
+      }
+    },
+    {
+      "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\evaluation\\evaluation_complete.json",
+      "keys": [
+        "models",
+        "release_fingerprint",
+        "timestamp"
+      ],
+      "manifest_sources": {
+        "train": 640
+      }
+    },
+    {
+      "path": "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\evaluation\\evaluation_complete.json",
+      "keys": [
+        "models",
+        "release_fingerprint",
+        "timestamp"
+      ],
+      "manifest_sources": {
+        "train": 640
+      }
+    }
+  ],
+  "final_scoring_receipt_paths": [],
+  "scoped_filename_search": {
+    "command": [
+      "rg",
+      "--files",
+      "-g",
+      "*licen*",
+      "-g",
+      "*LICEN*",
+      "-g",
+      "*metadata*",
+      "-g",
+      "*kaggle*",
+      "-g",
+      "*.zip",
+      "-g",
+      "*.7z"
+    ],
+    "exit_code": 0,
+    "output": "02_exp\\arsip_pipeline\\experiment_yolo26_training_pilot\\reports\\metadata_template.csv\n",
+    "limitation": "rg obeys ignore rules; scoped repo search, not proof that no off-repo/ignored records exist"
+  },
+  "human_pilot": {
+    "n": 160,
+    "sources": {
+      "train": 160
+    },
+    "splits": {
+      "train": 160
+    },
+    "reviews": [
+      {
+        "path": "02_exp\\arsip_pipeline\\experiment_yolo26_pilot\\responses\\reviewer_1.json",
+        "reviewer": "reviewer_1",
+        "n": 160,
+        "decision_counts": {
+          "tidur": 19,
+          "saya": 16,
+          "apa_kabar": 12,
+          "bingung": 18,
+          "ambiguous": 27,
+          "marah": 17,
+          "halo": 16,
+          "senang": 18,
+          "kamu": 17
+        },
+        "original_export_matches": false
+      },
+      {
+        "path": "02_exp\\arsip_pipeline\\experiment_yolo26_pilot\\responses\\reviewer_2.json",
+        "reviewer": "reviewer_2",
+        "n": 160,
+        "decision_counts": {
+          "tidur": 18,
+          "ambiguous": 12,
+          "marah": 20,
+          "halo": 17,
+          "bingung": 20,
+          "apa_kabar": 17,
+          "kamu": 18,
+          "saya": 19,
+          "invalid": 4,
+          "senang": 15
+        },
+        "original_export_matches": false
+      }
+    ]
+  },
+  "classification_technical_review": {
+    "viewed_n": 160,
+    "random_stratified_n": 120,
+    "additional_flagged_n": 40,
+    "suspected_nonrepresentative_n": 3,
+    "suspected_cross_class_pose_overlap_n": 2,
+    "semantic_expert_verified_n": 0,
+    "known_semantic_ambiguous_n": 0,
+    "semantic_unassessed_n": 640,
+    "observations": "Room/background/clothing cues recur across image groups; appearance cues may confound recognition. No signer identities inferred. No frame/label changed."
+  },
+  "v2_external_review_status": {
+    "pending": 400
+  },
+  "input_sha256": {
+    "01_hasil\\addendum\\data_inventory_task1_20261105\\audit.json": "2dbd5026b458f754e8b5bde85920d71e4b47ee35ab8570e6f39c39e6bea0bafa",
+    "07_dokumen\\draft_paper\\Effect of Training Set Expansion on YOLOv26 Performance for Real-Time BISINDO Phrase Recognition.md": "5a0b8e7efc22ad66219cf9be7ad71e5dd08ebd6c67b227f1b629357bbab562f9",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_classification_notebook_20261102\\evaluation\\evaluation_complete.json": "25a31f242571c47873530135cadcb1c9f9816721499d5f80c63185352bc15b54",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_classification_notebook_20261102\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_classification_pilot\\evaluation\\evaluation_complete.json": "027ab52ff7bf6d53d889f4b7cc41c910869285d413af44074f740256abe4ce85",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_classification_pilot\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\evaluation\\evaluation_complete.json": "d115d58e62c205f36b08bfbb45ca5dd9e4c8416cd23873a1fdebd5c4d53204f0",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\evaluation\\evaluation_complete.json": "e7b14edfb5fdf7aad33e1f2566c1355cfa1264ec40471e595ec0fbf3e1ae58a3",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed43\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\evaluation\\evaluation_complete.json": "47312f5a4b4b392500d9dbc11dd80a635358eaaf24ef63cb93509ffbfc250357",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed44\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\evaluation\\evaluation_complete.json": "dd316407d3cbed77b56c3f79ef1538dc9b4801f6b50c615249cef7805501a07e",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed45\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\evaluation\\evaluation_complete.json": "c79cc6878ffb284b0ff20af6f5a7859e14a3e8c63e4ede643c32add746fc487f",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed46\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_pilot\\pilot_manifest_private.csv": "6d033a09eb54c5f0af011f3b7fecf7fe5a9b2e5532610c9d8468961ae43128fd",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_pilot\\responses\\reviewer_1.json": "9f3e6f243b1f354f49d1495749022a12b6f400502282e12890d1b8fb639d8b18",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_pilot\\responses\\reviewer_2.json": "60377a15023e20beb9d158b9f3ba7660e3342093baf5442a5321ab0f9b7ecda8",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_classification_pilot\\audit\\technical_visual_summary.json": "85d2742b0daaee3b95b1664fb74c2f986ea8270f47f4c1835743828a44f5ff24",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_v2\\annotations.csv": "62ae29c17ef50011bd3458583176158aea4e1ef0923bd889c8f9f2d46491a595"
+  },
+  "attestation_generated": false,
+  "external_inference": false
+}

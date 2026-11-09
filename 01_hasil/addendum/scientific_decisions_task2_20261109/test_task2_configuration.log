@@ -1,0 +1,13 @@
+test_candidate_not_approval_or_frozen_protocol (test_task2_configuration.ConfigurationTests.test_candidate_not_approval_or_frozen_protocol) ... ok
+test_full_data_counts_and_steps_are_planned_not_measured (test_task2_configuration.ConfigurationTests.test_full_data_counts_and_steps_are_planned_not_measured) ... ok
+test_h2_verbatim_and_no_fabricated_approvals (test_task2_configuration.ConfigurationTests.test_h2_verbatim_and_no_fabricated_approvals) ... ok
+test_no_stochastic_transforms_or_normalization_drift (test_task2_configuration.ConfigurationTests.test_no_stochastic_transforms_or_normalization_drift) ... ok
+test_notebook_historical_code_cells_preserved_and_new_cells_read_only (test_task2_configuration.ConfigurationTests.test_notebook_historical_code_cells_preserved_and_new_cells_read_only) ... ok
+test_same_baseline_training_across_arms_no_search (test_task2_configuration.ConfigurationTests.test_same_baseline_training_across_arms_no_search) ... ok
+test_seed_provenance_preserves_uncertainty (test_task2_configuration.ConfigurationTests.test_seed_provenance_preserves_uncertainty) ... ok
+test_ten_actual_runs_have_transform_step_and_lr_evidence (test_task2_configuration.ConfigurationTests.test_ten_actual_runs_have_transform_step_and_lr_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.064s
+
+OK

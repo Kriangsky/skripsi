@@ -1,0 +1,39 @@
+{
+  "status": "PARTIAL_PROVENANCE",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "earliest_local_suggestion": {
+    "path": "07_dokumen/handoff/BISINDO_PROJECT_HANDOFF_FOR_CLAUDE_2026-11-02.md",
+    "section": "22",
+    "wording": "Multi-seed A/B, misalnya 42,43,44,45,46 pada sampling dan split yang tetap.",
+    "document_date": "2026-11-02",
+    "git_presence": "8b3bf45, commit 2026-11-03T12:13:54+07:00",
+    "limit": "document date is not independently verified creation/approval timestamp; suggestion follows already reported pilot"
+  },
+  "formal_candidate": {
+    "path": "07_dokumen/protokol/PREREGISTRATION.md",
+    "document_date": "2026-11-03",
+    "section": "2",
+    "pilot42_already_observed": true
+  },
+  "run_approvals": {
+    "path": "02_exp/log_sesi/exploratory_development_stage1b_user_20261103_v1_session/exploratory_approval_seed{42..46}.json",
+    "recorded_date": "2026-11-03",
+    "scope": "stage1b; researcher chat referenced, not independently authenticated"
+  },
+  "excluded_registered_seeds": [],
+  "all_ten_full_runs_accounted": true,
+  "earlier_seed42_replicates": "legacy pilot and notebook reproduction; not additional independent seeds",
+  "failures": "probe A42 before optimization; runner preflight zero fits; multi-work settings conflict retained",
+  "rationale_for_42_or_consecutive_numbers": null,
+  "rationale_for_exactly_five_seeds": null,
+  "result_influence": "No evidence of dropping registered42..46; result-independent original selection NOT established: pilot42 known before proposal.",
+  "exact_selection_time": null,
+  "complete_omitted_attempt_attestation": false,
+  "scope": "local handoff/protocol/addenda/approval/events/all_fits/failure records and git snapshots; no private chat/account attestation"
+}

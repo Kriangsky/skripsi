@@ -1,0 +1,6 @@
+true_accuracy_assumed,n_per_class,required_correct,probability_pass_one_class,probability_pass_both_if_independent,both_probability_frechet_low,both_probability_frechet_high,method
+0.8,50,45,0.04802721937073372,0.00230661380048458,0.0,0.04802721937073372,EXACT binomial + one-sided Clopper-Pearson; conditional single classifier/perfectly correlated seed errors; not pooled n=250
+0.85,50,45,0.21935333540143803,0.04811588575173577,0.0,0.21935333540143803,EXACT binomial + one-sided Clopper-Pearson; conditional single classifier/perfectly correlated seed errors; not pooled n=250
+0.9,50,45,0.6161230077242774,0.37960756064721,0.23224601544855483,0.6161230077242774,EXACT binomial + one-sided Clopper-Pearson; conditional single classifier/perfectly correlated seed errors; not pooled n=250
+0.95,50,45,0.9622238270102226,0.9258746932661988,0.9244476540204452,0.9622238270102226,EXACT binomial + one-sided Clopper-Pearson; conditional single classifier/perfectly correlated seed errors; not pooled n=250
+0.98,50,45,0.9995217827857861,0.9990437942632762,0.9990435655715721,0.9995217827857861,EXACT binomial + one-sided Clopper-Pearson; conditional single classifier/perfectly correlated seed errors; not pooled n=250

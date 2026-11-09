@@ -1,0 +1,84 @@
+{
+  "command": [
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "01_hasil/addendum/data_inventory_task1_20261105/final_checks.py"
+  ],
+  "started_utc": "2026-11-05T09:21:45.765448+00:00",
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "05_kode/tests",
+        "-p",
+        "test_final_control_notebook.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "final_check_0.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+        "05_kode/check_runtime.py",
+        "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa"
+      ],
+      "exit_code": 0,
+      "log": "final_check_1.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "final_check_2.log"
+    }
+  ],
+  "status": "PASS TASK 1 audit; final external readiness BLOCKED",
+  "previous_code_cells_preserved": 12,
+  "new_task1_code_cell_executed": true,
+  "unexpected_protected_drift": [],
+  "notebook_sha256": "7a6000fbfa93d9ea4e97bc334cbe5afd6fe2dfcd05df9d8c9b6fa2bc74e47932",
+  "completed_utc": "2026-11-05T09:21:48.022261+00:00",
+  "documentation_only_since_kernel_validation": true,
+  "training": false,
+  "external_scoring": false,
+  "task2_started": false,
+  "artifacts_sha256": {
+    "audit.json": "2dbd5026b458f754e8b5bde85920d71e4b47ee35ab8570e6f39c39e6bea0bafa",
+    "audit_report.md": "53a1c4cc0771ff9bea7fb53436fe228335babcbcd15e4f7faa022293aed3aa21",
+    "duplicate_impact.json": "f3910040b03fde6a2cf9e5e7a0de84fa7d28b41f061a420d44d39a95f0c1ad62",
+    "execution.json": "b1236d9de90a388777d3016910aaf16564a61e77ef3d0581ce744a5586f5fd36",
+    "file_integrity.jsonl": "720fc0ea19e23ada0e209b7f7f82989a5acff6f6b7829f700074cc707e115ffc",
+    "final_checks.py": "e6ab8f6f3239e8b123babb55a1d1f7155c9af9177007fb6c09051f015ffc9f9e",
+    "final_check_0.log": "333c3309bd7a20908522c3732d5e090ad4efc29da39d1b01b0450cea8aacbcf1",
+    "final_check_1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final_check_2.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "integrate_and_validate.py": "0b169aefd12faa0c3ae171ada84c6300b3f8dffb29fd076544fcdbad85c75642",
+    "integration_attempt_01.json": "e14a72cae93317ba3a83c2e078c8c72a918c0120a87be479d5059b738751db98",
+    "manifest_catalog.json": "9225c4436462a21d57d7d19365af8b566af937cfeb22163ba245c7bc40cb0eaa",
+    "notebook_execution.log": "0ea46d9acd3d3bffa55f15d68358b71b7c579a392626ba0b6511814628066c16",
+    "notebook_execution_verified.log": "745dfca47d864d165492663d07dfdfea033237244ed046d41dc6042d698ff8b2",
+    "notebook_outputs_before.json": "dcbfddbe49610f77945f265f162c9003de66c19bbaf74587b6f0723da5a3b566",
+    "protected_before.json": "4e580c033fb65e9c24228a6f611894e41c70886bf03d7e9fcb9da890943114f2",
+    "provenance.json": "6628bb7e7807605e2dd5cf391239bad55ed7906889d1f98f528bca191004bc66",
+    "provenance_review.py": "41443ee79cc15917fe5647d2bfffd00b8f2c451c32fd9ba9dd03457d4634592c",
+    "test_confirmatory_statistics.log": "5db4b30e4b4574be7bc7ce1b3993489880c72a3b7eabfbf937f471ac34103e9c",
+    "test_final_control_notebook.log": "0f293c9e5538bfb193c04339872fc378508341df9b4ba4a65c9ed42e78a5e23b",
+    "test_frame_candidates.log": "25300a99afbe5b5f583ef04877eeea2d56753560d3de72cca69289037087aea9",
+    "test_interference_metrics.log": "8ee0ab225797603a7fa3adf48d6c29d36cd6714ba4fc1a25922add5b87c14a91",
+    "test_task1_data_audit.log": "e15dc04a5b34f5bb8a57e87895ed5b6d0d696ff0768820ff8360ad536d224cad",
+    "validation.json": "0185ffeaf571e0da73570606b6f65e5e1aa9603b2005ccbb76f8ef6934eabbdf"
+  },
+  "source_sha256": {
+    "05_kode\\src\\task1_data_audit.py": "cce4e8fcf099ccc0ce62a219866d36c8c4a48bcbc2884a2429ee8638fdb52098",
+    "05_kode\\tests\\test_task1_data_audit.py": "c6c8d0fd55370a05bcc7534c5a924ce4815254f8d8c74637bcaf9a94a30ead73",
+    "06_notebook\\eksperimen\\BISINDO_FINAL_EXPERIMENT_CONTROL.ipynb": "7a6000fbfa93d9ea4e97bc334cbe5afd6fe2dfcd05df9d8c9b6fa2bc74e47932",
+    "07_dokumen\\TRACKING_BISINDO.md": "10f2969297e2d24c7cae68ae9be3e90d658c28721f1603334ae65efea3db9c3c"
+  }
+}

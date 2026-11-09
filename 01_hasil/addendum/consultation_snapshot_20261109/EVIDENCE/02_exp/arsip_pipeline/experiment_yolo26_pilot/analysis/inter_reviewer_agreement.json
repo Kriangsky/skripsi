@@ -1,0 +1,51 @@
+{
+  "n": 160,
+  "categories": [
+    "saya",
+    "kamu",
+    "senang",
+    "bingung",
+    "marah",
+    "apa_kabar",
+    "halo",
+    "tidur",
+    "ambiguous",
+    "invalid"
+  ],
+  "category_definition": "Eight exact class choices plus ambiguous and invalid as two distinct nominal categories. All samples retained, including missing images.",
+  "agreement": 0.84375,
+  "expected_agreement": 0.106328125,
+  "cohens_kappa": 0.8251595419179998,
+  "undefined_kappa_reason": null,
+  "frequent_confusion_definition": "At least 2 pooled directional errors across both reviewers; descriptive, not a significance threshold.",
+  "confused_pairs": [
+    {
+      "class_a": "apa_kabar",
+      "class_b": "halo",
+      "pooled_errors": 7,
+      "frequent": true
+    },
+    {
+      "class_a": "senang",
+      "class_b": "bingung",
+      "pooled_errors": 1,
+      "frequent": false
+    },
+    {
+      "class_a": "senang",
+      "class_b": "apa_kabar",
+      "pooled_errors": 1,
+      "frequent": false
+    },
+    {
+      "class_a": "senang",
+      "class_b": "tidur",
+      "pooled_errors": 1,
+      "frequent": false
+    }
+  ],
+  "frequent_confused_pair_n": 1,
+  "frequent_confused_class_n": 2,
+  "unidentifiable_either_n": 31,
+  "unidentifiable_both_n": 12
+}
