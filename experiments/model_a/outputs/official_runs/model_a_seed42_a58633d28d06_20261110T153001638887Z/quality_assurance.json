@@ -1,0 +1,27 @@
+{
+  "status": "PASS_TECHNICAL_ONLY",
+  "samples": 1800,
+  "split_counts": {
+    "train": 1440,
+    "val": 360
+  },
+  "class_split_counts": {
+    "apa_kabar/train": 240,
+    "apa_kabar/val": 60,
+    "bingung/train": 240,
+    "bingung/val": 60,
+    "kamu/train": 240,
+    "kamu/val": 60,
+    "marah/train": 240,
+    "marah/val": 60,
+    "saya/train": 240,
+    "saya/val": 60,
+    "senang/train": 240,
+    "senang/val": 60
+  },
+  "exact_source_and_selected_frame_cross_split_leakage": false,
+  "image_integrity": "SHA256 + RGB decode verified",
+  "exclusions": 0,
+  "quality_flags_reported": true,
+  "semantic_approval_required": false
+}

@@ -1,0 +1,15 @@
+test_alphabetical_mapping_and_invalid_mapping (test_model_a.ModelATests.test_alphabetical_mapping_and_invalid_mapping) ... ok
+test_duplicate_identity_and_content_rejected (test_model_a.ModelATests.test_duplicate_identity_and_content_rejected) ... ok
+test_label_and_external_split_mismatch_rejected (test_model_a.ModelATests.test_label_and_external_split_mismatch_rejected) ... ok
+test_letterbox_retains_edges_rgb_and_determinism (test_model_a.ModelATests.test_letterbox_retains_edges_rgb_and_determinism) ... ok
+test_metrics_known_answer_and_zero_support (test_model_a.ModelATests.test_metrics_known_answer_and_zero_support) ... ok
+test_notebook_schema_syntax_and_execution_flags (test_model_a.ModelATests.test_notebook_schema_syntax_and_execution_flags) ... ok
+test_path_escape_rejected (test_model_a.ModelATests.test_path_escape_rejected) ... ok
+test_real_frozen_inventory (test_model_a.ModelATests.test_real_frozen_inventory) ... ok
+test_semantic_ambiguity_and_unbound_review_rejected (test_model_a.ModelATests.test_semantic_ambiguity_and_unbound_review_rejected) ... ok
+test_unresolved_decisions_and_identity_edit_fail_closed (test_model_a.ModelATests.test_unresolved_decisions_and_identity_edit_fail_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.586s
+
+OK

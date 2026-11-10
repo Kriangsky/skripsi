@@ -1,0 +1,13 @@
+[
+  {
+    "epoch": 1,
+    "fitness": 0.08333,
+    "best_fitness": 0.08333,
+    "batch": 16,
+    "learning_rates": [
+      0.01,
+      0.01,
+      0.01
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "policy": "model_a_cached_full_frame_v1",
+  "declared_before_training": "2026-11-10",
+  "scope": "All 1800 original-six internal videos; identical policy for every class and both frozen splits",
+  "ranking": ["technically eligible first", "detected hands preferred", "fewer unique technical flags", "higher minimum hand-ROI focus", "lower frame index", "lexicographic candidate ID"],
+  "quality_heuristics": {"border_margin": 0.01, "min_hand_side_px": 16, "min_hand_area_px": 256, "min_focus": 60.0},
+  "fallback": "If no technically eligible candidate exists, select the highest-ranked readable integrity-verified candidate; retain every flag. Block only if no technically usable candidate remains or provenance differs.",
+  "context": "Use entire cached source frame; no ROI crop, mirroring or new extraction",
+  "semantics": "Unverified video-derived class labels. Semantic review is reported, not a universal gate. No prediction/accuracy-dependent selection.",
+  "historical_compatibility": "Old ranking plus a hand-visibility preference. All 480 previous selections agree; one previously unselected video changes relative to the old rank."
+}

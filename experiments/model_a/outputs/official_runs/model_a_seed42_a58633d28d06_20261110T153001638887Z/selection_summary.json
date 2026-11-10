@@ -1,0 +1,46 @@
+{
+  "status": "PASS_TECHNICAL_ONLY",
+  "selected_frames": 1800,
+  "candidates_verified": 21390,
+  "frames_extracted": 0,
+  "selected_cached_frames_reused": 1800,
+  "prior_selections_reused": 480,
+  "new_selections": 1320,
+  "fallback_count": 1448,
+  "quality_flags": {
+    "possible_hand_blur": 1433,
+    "hand_near_border_or_clipped": 31
+  },
+  "selected_hand_counts": {
+    "1": 1277,
+    "2": 523
+  },
+  "historical_concern_videos": 49,
+  "reviewer_decisions": {
+    "ambiguous": 37,
+    "saya": 8,
+    "apa_kabar": 6,
+    "kamu": 6,
+    "marah": 6,
+    "bingung": 5,
+    "senang": 3,
+    "invalid": 2,
+    "halo": 1
+  },
+  "technical_failures": [],
+  "policy_sha256": "ba5e0f692ee54c112907390a4355996c58a12af03f1cafc38f7731f9bcb57808",
+  "manifest_sha256": "c7f187740545e3d05b846f5314d2759738c8d334a7dd4f75997ce84c3ca3939f",
+  "provenance_sources": {
+    "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\split_lock.csv": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidate_config.json": "eb986c300d2d618372f955e87565f7f32c8abbfd3d7b3a34f2e229361f0eb618",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidates.csv": "2061a83fa605b0194324499ba7f9b9f69ddfd21ca86a907db01786fdcb3afb12",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_pilot\\pilot_manifest_private.csv": "6d033a09eb54c5f0af011f3b7fecf7fe5a9b2e5532610c9d8468961ae43128fd",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_pilot\\pilot_selection_report.csv": "f4e6a1a03bdfdab9c5dbff235279e7856d6af91c1c42a1218bf7453332dddc5c",
+    "05_kode\\src\\frame_candidates.py": "0e4a9a636775caed2b837f37eb5781072bb108bc5b5c4beeda78417cdcdb07a7",
+    "05_kode\\src\\bisindo_pipeline.py": "0f8aa793bb2e91eb88b29359de81b2cbec26a682952567cd7da980997eb7c8f1"
+  },
+  "limitation": "Technical scores do not establish semantic validity or independent signers. Cache has no extraction timestamps; filesystem mtimes preserved as observations only.",
+  "historical_concern_records": 74,
+  "historical_concern_same_selected_candidate_records": 74
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "original": "07_dokumen/protokol/analysis_plan.json",
+    "destination": "old hypothesa/protocol_snapshot/analysis_plan.json",
+    "sha256": "122793e63c677dd5a3635d3a40995dfeb3dccdee572046365ee218e2b1c38987"
+  },
+  {
+    "original": "07_dokumen/protokol/DEVIATION_LOG.md",
+    "destination": "old hypothesa/protocol_snapshot/DEVIATION_LOG.md",
+    "sha256": "651bd3435ba85a17d3c59ac39903f9a06c0e8b57633b3e903c7b31f698ed45d8"
+  },
+  {
+    "original": "07_dokumen/protokol/external_scoring_readiness.md",
+    "destination": "old hypothesa/protocol_snapshot/external_scoring_readiness.md",
+    "sha256": "2facca8dc01ea4fbeaf0fcd51314a4474d4fef8bbe9865e7b8ef88801522d1f1"
+  },
+  {
+    "original": "07_dokumen/protokol/HYPOTHESES_ENDPOINTS_ADDENDUM.md",
+    "destination": "old hypothesa/protocol_snapshot/HYPOTHESES_ENDPOINTS_ADDENDUM.md",
+    "sha256": "a0b557615af7cac04592f72de6a1ad37f90f35bfd8715121399087b47b550ea2"
+  },
+  {
+    "original": "07_dokumen/protokol/PREREGISTRATION.md",
+    "destination": "old hypothesa/protocol_snapshot/PREREGISTRATION.md",
+    "sha256": "24e21743168f3457933f0f17db76e52d420b5f005da774a7f9230c71f1ac7a70"
+  },
+  {
+    "original": "07_dokumen/protokol/PREREGISTRATION.sha256",
+    "destination": "old hypothesa/protocol_snapshot/PREREGISTRATION.sha256",
+    "sha256": "27e709e73a5d104634f7e0b424b92b4bd77dd2b13b2a96f17360364108e75691"
+  },
+  {
+    "original": "07_dokumen/protokol/PREREGISTRATION_ADDENDUM_01.md",
+    "destination": "old hypothesa/protocol_snapshot/PREREGISTRATION_ADDENDUM_01.md",
+    "sha256": "1242f435e86aaa1c4e62f55c8ed3a30e66f6dcb65e00b8d7570606bac09b2ba6"
+  },
+  {
+    "original": "07_dokumen/protokol/PREREGISTRATION_ADDENDUM_01.sha256",
+    "destination": "old hypothesa/protocol_snapshot/PREREGISTRATION_ADDENDUM_01.sha256",
+    "sha256": "33b36c8c0383e70dd2b8c9637b0dfcd88f1b787e5c08f1407cb5dc71f9e453eb"
+  },
+  {
+    "original": "07_dokumen/protokol/reproducibility_manifest.json",
+    "destination": "old hypothesa/protocol_snapshot/reproducibility_manifest.json",
+    "sha256": "f161597726bb41866c81fbf0a2c48ad62fd84658e13d30c521f52196d961efd8"
+  }
+]

@@ -1,0 +1,89 @@
+sample_id,video,reviewer,decision,reasons,scope
+ff8be2e7d3bfd0d2f75a,train/apa_kabar/apa_kabar_144.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+ac2f531ff4aba51bd9af,train/tidur/tidur_253.mp4,reviewer_1,ambiguous,[],Historical pilot frame; does not adjudicate another selected frame
+8fb00189a2c24782e3eb,train/bingung/bingung_186.mp4,reviewer_1,bingung,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+90aa0f03c9a49f832fee,train/halo/halo_192.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+d6335a99971686e0714a,train/apa_kabar/apa_kabar_141.mp4,reviewer_1,senang,[],Historical pilot frame; does not adjudicate another selected frame
+2047429edfa33c00b268,train/senang/senang_031.mov,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+596a563fb12963b65c7e,train/marah/marah_293.mp4,reviewer_1,ambiguous,"[""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+633e3a0b0592d2947201,train/apa_kabar/apa_kabar_231.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+50c6635444e7aa8c10fc,train/apa_kabar/apa_kabar_060.mov,reviewer_1,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+b8ee9286a46a85e14e32,train/apa_kabar/apa_kabar_039.mov,reviewer_1,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+1164e92ec2b70c2c8b6d,train/apa_kabar/apa_kabar_172.mp4,reviewer_1,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+dde75865ed2c32a44604,train/halo/halo_020.mov,reviewer_1,apa_kabar,[],Historical pilot frame; does not adjudicate another selected frame
+1937bbf12a6dfc13fd06,train/tidur/tidur_123.mp4,reviewer_1,tidur,"[""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+4f4d2209a61f0c2dfd5c,train/marah/marah_084.mov,reviewer_1,ambiguous,"[""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+2f934a72a46723a30fc4,train/halo/halo_245.mp4,reviewer_1,apa_kabar,[],Historical pilot frame; does not adjudicate another selected frame
+5a12428a3344d508dbe8,train/apa_kabar/apa_kabar_009.mov,reviewer_1,ambiguous,"[""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+41083364958fe3090838,train/saya/saya_028.mov,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+07ac31399af843ea1152,train/senang/senang_083.mov,reviewer_1,ambiguous,"[""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+04f3ddb334b73b1c1b42,train/senang/senang_102.mp4,reviewer_1,ambiguous,"[""transition"", ""blur"", ""temporal_insufficient""]",Historical pilot frame; does not adjudicate another selected frame
+017adf87877d69be4e2b,train/marah/marah_070.mov,reviewer_1,ambiguous,[],Historical pilot frame; does not adjudicate another selected frame
+ed761eb288dd6073618d,train/kamu/kamu_146.mp4,reviewer_1,ambiguous,"[""transition"", ""temporal_insufficient""]",Historical pilot frame; does not adjudicate another selected frame
+a8f6a38df7031fc2f0c0,train/apa_kabar/apa_kabar_254.mp4,reviewer_1,apa_kabar,"[""temporal_insufficient""]",Historical pilot frame; does not adjudicate another selected frame
+155dcd455a704668dd0a,train/bingung/bingung_096.mov,reviewer_1,ambiguous,"[""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+ca134c072f406ab793cf,train/kamu/kamu_147.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+e9f79f363d6c34ff858d,train/apa_kabar/apa_kabar_007.mov,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+4b1e90fce098c6b19a07,train/apa_kabar/apa_kabar_160.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+1fd78b78b5752c9388df,train/saya/saya_273.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+cecb3a0aa5dfeb8e6f3e,train/apa_kabar/apa_kabar_246.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+3d40e961189d764f696c,train/halo/halo_031.mov,reviewer_1,apa_kabar,[],Historical pilot frame; does not adjudicate another selected frame
+4f5a5737690c1dd398e0,train/kamu/kamu_133.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+421a3728ce4fd0c2914b,train/kamu/kamu_128.mp4,reviewer_1,kamu,"[""blur""]",Historical pilot frame; does not adjudicate another selected frame
+a58e47652126976f226e,train/saya/saya_088.mov,reviewer_1,saya,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+8b972d7aa442dbe8d868,train/senang/senang_244.mp4,reviewer_1,senang,"[""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+4a88864c1c3c28c4b435,train/senang/senang_071.mov,reviewer_1,senang,"[""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+a8b914ce101469eeb1a4,train/kamu/kamu_048.mov,reviewer_1,kamu,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+b73dafe2b178d7886d84,train/apa_kabar/apa_kabar_103.mov,reviewer_1,apa_kabar,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+25ade6bf835d25316d10,train/saya/saya_016.mov,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+6fcd7effdb7e7fb536a5,train/apa_kabar/apa_kabar_218.mp4,reviewer_1,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+567919e40e897c7db087,train/bingung/bingung_099.mov,reviewer_1,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+7b55e7be6a98dec2f85b,train/kamu/kamu_186.mp4,reviewer_1,kamu,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+7e485164a0ec4ae71770,train/saya/saya_102.mov,reviewer_1,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+3690876edc1e9b3201fc,train/marah/marah_253.mp4,reviewer_1,marah,"[""preparation"", ""temporal_insufficient""]",Historical pilot frame; does not adjudicate another selected frame
+04f3ddb334b73b1c1b42,train/senang/senang_102.mp4,reviewer_2,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+4b1e90fce098c6b19a07,train/apa_kabar/apa_kabar_160.mp4,reviewer_2,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+07ac31399af843ea1152,train/senang/senang_083.mov,reviewer_2,invalid,"[""preparation"", ""transition"", ""blur""]",Historical pilot frame; does not adjudicate another selected frame
+b80aea26f05f6bdaf679,train/saya/saya_085.mov,reviewer_2,saya,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+733eb575750380a6d672,train/apa_kabar/apa_kabar_171.mp4,reviewer_2,apa_kabar,"[""temporal_insufficient""]",Historical pilot frame; does not adjudicate another selected frame
+dde75865ed2c32a44604,train/halo/halo_020.mov,reviewer_2,invalid,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+3d40e961189d764f696c,train/halo/halo_031.mov,reviewer_2,apa_kabar,[],Historical pilot frame; does not adjudicate another selected frame
+ed761eb288dd6073618d,train/kamu/kamu_146.mp4,reviewer_2,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+6fcd7effdb7e7fb536a5,train/apa_kabar/apa_kabar_218.mp4,reviewer_2,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+d6335a99971686e0714a,train/apa_kabar/apa_kabar_141.mp4,reviewer_2,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+4afb2b38787a5efca2ad,train/senang/senang_179.mp4,reviewer_2,bingung,[],Historical pilot frame; does not adjudicate another selected frame
+ea28847204e90991fc20,train/tidur/tidur_129.mp4,reviewer_2,senang,[],Historical pilot frame; does not adjudicate another selected frame
+567919e40e897c7db087,train/bingung/bingung_099.mov,reviewer_2,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+9acb3f0238df77cc7285,train/senang/senang_252.mp4,reviewer_2,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+4a88864c1c3c28c4b435,train/senang/senang_071.mov,reviewer_2,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+1937bbf12a6dfc13fd06,train/tidur/tidur_123.mp4,reviewer_2,tidur,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+017adf87877d69be4e2b,train/marah/marah_070.mov,reviewer_2,marah,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+2047429edfa33c00b268,train/senang/senang_031.mov,reviewer_2,ambiguous,"[""preparation"", ""transition"", ""hand_clipped""]",Historical pilot frame; does not adjudicate another selected frame
+2f934a72a46723a30fc4,train/halo/halo_245.mp4,reviewer_2,apa_kabar,[],Historical pilot frame; does not adjudicate another selected frame
+ca134c072f406ab793cf,train/kamu/kamu_147.mp4,reviewer_2,ambiguous,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+1164e92ec2b70c2c8b6d,train/apa_kabar/apa_kabar_172.mp4,reviewer_2,apa_kabar,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+596a563fb12963b65c7e,train/marah/marah_293.mp4,reviewer_2,marah,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame
+cecb3a0aa5dfeb8e6f3e,train/apa_kabar/apa_kabar_246.mp4,reviewer_2,ambiguous,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+b73dafe2b178d7886d84,train/apa_kabar/apa_kabar_103.mov,reviewer_2,apa_kabar,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+90aa0f03c9a49f832fee,train/halo/halo_192.mp4,reviewer_2,apa_kabar,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+7184904cf99bcc877b13,train/apa_kabar/apa_kabar_081.mov,reviewer_2,halo,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+e5926d7cbe0f56a32a3f,train/bingung/bingung_151.mp4,reviewer_2,bingung,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+155dcd455a704668dd0a,train/bingung/bingung_096.mov,reviewer_2,bingung,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+a58e47652126976f226e,train/saya/saya_088.mov,reviewer_2,saya,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+5a12428a3344d508dbe8,train/apa_kabar/apa_kabar_009.mov,reviewer_2,invalid,"[""preparation"", ""transition"", ""hand_clipped""]",Historical pilot frame; does not adjudicate another selected frame
+633e3a0b0592d2947201,train/apa_kabar/apa_kabar_231.mp4,reviewer_2,apa_kabar,"[""temporal_insufficient""]",Historical pilot frame; does not adjudicate another selected frame
+1fd78b78b5752c9388df,train/saya/saya_273.mp4,reviewer_2,ambiguous,"[""preparation"", ""transition"", ""temporal_insufficient""]",Historical pilot frame; does not adjudicate another selected frame
+41083364958fe3090838,train/saya/saya_028.mov,reviewer_2,saya,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+dc913ab6b5a5da3698e6,train/halo/halo_063.mov,reviewer_2,halo,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+25ade6bf835d25316d10,train/saya/saya_016.mov,reviewer_2,saya,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+074e2c9b61669eda25f6,train/saya/saya_055.mov,reviewer_2,saya,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+7b55e7be6a98dec2f85b,train/kamu/kamu_186.mp4,reviewer_2,kamu,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+a8b914ce101469eeb1a4,train/kamu/kamu_048.mov,reviewer_2,kamu,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+4f4d2209a61f0c2dfd5c,train/marah/marah_084.mov,reviewer_2,marah,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+779e7707fbf765880954,train/kamu/kamu_148.mp4,reviewer_2,kamu,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+4fda4f57eba8e5faebbe,train/marah/marah_027.mov,reviewer_2,marah,"[""preparation""]",Historical pilot frame; does not adjudicate another selected frame
+9ea1f0a9977391c59124,train/saya/saya_144.mp4,reviewer_2,saya,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+cf4790c6c9279fb19cba,train/bingung/bingung_253.mp4,reviewer_2,bingung,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+5565a8ff13180b327df3,train/saya/saya_218.mp4,reviewer_2,saya,"[""preparation"", ""transition""]",Historical pilot frame; does not adjudicate another selected frame
+ac2f531ff4aba51bd9af,train/tidur/tidur_253.mp4,reviewer_2,invalid,"[""preparation"", ""transition"", ""temporal_insufficient""]",Historical pilot frame; does not adjudicate another selected frame
+958e72bd7b06a4de117e,train/marah/marah_044.mov,reviewer_2,marah,"[""transition""]",Historical pilot frame; does not adjudicate another selected frame

@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-cls.pt",
+  "sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+  "task": "classify",
+  "output_shape": [
+    1,
+    1000
+  ]
+}

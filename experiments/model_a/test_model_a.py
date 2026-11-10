@@ -1,0 +1,118 @@
+"""Focused guards for automatic technical selection and the Model A pipeline."""
+import unittest
+
+import nbformat
+import numpy as np
+from PIL import Image
+
+import model_a as a
+
+
+class ModelATests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.lock = a.read_csv(a.LOCK)
+
+    def test_real_frozen_inventory(self):
+        six = a.verify_inventory(self.lock)
+        self.assertEqual(len(six), 1800)
+        self.assertEqual(six.groupby(['class_name', 'split']).size().value_counts().to_dict(), {240: 6, 60: 6})
+
+    def test_duplicate_identity_and_content_rejected(self):
+        for field in ['sample_id', 'video', 'video_sha256']:
+            with self.subTest(field=field):
+                bad = self.lock.copy()
+                bad.loc[1, field] = bad.loc[0, field]
+                with self.assertRaises(ValueError):
+                    a.verify_inventory(bad)
+
+    def test_label_and_external_split_mismatch_rejected(self):
+        for field, value in [('class_id', '0'), ('class_name', 'saya'), ('source', 'test'), ('split', 'test')]:
+            with self.subTest(field=field):
+                bad = self.lock.copy()
+                bad.loc[0, field] = value
+                with self.assertRaises(ValueError):
+                    a.verify_inventory(bad)
+
+    def test_letterbox_retains_edges_rgb_and_determinism(self):
+        pixels = np.zeros((100, 400, 3), dtype=np.uint8)
+        pixels[:, :40] = (255, 0, 0)
+        pixels[:, -40:] = (0, 0, 255)
+        image = Image.fromarray(pixels)
+        result = np.asarray(a.LetterboxRGB(224)(image))
+        self.assertEqual(result.shape, (224, 224, 3))
+        np.testing.assert_array_equal(result[0, 0], [114, 114, 114])
+        np.testing.assert_array_equal(result[112, 1], [255, 0, 0])
+        np.testing.assert_array_equal(result[112, 222], [0, 0, 255])
+        x, y = a.transform()(image), a.transform()(image)
+        self.assertTrue(a.torch.equal(x, y))
+        self.assertEqual(tuple(x.shape), (3, 224, 224))
+        self.assertEqual(x[0, 112, 1].item(), 1.)
+
+    def test_alphabetical_mapping_and_invalid_mapping(self):
+        self.assertEqual(a.label_mapping(dict(enumerate(sorted(a.CLASSES)))), [5, 3, 1, 4, 0, 2])
+        with self.assertRaises(ValueError):
+            a.label_mapping(dict(enumerate(a.ALL_CLASSES)))
+
+    def test_metrics_known_answer_and_zero_support(self):
+        metrics, per_class, matrix = a.classification_metrics([0, 0, 1, 2, 3, 4, 5], [0, 1, 1, 2, 3, 4, 5])
+        self.assertAlmostEqual(metrics['top1_accuracy'], 6/7)
+        self.assertAlmostEqual(metrics['macro_f1'], 8/9)
+        self.assertEqual(matrix[0, 1], 1)
+        self.assertEqual(per_class.support.tolist(), [2, 1, 1, 1, 1, 1])
+        metrics, _, _ = a.classification_metrics([0], [0])
+        self.assertEqual(metrics['macro_f1'], 1/6)
+
+    def test_incomplete_selection_and_identity_edit_fail_closed(self):
+        rows = a.read_csv(a.AUTO_SELECTION)
+        inventory = a.read_csv(a.HERE / 'manifests/source_inventory.csv')
+        catalogue = a.read_csv(a.CACHE / 'candidates.csv').set_index('candidate_id')
+        with self.assertRaisesRegex(ValueError, 'every one'):
+            a.validate_selection(rows.iloc[:-1], inventory, catalogue)
+        self.assertEqual(len(a.validate_selection(rows, inventory, catalogue)), 1800)
+        bad = rows.copy()
+        bad.loc[0, 'split'] = 'val'
+        with self.assertRaisesRegex(ValueError, 'frozen identity'):
+            a.validate_selection(bad, inventory, catalogue)
+
+    def test_unassessed_and_historically_flagged_rows_remain_included(self):
+        inventory = a.read_csv(a.HERE / 'manifests/source_inventory.csv')
+        rows = a.read_csv(a.AUTO_SELECTION)
+        catalogue = a.read_csv(a.CACHE / 'candidates.csv').set_index('candidate_id')
+        selected = a.validate_selection(rows, inventory, catalogue)
+        self.assertTrue(selected.semantic_status.eq('not_assessed').all())
+        self.assertEqual(selected.historical_review_concern.eq('True').sum(), 49)
+        self.assertEqual(selected.selection_origin.eq('reused_existing_selection').sum(), 480)
+        rows.loc[0, 'source_frame_sha256'] = '0'*64
+        with self.assertRaisesRegex(ValueError, 'provenance'):
+            a.validate_selection(rows, inventory, catalogue)
+
+    def test_selection_rank_is_class_blind_and_deterministic(self):
+        from frame_selection import rank
+        base = dict(quality_flags=['possible_hand_blur'], num_hands=1, focus=30., frame_index=20, candidate_id='b')
+        no_hands = dict(base, quality_flags=['no_hands'], num_hands=0, focus=0.)
+        clipped = dict(base, quality_flags=['hand_near_border_or_clipped', 'possible_hand_blur'])
+        self.assertLess(rank(clipped), rank(no_hands))
+        self.assertLess(rank(dict(base, quality_flags=[])), rank(base))
+        self.assertLess(rank(dict(base, focus=40.)), rank(base))
+        self.assertLess(rank(dict(base, frame_index=19)), rank(base))
+        self.assertLess(rank(dict(base, candidate_id='a')), rank(base))
+        self.assertEqual(rank(dict(base, class_name='saya', split='train')), rank(dict(base, class_name='kamu', split='val')))
+
+    def test_path_escape_rejected(self):
+        with self.assertRaises(ValueError):
+            a.safe_path(a.CACHE, '../../../../../outside.jpg')
+
+    def test_notebook_schema_syntax_and_execution_flags(self):
+        notebook = nbformat.read(a.HERE / 'Model_A_YOLO26_6Class_Training.ipynb', as_version=4)
+        nbformat.validate(notebook)
+        source = '\n'.join(c.source for c in notebook.cells if c.cell_type == 'code')
+        self.assertIn('RUN_TRAINING = False', source)
+        self.assertIn('RUN_SMOKE_TEST = False', source)
+        for i, cell in enumerate(notebook.cells):
+            if cell.cell_type == 'code':
+                compile(cell.source, f'cell_{i}', 'exec')
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)

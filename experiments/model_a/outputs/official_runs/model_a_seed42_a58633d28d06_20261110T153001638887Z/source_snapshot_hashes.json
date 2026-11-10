@@ -1,0 +1,9 @@
+{
+  "bisindo_pipeline.py": "0f8aa793bb2e91eb88b29359de81b2cbec26a682952567cd7da980997eb7c8f1",
+  "frame_candidates.py": "0e4a9a636775caed2b837f37eb5781072bb108bc5b5c4beeda78417cdcdb07a7",
+  "frame_selection.py": "2012e7bb492b1e8067a4d6faa5ab562ec73444702d4a9a09b107a5a297722e7e",
+  "frame_selection_policy_v1.json": "ba5e0f692ee54c112907390a4355996c58a12af03f1cafc38f7731f9bcb57808",
+  "model_a.json": "aeb8623cc8ba36c9d846a92a05847bfec34368bb6ecd6be84350d9051bbda206",
+  "model_a.py": "8f6a500bd3e9d1c6e20fec099a40f7619105e6f11543e3bab75cf35a054136e8",
+  "Model_A_YOLO26_6Class_Training.ipynb": "24112a698e4d8be00e5620a2c27a0a8d084923d3bde888341937d4fa601cbab8"
+}

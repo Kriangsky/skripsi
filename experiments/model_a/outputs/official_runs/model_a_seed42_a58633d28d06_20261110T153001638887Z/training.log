@@ -1,0 +1,239 @@
+Ultralytics 8.4.197 🚀 Python-3.11.5 torch-2.14.0+cu126 CUDA:0 (NVIDIA GeForce RTX 4070 Laptop GPU, 8188MiB)
+[34m[1mengine\trainer: [0magnostic_nms=False, amp=False, angle=1.0, augment=False, auto_augment=None, batch=16, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\datasets\official\a58633d28d06dd212249fd103b1d714b4de93dbe10b91f2039eb41ff0011346c, degrees=0.0, deterministic=True, device=0, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=100, erasing=0.0, exist_ok=False, fliplr=0.0, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.0, hsv_s=0.0, hsv_v=0.0, imgsz=224, iou=0.7, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\outputs\pretrained\yolo26n-cls.pt, momentum=0.937, mosaic=0.0, multi_scale=0.0, name=fit, nbs=64, nms=None, opset=None, optimize=False, optimizer=SGD, overlap_mask=True, patience=20, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\outputs\official_runs\model_a_seed42_a58633d28d06_20261110T153001638887Z, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\outputs\official_runs\model_a_seed42_a58633d28d06_20261110T153001638887Z\fit, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.0, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=classify, time=None, tracker=tracktrack.yaml, translate=0.0, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=0, workspace=None
+[34m[1mtrain:[0m C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\datasets\official\a58633d28d06dd212249fd103b1d714b4de93dbe10b91f2039eb41ff0011346c\train... found 1440 images in 6 classes ✅ 
+[34m[1mval:[0m C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\datasets\official\a58633d28d06dd212249fd103b1d714b4de93dbe10b91f2039eb41ff0011346c\val... found 360 images in 6 classes ✅ 
+[34m[1mtest:[0m None...
+Overriding model.yaml nc=1000 with nc=6
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      6640  ultralytics.nn.modules.block.C3k2            [32, 64, 1, False, 0.25]      
+  3                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+  4                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  5                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  6                  -1  1     87040  ultralytics.nn.modules.block.C3k2            [128, 128, 1, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  9                  -1  1    249728  ultralytics.nn.modules.block.C2PSA           [256, 256, 1]                 
+ 10                  -1  1    337926  ultralytics.nn.modules.head.Classify         [256, 6]                      
+YOLO26n-cls summary: 86 layers, 1,538,790 parameters, 1,538,790 gradients, 3.3 GFLOPs
+Transferred 234/236 items from pretrained weights
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.3±0.0 ms, read: 174.5±63.4 MB/s, size: 72.5 KB)
+[34m[1mval: [0mFast image access ✅ (ping: 0.1±0.0 ms, read: 646.4±352.6 MB/s, size: 88.9 KB)
+[34m[1moptimizer:[0m SGD(lr=0.01, momentum=0.937) with parameter groups 39 weight(decay=0.0), 40 weight(decay=0.0005), 40 bias(decay=0.0)
+Using 1440 train, 360 val images for fraction=1.0 at imgsz=224
+Using 0 dataloader workers
+Logging results to [1mC:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\outputs\official_runs\model_a_seed42_a58633d28d06_20261110T153001638887Z\fit[0m
+Starting training for 100 epochs...
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.892      0.994
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all       0.95      0.994
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.817          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.958      0.997
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.956          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.964          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.722      0.994
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.969      0.997
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.983      0.997
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.986      0.997
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.981          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.975          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.978          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.986      0.997
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.983          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.983          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.978          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.981          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.983          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.983          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.983          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.981          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.994          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.994          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.992          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+                   all      0.989          1
+[34m[1mEarlyStopping: [0mTraining stopped early as no improvement observed in last 20 epochs. Best results observed at epoch 45, best model saved as best.pt.
+To update EarlyStopping(patience=20) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+
+65 epochs completed in 0.427 hours.
+Optimizer stripped from C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\outputs\official_runs\model_a_seed42_a58633d28d06_20261110T153001638887Z\fit\weights\last.pt, 3.2MB
+Optimizer stripped from C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\outputs\official_runs\model_a_seed42_a58633d28d06_20261110T153001638887Z\fit\weights\best.pt, 3.2MB
+
+Validating C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\outputs\official_runs\model_a_seed42_a58633d28d06_20261110T153001638887Z\fit\weights\best.pt...
+Ultralytics 8.4.197 🚀 Python-3.11.5 torch-2.14.0+cu126 CUDA:0 (NVIDIA GeForce RTX 4070 Laptop GPU, 8188MiB)
+YOLO26n-cls summary (fused): 47 layers, 1,533,710 parameters, 0 gradients, 3.2 GFLOPs
+[34m[1mtrain:[0m C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\datasets\official\a58633d28d06dd212249fd103b1d714b4de93dbe10b91f2039eb41ff0011346c\train... found 1440 images in 6 classes ✅ 
+[34m[1mval:[0m C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\datasets\official\a58633d28d06dd212249fd103b1d714b4de93dbe10b91f2039eb41ff0011346c\val... found 360 images in 6 classes ✅ 
+[34m[1mtest:[0m None...
+                   all      0.994          1
+Speed: 0.4ms preprocess, 1.5ms inference, 0.0ms loss, 0.0ms postprocess per image
+Results saved to [1mC:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\outputs\official_runs\model_a_seed42_a58633d28d06_20261110T153001638887Z\fit[0m

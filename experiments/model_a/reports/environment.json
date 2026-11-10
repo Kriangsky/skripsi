@@ -1,0 +1,22 @@
+{
+  "python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+  "packages": {
+    "ultralytics": "8.4.197",
+    "torch": "2.14.0+cu126",
+    "torchvision": "0.29.0+cu126",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "Pillow": "11.0.0",
+    "matplotlib": "3.9.2",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.0"
+  },
+  "cuda_available": true,
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "default_validation_transform": "Compose(\n    Resize(size=224, interpolation=bilinear, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=tensor([0., 0., 0.]), std=tensor([1., 1., 1.]))\n)",
+  "upstream_transform_source_sha256": "414e49b76e5babfa118b88de60558e939fc436945cdf7a7ec4c09b0320a7036e",
+  "default_training_has_random_crop": true,
+  "preprocessing": "RGB; full-frame bilinear resize + centered gray114 padding; tensor /255; mean0/std1; no augmentation"
+}

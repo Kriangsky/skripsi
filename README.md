@@ -1,11 +1,22 @@
 # BISINDO — workspace
 
+**Hipotesis lama tidak dipakai lagi. Pengembangan dan eksperimen aktif sekarang berada di folder [`experiments/`](experiments/), dimulai dari Model A.**
+Folder [`old hypothesa/`](old%20hypothesa/ARCHIVE_MANIFEST.md) menyimpan eksperimen hipotesis lama sebagai arsip historis, bukan acuan eksperimen aktif.
+
+Current baseline: [Model A YOLO26 six-class notebook](experiments/model_a/Model_A_YOLO26_6Class_Training.ipynb).
+Read [audit, blockers and execution instructions](experiments/model_a/reports/AUDIT_AND_USAGE.md).
+Model A completed: 1,800 frames, frozen 1,440/360 split; early stopped at 65 epochs. Internal validation accuracy 99.44%, macro-F1 99.45%.
+Historical experiment archive: [old hypothesa](old%20hypothesa/ARCHIVE_MANIFEST.md); original paths remain compatibility junctions.
+
+
 Seluruh file sudah disegmentasikan. Hasil penelitian tetap **exploratory/development**.
 
 **[Tracking proyek: dibuat, dicoba, berhasil, gagal, tertunda](07_dokumen/TRACKING_BISINDO.md)**.
 
 | Section | Isi |
 |---|---|
+| [experiments](experiments/) | Eksperimen aktif dan workflow Model A |
+| [old hypothesa](old%20hypothesa/ARCHIVE_MANIFEST.md) | Arsip hipotesis lama yang tidak lagi dipakai |
 | [01_hasil](01_hasil/README.md) | Laporan, metrik, notebook hasil dan verifikasi |
 | [02_exp](02_exp/README.md) | Full runs, linear probes, checkpoint, cache dan log |
 | [03_insight_exp](03_insight_exp/README.md) | Interpretasi hasil, paired analysis, masking, kurva dan power |

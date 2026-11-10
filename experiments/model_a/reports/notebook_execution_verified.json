@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cells": 31,
+  "kernel_executable": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+  "official_training": false,
+  "smoke_training": false,
+  "source_notebook_sha256": "31d4dde2ab4e86cfaa2632f90f3a59cca8d1df1a933ae921a97aac0a5db09557",
+  "source_helper_sha256": "684bb6fdbe09a8f3e38a6747dd51e766d60c78a467ab79ccbf86393e0781eb9f"
+}

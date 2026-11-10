@@ -1,0 +1,94 @@
+{'python': '3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]', 'executable': 'C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe', 'packages': {'ultralytics': '8.4.197', 'torch': '2.14.0+cu126', 'torchvision': '0.29.0+cu126', 'numpy': '1.26.4', 'pandas': '2.2.3', 'Pillow': '11.0.0', 'matplotlib': '3.9.2', 'nbformat': '5.10.4', 'nbclient': '0.10.0'}, 'cuda_available': True, 'cuda': '12.6', 'gpu': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'default_validation_transform': 'Compose(\n    Resize(size=224, interpolation=bilinear, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=tensor([0., 0., 0.]), std=tensor([1., 1., 1.]))\n)', 'upstream_transform_source_sha256': '414e49b76e5babfa118b88de60558e939fc436945cdf7a7ec4c09b0320a7036e', 'default_training_has_random_crop': True, 'preprocessing': 'RGB; full-frame bilinear resize + centered gray114 padding; tensor /255; mean0/std1; no augmentation'}
+{'checkpoint_url': 'https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-cls.pt', 'checkpoint_sha256': '0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81', 'ultralytics_version': '8.4.197', 'training': {'epochs': 100, 'patience': 20, 'imgsz': 224, 'batch': 16, 'seed': 42, 'optimizer': 'SGD', 'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'cos_lr': False, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'nbs': 64, 'pretrained': True, 'deterministic': True, 'workers': 0, 'amp': False, 'dropout': 0.0, 'fliplr': 0.0, 'flipud': 0.0, 'degrees': 0.0, 'translate': 0.0, 'scale': 0.0, 'shear': 0.0, 'perspective': 0.0, 'hsv_h': 0.0, 'hsv_s': 0.0, 'hsv_v': 0.0, 'erasing': 0.0, 'auto_augment': None, 'mixup': 0.0, 'cutmix': 0.0, 'mosaic': 0.0, 'fraction': 1.0, 'cache': False, 'resume': False, 'save': True, 'val': True, 'plots': True}}
+  class_name  train  val
+0       saya    240   60
+1       kamu    240   60
+2     senang    240   60
+3    bingung    240   60
+4      marah    240   60
+5  apa_kabar    240   60
+{'status': 'BLOCKED_PENDING_FRAME_DECISIONS', 'source_videos': 1800, 'counts': {'train': {'saya': 240, 'kamu': 240, 'senang': 240, 'bingung': 240, 'marah': 240, 'apa_kabar': 240}, 'val': {'saya': 60, 'kamu': 60, 'senang': 60, 'bingung': 60, 'marah': 60, 'apa_kabar': 60}}, 'existing_selected_frames': 480, 'missing_selected_frames': 1320, 'raw_video_hashes_verified': True, 'video_leakage': False, 'external_samples_used': 0, 'reviewed_v3_frames': 0, 'historical_concern_videos': 49, 'note': '480 existing six-class selections are unassessed; no new frame-selection policy applied. Official preparation rechecks all decisions; this audit does not certify semantic validity.'}
+Frozen identity/source checks PASS. Signer/near-duplicate independence UNVERIFIED.
+disposition  pending
+class_name          
+apa_kabar        300
+bingung          300
+kamu             300
+marah            300
+saya             300
+senang           300
+               sample_id  ...                                              scope
+0   ff8be2e7d3bfd0d2f75a  ...  Historical pilot frame; does not adjudicate an...
+1   ac2f531ff4aba51bd9af  ...  Historical pilot frame; does not adjudicate an...
+2   8fb00189a2c24782e3eb  ...  Historical pilot frame; does not adjudicate an...
+3   90aa0f03c9a49f832fee  ...  Historical pilot frame; does not adjudicate an...
+4   d6335a99971686e0714a  ...  Historical pilot frame; does not adjudicate an...
+5   2047429edfa33c00b268  ...  Historical pilot frame; does not adjudicate an...
+6   596a563fb12963b65c7e  ...  Historical pilot frame; does not adjudicate an...
+7   633e3a0b0592d2947201  ...  Historical pilot frame; does not adjudicate an...
+8   50c6635444e7aa8c10fc  ...  Historical pilot frame; does not adjudicate an...
+9   b8ee9286a46a85e14e32  ...  Historical pilot frame; does not adjudicate an...
+10  1164e92ec2b70c2c8b6d  ...  Historical pilot frame; does not adjudicate an...
+11  dde75865ed2c32a44604  ...  Historical pilot frame; does not adjudicate an...
+
+[12 rows x 6 columns]
+Preparation preview only. Official training remains blocked until frame decisions are complete.
+Figure(1000x2000)
+YOLO26n-cls summary: 120 layers, 2,812,104 parameters, 0 gradients, 3.3 GFLOPs
+{'url': 'https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-cls.pt', 'sha256': '0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81', 'task': 'classify', 'output_shape': [1, 1000]}
+YOLO26n-cls summary: 120 layers, 2,812,104 parameters, 0 gradients, 3.3 GFLOPs
+Full pretrained architecture: C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_a\reports\pretrained_architecture.txt
+Planned training head: six classes; actual output mapping is inspected after fitting.
+epochs                100
+patience               20
+imgsz                 224
+batch                  16
+seed                   42
+optimizer             SGD
+lr0                  0.01
+lrf                  0.01
+momentum            0.937
+weight_decay       0.0005
+cos_lr              False
+warmup_epochs         3.0
+warmup_momentum       0.8
+warmup_bias_lr        0.1
+nbs                    64
+pretrained           True
+deterministic        True
+workers                 0
+amp                 False
+dropout               0.0
+fliplr                0.0
+flipud                0.0
+degrees               0.0
+translate             0.0
+scale                 0.0
+shear                 0.0
+perspective           0.0
+hsv_h                 0.0
+hsv_s                 0.0
+hsv_v                 0.0
+erasing               0.0
+auto_augment         None
+mixup                 0.0
+cutmix                0.0
+mosaic                0.0
+fraction              1.0
+cache               False
+resume              False
+save                 True
+val                  True
+plots                True
+Name: initial_configuration, dtype: object
+Enabled augmentation: none. Deterministic full-frame letterbox only.
+TRAINING NOT RUN. Both execution flags are False.
+Training curves, completed epochs and stopping information: NOT AVAILABLE.
+Official Model A validation metrics: NOT AVAILABLE. No fit was run.
+Confusion matrix and error analysis: NOT AVAILABLE.
+Construction evidence exported. Official checkpoints and metrics: NOT AVAILABLE.
+Scope: Model A only; internal validation only.
+Run: NOT EXECUTED
+Official results: NOT AVAILABLE
+Archive: C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\old hypothesa\ARCHIVE_MANIFEST.md
+ORDERED_CELLS_PASS

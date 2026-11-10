@@ -1,0 +1,7 @@
+{
+  "status": "NOT AVAILABLE",
+  "official_training_executed": false,
+  "reason": "No official run requested; full selected-frame/review coverage incomplete",
+  "metrics": null,
+  "best_checkpoint": null
+}

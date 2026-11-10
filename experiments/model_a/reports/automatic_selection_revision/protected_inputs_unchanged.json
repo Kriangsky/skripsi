@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "protected_files": 2424,
+  "failures": [],
+  "scope": "Original internal raw videos and frozen/source provenance files; no external media read"
+}

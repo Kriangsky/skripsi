@@ -66,3 +66,33 @@ __pycache__/
 !/09_environment/README.md
 !/08_review/templates/annotation_review_template.html
 !/08_review/templates/frame_review_template.html
+
+# Historical compatibility junctions: canonical contents live under old hypothesa
+/06_notebook/eksperimen/
+/06_notebook/hasil/
+/01_hasil/tahap1a/
+/01_hasil/tahap1b/
+/03_insight_exp/tahap1b/
+/03_insight_exp/arsip_tahap1a/
+/03_insight_exp/arsip_notebook/
+/02_exp/tahap1b/linear_probes/
+/02_exp/arsip_pipeline/experiment_yolo26_classification_notebook_20261102/evaluation/
+/02_exp/arsip_pipeline/experiment_yolo26_classification_notebook_20261102/runs/
+/02_exp/arsip_pipeline/experiment_yolo26_classification_pilot/evaluation/
+/02_exp/arsip_pipeline/experiment_yolo26_classification_pilot/runs/
+/02_exp/arsip_pipeline/experiment_yolo26_training_pilot/evaluation/
+/02_exp/arsip_pipeline/experiment_yolo26_training_pilot/runs/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/evaluation/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed42/runs/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/evaluation/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed43/runs/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/evaluation/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed44/runs/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/evaluation/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed45/runs/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/evaluation/
+/02_exp/tahap1b/full_runs/exploratory_development_stage1b_user_20261103_v1_seed46/runs/
+
+# Local executed notebook contains participant image previews
+/experiments/model_a/reports/Model_A_validation_executed.ipynb
+/experiments/model_a/reports/automatic_selection_revision/*_executed.ipynb

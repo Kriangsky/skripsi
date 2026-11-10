@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "archived_directories": 24,
+  "archived_files_verified": 1923,
+  "protected_files_verified": 2424,
+  "protocol_snapshots_verified": 9,
+  "runtime_hardlinks": "PASS",
+  "notebook_cells": 31,
+  "unit_tests": 10,
+  "smoke_run": "experiments\\model_a\\outputs\\smoke_test\\model_a_seed42_57455fa0c685_20261110T150948425368Z",
+  "smoke_train_samples": 12,
+  "smoke_validation_samples": 12,
+  "smoke_predictions_and_mappings": "PASS",
+  "official_training_executed": false,
+  "official_metrics": "NOT AVAILABLE",
+  "official_guard": "PASS",
+  "remaining_blocker": "1320 missing frame selections; 480 existing selections unassessed; all1800 decisions pending; 49 source videos have historical review concerns",
+  "limitations": [
+    "No signer independence",
+    "No full-data selected-frame leakage proof until decisions complete",
+    "No near-duplicate or temporal-overlap certification",
+    "Post-smoke metadata-only addition exports actual sample/batch counts; full smoke source snapshot preserved"
+  ]
+}

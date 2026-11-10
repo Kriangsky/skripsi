@@ -1,0 +1,136 @@
+{
+  "scope": "Technical visual inspection, not expert semantic adjudication",
+  "stratified_thumbnails": 24,
+  "strata": [
+    {
+      "class_name": "apa_kabar",
+      "split": "train",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "apa_kabar",
+      "split": "train",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "apa_kabar",
+      "split": "val",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "apa_kabar",
+      "split": "val",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "bingung",
+      "split": "train",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "bingung",
+      "split": "train",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "bingung",
+      "split": "val",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "bingung",
+      "split": "val",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "kamu",
+      "split": "train",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "kamu",
+      "split": "train",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "kamu",
+      "split": "val",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "kamu",
+      "split": "val",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "marah",
+      "split": "train",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "marah",
+      "split": "train",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "marah",
+      "split": "val",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "marah",
+      "split": "val",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "saya",
+      "split": "train",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "saya",
+      "split": "train",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "saya",
+      "split": "val",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "saya",
+      "split": "val",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "senang",
+      "split": "train",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "senang",
+      "split": "train",
+      "quality_status": "flagged"
+    },
+    {
+      "class_name": "senang",
+      "split": "val",
+      "quality_status": "eligible"
+    },
+    {
+      "class_name": "senang",
+      "split": "val",
+      "quality_status": "flagged"
+    }
+  ],
+  "historical_concern_videos": 49,
+  "unique_source_videos_visually_inspected": 72,
+  "observations": [
+    "Full cached source-frame boundaries retained by letterbox; no added crop or mirror observed",
+    "Motion blur and source-border clipping remain visible on some samples",
+    "Upper-body scale, illumination and backgrounds vary",
+    "All49 concern images technically readable; historical semantic decisions remain unresolved and original labels unchanged"
+  ],
+  "exclusions": 0,
+  "relabels": 0
+}

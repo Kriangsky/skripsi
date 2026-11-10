@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "configuration_unchanged": true,
+  "training_completed": true,
+  "completed_epochs": 65,
+  "best_checkpoint_epoch": 46,
+  "first_strict_maximum_epoch": 45,
+  "early_stopping_patience": 20,
+  "full_dataset_samples": 1800,
+  "train_samples": 1440,
+  "validation_samples": 360,
+  "source_and_image_hashes": "PASS",
+  "mapping_probability_and_prediction_coverage": "PASS",
+  "independent_sklearn_metric_check": "PASS",
+  "metrics": {
+    "top1_accuracy": 0.9944444444444445,
+    "macro_precision": 0.9946236559139785,
+    "macro_recall": 0.9944444444444445,
+    "macro_f1": 0.9944666391146623
+  },
+  "protected_original_inputs": 2424,
+  "notebook_pretraining_cells": 31,
+  "unit_tests": 11,
+  "raw_data_and_frozen_splits_unchanged": true,
+  "frames_extracted": 0,
+  "exclusions": 0,
+  "relabels": 0,
+  "quality_flags_and_historical_concerns_retained": true,
+  "run_directory": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiments\\model_a\\outputs\\official_runs\\model_a_seed42_a58633d28d06_20261110T153001638887Z",
+  "source_code_and_notebook_match_run_snapshots": true,
+  "scientific_limits": [
+    "Unresolved semantic concern videos retained, including reviewer-invalid/alternate-label frames",
+    "Validation is not signer-independent",
+    "Near-duplicate/temporal overlap unverified",
+    "No Kaggle evaluation"
+  ]
+}
