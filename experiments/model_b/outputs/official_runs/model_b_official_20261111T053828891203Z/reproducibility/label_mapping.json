@@ -1,0 +1,32 @@
+{
+  "canonical": {
+    "0": "saya",
+    "1": "kamu",
+    "2": "senang",
+    "3": "bingung",
+    "4": "marah",
+    "5": "apa_kabar",
+    "6": "halo",
+    "7": "tidur"
+  },
+  "model_output": {
+    "0": "apa_kabar",
+    "1": "bingung",
+    "2": "halo",
+    "3": "kamu",
+    "4": "marah",
+    "5": "saya",
+    "6": "senang",
+    "7": "tidur"
+  },
+  "output_to_canonical": [
+    5,
+    3,
+    6,
+    1,
+    4,
+    0,
+    2,
+    7
+  ]
+}

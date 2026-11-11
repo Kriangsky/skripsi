@@ -1,0 +1,12 @@
+[
+  {
+    "epoch": 1,
+    "fitness": 0.025,
+    "optimizer_steps": 1,
+    "learning_rates": [
+      0.001,
+      0.001,
+      0.001
+    ]
+  }
+]

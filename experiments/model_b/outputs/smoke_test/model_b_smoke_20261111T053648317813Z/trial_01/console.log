@@ -1,0 +1,5 @@
+[K[34m[1mtrain: [0mScanning C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_b\outputs\smoke_test\model_b_smoke_20261111T053648317813Z\dataset\train... 16 images, 0 corrupt: 100% ━━━━━━━━━━━━ 16/16 1.1Kit/s 0.0s
+[K[34m[1mval: [0mScanning C:\Users\Ricardo Cuthbert\Downloads\skrpsi bwabwa\experiments\model_b\outputs\smoke_test\model_b_smoke_20261111T053648317813Z\dataset\val... 16 images, 0 corrupt: 100% ━━━━━━━━━━━━ 16/16 1.1Kit/s 0.0s
+[K        1/1     0.391G      2.113         16        224: 0% ──────────── 0/1  0.7s[K        1/1     0.391G      2.113         16        224: 100% ━━━━━━━━━━━━ 1/1 1.5it/s 0.7s
+[K               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 1/1 4.0it/s 0.3s
+[K               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 1/1 4.0it/s 0.2s

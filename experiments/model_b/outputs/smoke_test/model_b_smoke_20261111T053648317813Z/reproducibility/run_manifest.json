@@ -1,0 +1,404 @@
+{
+  "status": "TECHNICAL_SMOKE_COMPLETE",
+  "experiment_id": "model_b_smoke_20261111T053648317813Z",
+  "started": "2026-11-11T05:37:13.906145+00:00",
+  "completed": "2026-11-11T05:37:24.782029+00:00",
+  "architecture": "yolo26n-cls",
+  "pretrained_source": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-cls.pt",
+  "pretrained_path": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiments\\model_a\\outputs\\pretrained\\yolo26n-cls.pt",
+  "pretrained_sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+  "config": {
+    "experiment_id": "model_b_smoke_20261111T053648317813Z",
+    "mode": "smoke",
+    "base": {
+      "epochs": 1,
+      "patience": 1,
+      "imgsz": 224,
+      "batch": 16,
+      "seed": 42,
+      "optimizer": "SGD",
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "cos_lr": false,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "nbs": 64,
+      "pretrained": true,
+      "deterministic": true,
+      "workers": 0,
+      "amp": false,
+      "dropout": 0.0,
+      "fliplr": 0.0,
+      "flipud": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "erasing": 0.0,
+      "auto_augment": null,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "mosaic": 0.0,
+      "fraction": 1.0,
+      "cache": false,
+      "resume": false,
+      "save": true,
+      "val": true,
+      "plots": true
+    },
+    "candidates": [
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.001,
+        "weight_decay": 0.0001,
+        "batch": 16
+      }
+    ],
+    "search_space": [
+      {
+        "optimizer": "SGD",
+        "lr0": 0.003,
+        "weight_decay": 0.0001,
+        "batch": 16
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.003,
+        "weight_decay": 0.0001,
+        "batch": 32
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.003,
+        "weight_decay": 0.0005,
+        "batch": 16
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.003,
+        "weight_decay": 0.0005,
+        "batch": 32
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.01,
+        "weight_decay": 0.0001,
+        "batch": 16
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.01,
+        "weight_decay": 0.0001,
+        "batch": 32
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.01,
+        "weight_decay": 0.0005,
+        "batch": 16
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.01,
+        "weight_decay": 0.0005,
+        "batch": 32
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.03,
+        "weight_decay": 0.0001,
+        "batch": 16
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.03,
+        "weight_decay": 0.0001,
+        "batch": 32
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.03,
+        "weight_decay": 0.0005,
+        "batch": 16
+      },
+      {
+        "optimizer": "SGD",
+        "lr0": 0.03,
+        "weight_decay": 0.0005,
+        "batch": 32
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.0001,
+        "weight_decay": 0.0001,
+        "batch": 16
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.0001,
+        "weight_decay": 0.0001,
+        "batch": 32
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.0001,
+        "weight_decay": 0.0005,
+        "batch": 16
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.0001,
+        "weight_decay": 0.0005,
+        "batch": 32
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.0003,
+        "weight_decay": 0.0001,
+        "batch": 16
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.0003,
+        "weight_decay": 0.0001,
+        "batch": 32
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.0003,
+        "weight_decay": 0.0005,
+        "batch": 16
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.0003,
+        "weight_decay": 0.0005,
+        "batch": 32
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.001,
+        "weight_decay": 0.0001,
+        "batch": 16
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.001,
+        "weight_decay": 0.0001,
+        "batch": 32
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.001,
+        "weight_decay": 0.0005,
+        "batch": 16
+      },
+      {
+        "optimizer": "AdamW",
+        "lr0": 0.001,
+        "weight_decay": 0.0005,
+        "batch": 32
+      }
+    ],
+    "seed": 42,
+    "planned_trials": 1,
+    "primary_objective": "eight_class_validation_macro_f1",
+    "epoch_ties": "last at five decimal fitness",
+    "trial_ties": "lowest trial ID",
+    "device": 0
+  },
+  "completed_trials": 1,
+  "selected_trial": {
+    "trial": "trial_01",
+    "optimizer": "AdamW",
+    "lr0": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 16,
+    "configuration": {
+      "epochs": 1,
+      "patience": 1,
+      "imgsz": 224,
+      "batch": 16,
+      "seed": 42,
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0001,
+      "cos_lr": false,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "nbs": 64,
+      "pretrained": true,
+      "deterministic": true,
+      "workers": 0,
+      "amp": false,
+      "dropout": 0.0,
+      "fliplr": 0.0,
+      "flipud": 0.0,
+      "degrees": 0.0,
+      "translate": 0.0,
+      "scale": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "erasing": 0.0,
+      "auto_augment": null,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "mosaic": 0.0,
+      "fraction": 1.0,
+      "cache": false,
+      "resume": false,
+      "save": true,
+      "val": true,
+      "plots": true
+    },
+    "status": "COMPLETE",
+    "started": "2026-11-11T05:37:13.960792+00:00",
+    "pretrained_sha256": "0dd6f8dbc448870ac98a3cbb7156f923f7ce21fed3755d4019169ffffd279e81",
+    "dataset_manifest_sha256": "495bd4e9c753ab911aaa421da5f5ee5f53cd15cee38d6af335ec4c12fb8f1cac",
+    "completed_epochs": 1,
+    "best_epoch": 1,
+    "macro_f1": 0.025,
+    "duration_seconds": 6.774992200000042,
+    "optimizer_steps": 1,
+    "completed": "2026-11-11T05:37:20.737064+00:00",
+    "stopping_reason": "maximum_epochs",
+    "stopper_best_epoch": 1,
+    "checkpoint": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiments\\model_b\\outputs\\smoke_test\\model_b_smoke_20261111T053648317813Z\\trial_01\\fit\\weights\\best.pt",
+    "checkpoint_sha256": "0233661393466ac239b9b7b07b6a550ea1f4c41a947c36d517556409826d7c6d",
+    "selection": "macro-F1 rounded 5 decimals; last epoch tie"
+  },
+  "final_metrics8": {
+    "top1_accuracy": 0.0625,
+    "macro_precision": 0.015625,
+    "macro_recall": 0.0625,
+    "macro_f1": 0.025,
+    "samples": 16
+  },
+  "final_metrics6": {
+    "top1_accuracy": 0.0,
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "samples": 12
+  },
+  "environment": {
+    "python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+    "kernel": "ipykernel",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.14.0+cu126",
+      "torchvision": "0.29.0+cu126",
+      "ultralytics": "8.4.197",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "Pillow": "11.0.0",
+      "matplotlib": "3.9.2",
+      "nbformat": "5.10.4",
+      "nbclient": "0.10.0",
+      "ipykernel": "6.29.4"
+    },
+    "cuda_available": true,
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "gpu_memory_bytes": 8585216000,
+    "framework_sources": {
+      "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Lib\\site-packages\\ultralytics\\models\\yolo\\classify\\train.py": "4d97154acfbe74533b309523e8c0e8ab7a19540591f37b3e85acc4ec6c7f490c",
+      "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Lib\\site-packages\\ultralytics\\models\\yolo\\classify\\val.py": "2f52795893d9ddb793fdc117f272c0a8c848c7376f1f5de9373706fce7281dde",
+      "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Lib\\site-packages\\ultralytics\\engine\\trainer.py": "d867f0cae5efb0bfdc7661a35b7071f024b45d1b495e2ec3eaefef9785b40a27"
+    }
+  },
+  "dataset_audit": {
+    "shared_samples_exact": 1800,
+    "class_counts": "class_name  split\napa_kabar   train    240\n            val       60\nbingung     train    240\n            val       60\nhalo        train    240\n            val       60\nkamu        train    240\n            val       60\nmarah       train    240\n            val       60\nsaya        train    240\n            val       60\nsenang      train    240\n            val       60\ntidur       train    240\n            val       60",
+    "source_hashes": {
+      "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\split_lock.csv": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+      "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\inventory.csv": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+      "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidates.csv": "2061a83fa605b0194324499ba7f9b9f69ddfd21ca86a907db01786fdcb3afb12",
+      "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+      "experiments\\model_a\\outputs\\official_runs\\model_a_seed42_a58633d28d06_20261110T153001638887Z\\dataset_manifest.csv": "c7f187740545e3d05b846f5314d2759738c8d334a7dd4f75997ce84c3ca3939f",
+      "experiments\\model_a\\manifests\\automatic_frame_selection_v1.csv": "c7f187740545e3d05b846f5314d2759738c8d334a7dd4f75997ce84c3ca3939f",
+      "experiments\\model_a\\config\\model_a.json": "aeb8623cc8ba36c9d846a92a05847bfec34368bb6ecd6be84350d9051bbda206"
+    },
+    "model_a_run": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiments\\model_a\\outputs\\official_runs\\model_a_seed42_a58633d28d06_20261110T153001638887Z",
+    "files_verified": true,
+    "new_frame_source": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\manifest.csv",
+    "frame_regeneration": false,
+    "existing_new_class_selections": 160,
+    "new_selections_from_existing_cache": 440,
+    "signer_independent": false,
+    "external_data_used": false,
+    "selected_frame_manifest_sha256": "d79546c9ff0514d2d53ea9a66a734b8a3cdb9d20bf9e655ff5f39aa74e061791",
+    "split_hashes": {
+      "train": "dac95b3e0cc5bad62ce9c868ed06723bce6030bc27e716185728de1aa307a519",
+      "val": "650b55365b2b9682508f629d614623f7b16bf141dfa9fb52946f4860c65457bc"
+    }
+  },
+  "dataset_manifest_sha256": "495bd4e9c753ab911aaa421da5f5ee5f53cd15cee38d6af335ec4c12fb8f1cac",
+  "class_mapping": {
+    "canonical": {
+      "0": "saya",
+      "1": "kamu",
+      "2": "senang",
+      "3": "bingung",
+      "4": "marah",
+      "5": "apa_kabar",
+      "6": "halo",
+      "7": "tidur"
+    },
+    "model_output": {
+      "0": "apa_kabar",
+      "1": "bingung",
+      "2": "halo",
+      "3": "kamu",
+      "4": "marah",
+      "5": "saya",
+      "6": "senang",
+      "7": "tidur"
+    },
+    "output_to_canonical": [
+      5,
+      3,
+      6,
+      1,
+      4,
+      0,
+      2,
+      7
+    ]
+  },
+  "git_commit": "0644f64e54b1010456e69866cd9dcc2262e17603",
+  "checkpoint_hashes": {
+    "best.pt": "0233661393466ac239b9b7b07b6a550ea1f4c41a947c36d517556409826d7c6d",
+    "last.pt": "36f1f216129089612d54d0a5283040d8e61dfe003ef9ab46fd8de790251326ea"
+  },
+  "total_duration_seconds": 6.774992200000042,
+  "total_epochs": 1,
+  "total_optimizer_steps": 1,
+  "source_code_hashes": {
+    "model_b_support.py": "49c84f2923d7e10dd1dc45ea01a33fdd92e4af897ebf9ad926865e198e2e9370",
+    "build_notebook.py": "77e65c68e42d1af53b8a5125208002799e3c21080c47fb7978bf1379e14ec607",
+    "test_model_b.py": "ae9ff8b049b3bfc70f1cf41c488af79e5f583270fa9719439145bfa7da946561"
+  },
+  "limitations": [
+    "Model A untuned; independent optimization required",
+    "Validation reused for tuning; no independent generalization estimate",
+    "Not signer independent; semantic labels unassessed",
+    "Vocabulary, sample count and optimized settings differ",
+    "440 new-class frames selected from existing cache; 160 historical selections preserved",
+    "Framework rounds selection fitness to five decimals; saved FP16 checkpoint may differ from training EMA"
+  ]
+}

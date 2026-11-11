@@ -1,0 +1,22 @@
+[
+  {
+    "model": "A untuned baseline",
+    "trials": 1,
+    "train_samples": 1440,
+    "completed_epochs": 65,
+    "image_presentations": 93600,
+    "optimizer_steps": null,
+    "csv_training_seconds": 1536.77,
+    "selection": "top1 accuracy"
+  },
+  {
+    "model": "B independent search",
+    "trials": 8,
+    "train_samples": 1920,
+    "completed_epochs": 330,
+    "image_presentations": 633600,
+    "optimizer_steps": 10460.0,
+    "csv_training_seconds": 9740.108,
+    "selection": "8-class macro-F1"
+  }
+]

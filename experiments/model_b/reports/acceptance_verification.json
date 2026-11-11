@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "run": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiments\\model_b\\outputs\\official_runs\\model_b_official_20261111T053828891203Z",
+  "executed_code_cells": 16,
+  "completed_trials": 8,
+  "training_samples": 1920,
+  "validation_samples": 480,
+  "shared_samples_exact": 1800,
+  "paired_validation_samples": 360,
+  "selected_trial": "trial_07",
+  "metrics8": {
+    "top1_accuracy": 0.9958333333333333,
+    "macro_precision": 0.9959016393442623,
+    "macro_recall": 0.9958333333333333,
+    "macro_f1": 0.9958330439613863,
+    "samples": 480
+  },
+  "metrics6": {
+    "top1_accuracy": 0.9944444444444445,
+    "macro_precision": 0.9945355191256832,
+    "macro_recall": 0.9944444444444445,
+    "macro_f1": 0.9944440586151817,
+    "samples": 360
+  },
+  "model_a_evidence_unchanged": true
+}

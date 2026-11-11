@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "videos_verified": 2400,
+  "physical_videos": 2400,
+  "shared_samples_exact": 1800,
+  "split_lock_sha256": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e"
+}

@@ -1,0 +1,7 @@
+class_name,canonical_id,precision,recall,f1,support
+saya,0,0.0,0.0,0.0,2
+kamu,1,0.0,0.0,0.0,2
+senang,2,0.0,0.0,0.0,2
+bingung,3,0.0,0.0,0.0,2
+marah,4,0.0,0.0,0.0,2
+apa_kabar,5,0.0,0.0,0.0,2

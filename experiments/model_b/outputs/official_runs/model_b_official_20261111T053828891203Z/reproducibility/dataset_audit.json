@@ -1,0 +1,26 @@
+{
+  "shared_samples_exact": 1800,
+  "class_counts": "class_name  split\napa_kabar   train    240\n            val       60\nbingung     train    240\n            val       60\nhalo        train    240\n            val       60\nkamu        train    240\n            val       60\nmarah       train    240\n            val       60\nsaya        train    240\n            val       60\nsenang      train    240\n            val       60\ntidur       train    240\n            val       60",
+  "source_hashes": {
+    "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\split_lock.csv": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\inventory.csv": "03eb34d91c6764d14052d2d8f99f6996d5b54602d50d533b47b9246ad32f706e",
+    "02_exp\\arsip_pipeline\\experiment_yolo26_v3\\candidates.csv": "2061a83fa605b0194324499ba7f9b9f69ddfd21ca86a907db01786fdcb3afb12",
+    "02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\manifest.csv": "e32f95a16c1d1fa9f8639680940345a3697d65706bc599426f7112eda0c23f0e",
+    "experiments\\model_a\\outputs\\official_runs\\model_a_seed42_a58633d28d06_20261110T153001638887Z\\dataset_manifest.csv": "c7f187740545e3d05b846f5314d2759738c8d334a7dd4f75997ce84c3ca3939f",
+    "experiments\\model_a\\manifests\\automatic_frame_selection_v1.csv": "c7f187740545e3d05b846f5314d2759738c8d334a7dd4f75997ce84c3ca3939f",
+    "experiments\\model_a\\config\\model_a.json": "aeb8623cc8ba36c9d846a92a05847bfec34368bb6ecd6be84350d9051bbda206"
+  },
+  "model_a_run": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\experiments\\model_a\\outputs\\official_runs\\model_a_seed42_a58633d28d06_20261110T153001638887Z",
+  "files_verified": true,
+  "new_frame_source": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\02_exp\\tahap1b\\full_runs\\exploratory_development_stage1b_user_20261103_v1_seed42\\manifest.csv",
+  "frame_regeneration": false,
+  "existing_new_class_selections": 160,
+  "new_selections_from_existing_cache": 440,
+  "signer_independent": false,
+  "external_data_used": false,
+  "selected_frame_manifest_sha256": "d79546c9ff0514d2d53ea9a66a734b8a3cdb9d20bf9e655ff5f39aa74e061791",
+  "split_hashes": {
+    "train": "dac95b3e0cc5bad62ce9c868ed06723bce6030bc27e716185728de1aa307a519",
+    "val": "650b55365b2b9682508f629d614623f7b16bf141dfa9fb52946f4860c65457bc"
+  }
+}

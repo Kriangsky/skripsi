@@ -1,0 +1,73 @@
+{
+  "top1_accuracy": 0.0625,
+  "macro_precision": 0.015625,
+  "macro_recall": 0.0625,
+  "macro_f1": 0.025,
+  "samples": 16,
+  "per_class": [
+    {
+      "class_name": "saya",
+      "canonical_id": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    {
+      "class_name": "kamu",
+      "canonical_id": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    {
+      "class_name": "senang",
+      "canonical_id": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    {
+      "class_name": "bingung",
+      "canonical_id": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    {
+      "class_name": "marah",
+      "canonical_id": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    {
+      "class_name": "apa_kabar",
+      "canonical_id": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    {
+      "class_name": "halo",
+      "canonical_id": 6,
+      "precision": 0.125,
+      "recall": 0.5,
+      "f1": 0.2,
+      "support": 2
+    },
+    {
+      "class_name": "tidur",
+      "canonical_id": 7,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    }
+  ]
+}

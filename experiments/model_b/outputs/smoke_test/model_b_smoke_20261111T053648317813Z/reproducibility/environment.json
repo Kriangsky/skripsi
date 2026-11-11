@@ -1,0 +1,27 @@
+{
+  "python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Scripts\\python.exe",
+  "kernel": "ipykernel",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "packages": {
+    "torch": "2.14.0+cu126",
+    "torchvision": "0.29.0+cu126",
+    "ultralytics": "8.4.197",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "Pillow": "11.0.0",
+    "matplotlib": "3.9.2",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.0",
+    "ipykernel": "6.29.4"
+  },
+  "cuda_available": true,
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "gpu_memory_bytes": 8585216000,
+  "framework_sources": {
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Lib\\site-packages\\ultralytics\\models\\yolo\\classify\\train.py": "4d97154acfbe74533b309523e8c0e8ab7a19540591f37b3e85acc4ec6c7f490c",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Lib\\site-packages\\ultralytics\\models\\yolo\\classify\\val.py": "2f52795893d9ddb793fdc117f272c0a8c848c7376f1f5de9373706fce7281dde",
+    "C:\\Users\\Ricardo Cuthbert\\Downloads\\skrpsi bwabwa\\.venv-bisindo\\Lib\\site-packages\\ultralytics\\engine\\trainer.py": "d867f0cae5efb0bfdc7661a35b7071f024b45d1b495e2ec3eaefef9785b40a27"
+  }
+}

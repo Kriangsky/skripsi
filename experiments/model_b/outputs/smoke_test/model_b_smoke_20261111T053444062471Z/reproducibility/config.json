@@ -1,0 +1,207 @@
+{
+  "experiment_id": "model_b_smoke_20261111T053444062471Z",
+  "mode": "smoke",
+  "base": {
+    "epochs": 1,
+    "patience": 1,
+    "imgsz": 224,
+    "batch": 16,
+    "seed": 42,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "cos_lr": false,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "nbs": 64,
+    "pretrained": true,
+    "deterministic": true,
+    "workers": 0,
+    "amp": false,
+    "dropout": 0.0,
+    "fliplr": 0.0,
+    "flipud": 0.0,
+    "degrees": 0.0,
+    "translate": 0.0,
+    "scale": 0.0,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "hsv_h": 0.0,
+    "hsv_s": 0.0,
+    "hsv_v": 0.0,
+    "erasing": 0.0,
+    "auto_augment": null,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "mosaic": 0.0,
+    "fraction": 1.0,
+    "cache": false,
+    "resume": false,
+    "save": true,
+    "val": true,
+    "plots": true
+  },
+  "candidates": [
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "weight_decay": 0.0001,
+      "batch": 16
+    }
+  ],
+  "search_space": [
+    {
+      "optimizer": "SGD",
+      "lr0": 0.003,
+      "weight_decay": 0.0001,
+      "batch": 16
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.003,
+      "weight_decay": 0.0001,
+      "batch": 32
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.003,
+      "weight_decay": 0.0005,
+      "batch": 16
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.003,
+      "weight_decay": 0.0005,
+      "batch": 32
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.01,
+      "weight_decay": 0.0001,
+      "batch": 16
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.01,
+      "weight_decay": 0.0001,
+      "batch": 32
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.01,
+      "weight_decay": 0.0005,
+      "batch": 16
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.01,
+      "weight_decay": 0.0005,
+      "batch": 32
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.03,
+      "weight_decay": 0.0001,
+      "batch": 16
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.03,
+      "weight_decay": 0.0001,
+      "batch": 32
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.03,
+      "weight_decay": 0.0005,
+      "batch": 16
+    },
+    {
+      "optimizer": "SGD",
+      "lr0": 0.03,
+      "weight_decay": 0.0005,
+      "batch": 32
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.0001,
+      "weight_decay": 0.0001,
+      "batch": 16
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.0001,
+      "weight_decay": 0.0001,
+      "batch": 32
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.0001,
+      "weight_decay": 0.0005,
+      "batch": 16
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.0001,
+      "weight_decay": 0.0005,
+      "batch": 32
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "weight_decay": 0.0001,
+      "batch": 16
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "weight_decay": 0.0001,
+      "batch": 32
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "weight_decay": 0.0005,
+      "batch": 16
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "weight_decay": 0.0005,
+      "batch": 32
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "weight_decay": 0.0001,
+      "batch": 16
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "weight_decay": 0.0001,
+      "batch": 32
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "weight_decay": 0.0005,
+      "batch": 16
+    },
+    {
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "weight_decay": 0.0005,
+      "batch": 32
+    }
+  ],
+  "seed": 42,
+  "planned_trials": 1,
+  "primary_objective": "eight_class_validation_macro_f1",
+  "epoch_ties": "last at five decimal fitness",
+  "trial_ties": "lowest trial ID",
+  "device": 0
+}
